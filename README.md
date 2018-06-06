@@ -6,7 +6,7 @@ Dewi Mooij 10752978
 
 Since the rise of fitgirls, avocados have become a very popular food. However, the circumstances in Europe are unsuitable for avocado farming, which is why large amounts of avocados are imported throughout the year from avocado producing countries such as Mexico and Peru. As avocados are a superfood and considered to be very healthy, it is interesting to try an find a relation between the amount of avocados imported by a country for consumption and the health perception of its inhabitants.  
 
-This project aims to visualize the amount and origin of avocados imported to Europe throughout a year and to explore the connection between the amount of avocados imported by a country and the health perception of its inhabitants.
+This project aims to visualize the amount of avocados imported and exported in Europe throughout a year and to explore the connection between the amount of avocados consumed by a country and the health perception of its inhabitants.
 
 # Features
 
