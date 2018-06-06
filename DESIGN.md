@@ -20,3 +20,7 @@ health perception data: http://stats.oecd.org/#
 # Components
 
 # D3 plugins
+
+D3 - tooltip
+
+D3 -  worldmaps
