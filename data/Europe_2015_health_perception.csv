@@ -1,0 +1,226 @@
+STATUS,GENDER,Measure,COU,Country,Year,Value
+Good/very good health,male,% of population (crude rate),AUT,Austria,2015,71.8
+Fair (not good, not bad) health,male,% of population (crude rate),AUT,Austria,2015,19.9
+Bad/very bad health,male,% of population (crude rate),AUT,Austria,2015,8.3
+Good/very good health,female,% of population (crude rate),AUT,Austria,2015,67.9
+Fair (not good, not bad) health,female,% of population (crude rate),AUT,Austria,2015,22.8
+Bad/very bad health,female,% of population (crude rate),AUT,Austria,2015,9.3
+Good/very good health,total,% of population (crude rate),AUT,Austria,2015,69.8
+Fair (not good, not bad) health,total,% of population (crude rate),AUT,Austria,2015,21.4
+Bad/very bad health,total,% of population (crude rate),AUT,Austria,2015,8.8
+Good/very good health,male,% of population (crude rate),BEL,Belgium,2015,77.9
+Fair (not good, not bad) health,male,% of population (crude rate),BEL,Belgium,2015,14.6
+Bad/very bad health,male,% of population (crude rate),BEL,Belgium,2015,7.5
+Good/very good health,female,% of population (crude rate),BEL,Belgium,2015,71.5
+Fair (not good, not bad) health,female,% of population (crude rate),BEL,Belgium,2015,17.3
+Bad/very bad health,female,% of population (crude rate),BEL,Belgium,2015,11.3
+Good/very good health,total,% of population (crude rate),BEL,Belgium,2015,74.6
+Fair (not good, not bad) health,total,% of population (crude rate),BEL,Belgium,2015,16
+Bad/very bad health,total,% of population (crude rate),BEL,Belgium,2015,9.4
+Good/very good health,male,% of population (crude rate),CZE,Czech Republic,2015,63.4
+Fair (not good, not bad) health,male,% of population (crude rate),CZE,Czech Republic,2015,26.4
+Bad/very bad health,male,% of population (crude rate),CZE,Czech Republic,2015,10.1
+Good/very good health,female,% of population (crude rate),CZE,Czech Republic,2015,59.6
+Fair (not good, not bad) health,female,% of population (crude rate),CZE,Czech Republic,2015,28.6
+Bad/very bad health,female,% of population (crude rate),CZE,Czech Republic,2015,11.8
+Good/very good health,total,% of population (crude rate),CZE,Czech Republic,2015,11.1
+Fair (not good, not bad) health,total,% of population (crude rate),CZE,Czech Republic,2015,61.2
+Bad/very bad health,total,% of population (crude rate),CZE,Czech Republic,2015,27.7
+Good/very good health,male,% of population (crude rate),DNK,Denmark,2015,73.1
+Fair (not good, not bad) health,male,% of population (crude rate),DNK,Denmark,2015,20.6
+Bad/very bad health,male,% of population (crude rate),DNK,Denmark,2015,6.3
+Good/very good health,female,% of population (crude rate),DNK,Denmark,2015,70.1
+Fair (not good, not bad) health,female,% of population (crude rate),DNK,Denmark,2015,21.1
+Bad/very bad health,female,% of population (crude rate),DNK,Denmark,2015,8.8
+Good/very good health,total,% of population (crude rate),DNK,Denmark,2015,20.8
+Fair (not good, not bad) health,total,% of population (crude rate),DNK,Denmark,2015,71.6
+Bad/very bad health,total,% of population (crude rate),DNK,Denmark,2015,7.6
+Good/very good health,male,% of population (crude rate),EST,Estonia,2015,53.5
+Fair (not good, not bad) health,male,% of population (crude rate),EST,Estonia,2015,32.8
+Bad/very bad health,male,% of population (crude rate),EST,Estonia,2015,13.7
+Good/very good health,female,% of population (crude rate),EST,Estonia,2015,50
+Fair (not good, not bad) health,female,% of population (crude rate),EST,Estonia,2015,32.8
+Bad/very bad health,female,% of population (crude rate),EST,Estonia,2015,17.1
+Good/very good health,total,% of population (crude rate),EST,Estonia,2015,51.4
+Fair (not good, not bad) health,total,% of population (crude rate),EST,Estonia,2015,32.8
+Bad/very bad health,total,% of population (crude rate),EST,Estonia,2015,15.7
+Good/very good health,male,% of population (crude rate),FIN,Finland,2015,70.3
+Fair (not good, not bad) health,male,% of population (crude rate),FIN,Finland,2015,24.1
+Bad/very bad health,male,% of population (crude rate),FIN,Finland,2015,5.6
+Good/very good health,female,% of population (crude rate),FIN,Finland,2015,69.3
+Fair (not good, not bad) health,female,% of population (crude rate),FIN,Finland,2015,24.7
+Bad/very bad health,female,% of population (crude rate),FIN,Finland,2015,5.9
+Good/very good health,total,% of population (crude rate),FIN,Finland,2015,69.8
+Fair (not good, not bad) health,total,% of population (crude rate),FIN,Finland,2015,24.4
+Bad/very bad health,total,% of population (crude rate),FIN,Finland,2015,5.8
+Good/very good health,male,% of population (crude rate),FRA,France,2015,70.2
+Fair (not good, not bad) health,male,% of population (crude rate),FRA,France,2015,22.7
+Bad/very bad health,male,% of population (crude rate),FRA,France,2015,7.1
+Good/very good health,female,% of population (crude rate),FRA,France,2015,65.6
+Fair (not good, not bad) health,female,% of population (crude rate),FRA,France,2015,26.1
+Bad/very bad health,female,% of population (crude rate),FRA,France,2015,8.4
+Good/very good health,total,% of population (crude rate),FRA,France,2015,67.8
+Fair (not good, not bad) health,total,% of population (crude rate),FRA,France,2015,24.4
+Bad/very bad health,total,% of population (crude rate),FRA,France,2015,7.8
+Good/very good health,male,% of population (crude rate),DEU,Germany,2015,66
+Fair (not good, not bad) health,male,% of population (crude rate),DEU,Germany,2015,25.5
+Bad/very bad health,male,% of population (crude rate),DEU,Germany,2015,8.4
+Good/very good health,female,% of population (crude rate),DEU,Germany,2015,63.1
+Fair (not good, not bad) health,female,% of population (crude rate),DEU,Germany,2015,28.7
+Bad/very bad health,female,% of population (crude rate),DEU,Germany,2015,8.2
+Good/very good health,total,% of population (crude rate),DEU,Germany,2015,64.5
+Fair (not good, not bad) health,total,% of population (crude rate),DEU,Germany,2015,27.1
+Bad/very bad health,total,% of population (crude rate),DEU,Germany,2015,8.3
+Good/very good health,male,% of population (crude rate),GRC,Greece,2015,77.2
+Fair (not good, not bad) health,male,% of population (crude rate),GRC,Greece,2015,13.8
+Bad/very bad health,male,% of population (crude rate),GRC,Greece,2015,9
+Good/very good health,female,% of population (crude rate),GRC,Greece,2015,71.8
+Fair (not good, not bad) health,female,% of population (crude rate),GRC,Greece,2015,17.4
+Bad/very bad health,female,% of population (crude rate),GRC,Greece,2015,10.9
+Good/very good health,total,% of population (crude rate),GRC,Greece,2015,74.4
+Fair (not good, not bad) health,total,% of population (crude rate),GRC,Greece,2015,15.6
+Bad/very bad health,total,% of population (crude rate),GRC,Greece,2015,10
+Good/very good health,male,% of population (crude rate),HUN,Hungary,2015,59.6
+Fair (not good, not bad) health,male,% of population (crude rate),HUN,Hungary,2015,26.8
+Bad/very bad health,male,% of population (crude rate),HUN,Hungary,2015,13.7
+Good/very good health,female,% of population (crude rate),HUN,Hungary,2015,53.3
+Fair (not good, not bad) health,female,% of population (crude rate),HUN,Hungary,2015,29
+Bad/very bad health,female,% of population (crude rate),HUN,Hungary,2015,17.7
+Good/very good health,total,% of population (crude rate),HUN,Hungary,2015,56.3
+Fair (not good, not bad) health,total,% of population (crude rate),HUN,Hungary,2015,27.9
+Bad/very bad health,total,% of population (crude rate),HUN,Hungary,2015,15.8
+Good/very good health,male,% of population (crude rate),ISL,Iceland,2015,80.1
+Fair (not good, not bad) health,male,% of population (crude rate),ISL,Iceland,2015,16
+Bad/very bad health,male,% of population (crude rate),ISL,Iceland,2015,3.9
+Good/very good health,female,% of population (crude rate),ISL,Iceland,2015,72.6
+Fair (not good, not bad) health,female,% of population (crude rate),ISL,Iceland,2015,19.9
+Bad/very bad health,female,% of population (crude rate),ISL,Iceland,2015,7.5
+Good/very good health,total,% of population (crude rate),ISL,Iceland,2015,76.3
+Fair (not good, not bad) health,total,% of population (crude rate),ISL,Iceland,2015,18
+Bad/very bad health,total,% of population (crude rate),ISL,Iceland,2015,5.7
+Good/very good health,male,% of population (crude rate),IRL,Ireland,2015,83
+Fair (not good, not bad) health,male,% of population (crude rate),IRL,Ireland,2015,13.1
+Bad/very bad health,male,% of population (crude rate),IRL,Ireland,2015,4
+Good/very good health,female,% of population (crude rate),IRL,Ireland,2015,81.7
+Fair (not good, not bad) health,female,% of population (crude rate),IRL,Ireland,2015,14.5
+Bad/very bad health,female,% of population (crude rate),IRL,Ireland,2015,3.8
+Good/very good health,total,% of population (crude rate),IRL,Ireland,2015,82.3
+Fair (not good, not bad) health,total,% of population (crude rate),IRL,Ireland,2015,13.8
+Bad/very bad health,total,% of population (crude rate),IRL,Ireland,2015,3.9
+Good/very good health,male,% of population (crude rate),ITA,Italy,2015,68.9
+Fair (not good, not bad) health,male,% of population (crude rate),ITA,Italy,2015,20.6
+Bad/very bad health,male,% of population (crude rate),ITA,Italy,2015,10.5
+Good/very good health,female,% of population (crude rate),ITA,Italy,2015,62.6
+Fair (not good, not bad) health,female,% of population (crude rate),ITA,Italy,2015,23.3
+Bad/very bad health,female,% of population (crude rate),ITA,Italy,2015,14.2
+Good/very good health,total,% of population (crude rate),ITA,Italy,2015,65.6
+Fair (not good, not bad) health,total,% of population (crude rate),ITA,Italy,2015,22
+Bad/very bad health,total,% of population (crude rate),ITA,Italy,2015,12.4
+Good/very good health,male,% of population (crude rate),LVA,Latvia,2015,51.3
+Fair (not good, not bad) health,male,% of population (crude rate),LVA,Latvia,2015,35.5
+Bad/very bad health,male,% of population (crude rate),LVA,Latvia,2015,13.1
+Good/very good health,female,% of population (crude rate),LVA,Latvia,2015,42.1
+Fair (not good, not bad) health,female,% of population (crude rate),LVA,Latvia,2015,39
+Bad/very bad health,female,% of population (crude rate),LVA,Latvia,2015,18.9
+Good/very good health,total,% of population (crude rate),LVA,Latvia,2015,46.2
+Fair (not good, not bad) health,total,% of population (crude rate),LVA,Latvia,2015,37.5
+Bad/very bad health,total,% of population (crude rate),LVA,Latvia,2015,16.3
+Good/very good health,male,% of population (crude rate),LUX,Luxembourg,2015,72.4
+Fair (not good, not bad) health,male,% of population (crude rate),LUX,Luxembourg,2015,19.9
+Bad/very bad health,male,% of population (crude rate),LUX,Luxembourg,2015,7.8
+Good/very good health,female,% of population (crude rate),LUX,Luxembourg,2015,68.5
+Fair (not good, not bad) health,female,% of population (crude rate),LUX,Luxembourg,2015,21.9
+Bad/very bad health,female,% of population (crude rate),LUX,Luxembourg,2015,9.6
+Good/very good health,total,% of population (crude rate),LUX,Luxembourg,2015,70.4
+Fair (not good, not bad) health,total,% of population (crude rate),LUX,Luxembourg,2015,20.9
+Bad/very bad health,total,% of population (crude rate),LUX,Luxembourg,2015,8.7
+Good/very good health,male,% of population (crude rate),NLD,Netherlands,2015,80.1
+Fair (not good, not bad) health,male,% of population (crude rate),NLD,Netherlands,2015,15.3
+Bad/very bad health,male,% of population (crude rate),NLD,Netherlands,2015,4.6
+Good/very good health,female,% of population (crude rate),NLD,Netherlands,2015,72.6
+Fair (not good, not bad) health,female,% of population (crude rate),NLD,Netherlands,2015,21.6
+Bad/very bad health,female,% of population (crude rate),NLD,Netherlands,2015,5.8
+Good/very good health,total,% of population (crude rate),NLD,Netherlands,2015,76.2
+Fair (not good, not bad) health,total,% of population (crude rate),NLD,Netherlands,2015,18.5
+Bad/very bad health,total,% of population (crude rate),NLD,Netherlands,2015,5.2
+Good/very good health,male,% of population (crude rate),NOR,Norway,2015,80.2
+Fair (not good, not bad) health,male,% of population (crude rate),NOR,Norway,2015,14.9
+Bad/very bad health,male,% of population (crude rate),NOR,Norway,2015,4.9
+Good/very good health,female,% of population (crude rate),NOR,Norway,2015,76.5
+Fair (not good, not bad) health,female,% of population (crude rate),NOR,Norway,2015,15.6
+Bad/very bad health,female,% of population (crude rate),NOR,Norway,2015,7.9
+Good/very good health,total,% of population (crude rate),NOR,Norway,2015,78.3
+Fair (not good, not bad) health,total,% of population (crude rate),NOR,Norway,2015,15.3
+Bad/very bad health,total,% of population (crude rate),NOR,Norway,2015,6.4
+Good/very good health,male,% of population (crude rate),POL,Poland,2015,61.5
+Fair (not good, not bad) health,male,% of population (crude rate),POL,Poland,2015,25.4
+Bad/very bad health,male,% of population (crude rate),POL,Poland,2015,13.1
+Good/very good health,female,% of population (crude rate),POL,Poland,2015,54.6
+Fair (not good, not bad) health,female,% of population (crude rate),POL,Poland,2015,30.1
+Bad/very bad health,female,% of population (crude rate),POL,Poland,2015,15.3
+Good/very good health,total,% of population (crude rate),POL,Poland,2015,57.8
+Fair (not good, not bad) health,total,% of population (crude rate),POL,Poland,2015,27.9
+Bad/very bad health,total,% of population (crude rate),POL,Poland,2015,14.3
+Good/very good health,male,% of population (crude rate),PRT,Portugal,2015,51.5
+Fair (not good, not bad) health,male,% of population (crude rate),PRT,Portugal,2015,33.9
+Bad/very bad health,male,% of population (crude rate),PRT,Portugal,2015,14.6
+Good/very good health,female,% of population (crude rate),PRT,Portugal,2015,41.8
+Fair (not good, not bad) health,female,% of population (crude rate),PRT,Portugal,2015,37.1
+Bad/very bad health,female,% of population (crude rate),PRT,Portugal,2015,21
+Good/very good health,total,% of population (crude rate),PRT,Portugal,2015,46.4
+Fair (not good, not bad) health,total,% of population (crude rate),PRT,Portugal,2015,35.6
+Bad/very bad health,total,% of population (crude rate),PRT,Portugal,2015,18
+Good/very good health,male,% of population (crude rate),SVK,Slovak Republic,2015,69.7
+Fair (not good, not bad) health,male,% of population (crude rate),SVK,Slovak Republic,2015,19.9
+Bad/very bad health,male,% of population (crude rate),SVK,Slovak Republic,2015,10.4
+Good/very good health,female,% of population (crude rate),SVK,Slovak Republic,2015,62.3
+Fair (not good, not bad) health,female,% of population (crude rate),SVK,Slovak Republic,2015,23.7
+Bad/very bad health,female,% of population (crude rate),SVK,Slovak Republic,2015,14.1
+Good/very good health,total,% of population (crude rate),SVK,Slovak Republic,2015,65.9
+Fair (not good, not bad) health,total,% of population (crude rate),SVK,Slovak Republic,2015,21.8
+Bad/very bad health,total,% of population (crude rate),SVK,Slovak Republic,2015,12.3
+Good/very good health,male,% of population (crude rate),SVN,Slovenia,2015,68.1
+Fair (not good, not bad) health,male,% of population (crude rate),SVN,Slovenia,2015,21.9
+Bad/very bad health,male,% of population (crude rate),SVN,Slovenia,2015,10
+Good/very good health,female,% of population (crude rate),SVN,Slovenia,2015,61.6
+Fair (not good, not bad) health,female,% of population (crude rate),SVN,Slovenia,2015,25.1
+Bad/very bad health,female,% of population (crude rate),SVN,Slovenia,2015,13.3
+Good/very good health,total,% of population (crude rate),SVN,Slovenia,2015,64.8
+Fair (not good, not bad) health,total,% of population (crude rate),SVN,Slovenia,2015,23.6
+Bad/very bad health,total,% of population (crude rate),SVN,Slovenia,2015,11.6
+Good/very good health,male,% of population (crude rate),ESP,Spain,2015,75.3
+Fair (not good, not bad) health,male,% of population (crude rate),ESP,Spain,2015,18.6
+Bad/very bad health,male,% of population (crude rate),ESP,Spain,2015,6.1
+Good/very good health,female,% of population (crude rate),ESP,Spain,2015,69.6
+Fair (not good, not bad) health,female,% of population (crude rate),ESP,Spain,2015,21.7
+Bad/very bad health,female,% of population (crude rate),ESP,Spain,2015,8.8
+Good/very good health,total,% of population (crude rate),ESP,Spain,2015,72.4
+Fair (not good, not bad) health,total,% of population (crude rate),ESP,Spain,2015,20.2
+Bad/very bad health,total,% of population (crude rate),ESP,Spain,2015,7.5
+Good/very good health,male,% of population (crude rate),SWE,Sweden,2015,82.3
+Fair (not good, not bad) health,male,% of population (crude rate),SWE,Sweden,2015,15
+Bad/very bad health,male,% of population (crude rate),SWE,Sweden,2015,2.7
+Good/very good health,female,% of population (crude rate),SWE,Sweden,2015,77.1
+Fair (not good, not bad) health,female,% of population (crude rate),SWE,Sweden,2015,18
+Bad/very bad health,female,% of population (crude rate),SWE,Sweden,2015,5
+Good/very good health,total,% of population (crude rate),SWE,Sweden,2015,79.7
+Fair (not good, not bad) health,total,% of population (crude rate),SWE,Sweden,2015,16.5
+Bad/very bad health,total,% of population (crude rate),SWE,Sweden,2015,3.8
+Good/very good health,male,% of population (crude rate),TUR,Turkey,2015,71
+Fair (not good, not bad) health,male,% of population (crude rate),TUR,Turkey,2015,19.3
+Bad/very bad health,male,% of population (crude rate),TUR,Turkey,2015,9.8
+Good/very good health,female,% of population (crude rate),TUR,Turkey,2015,61.9
+Fair (not good, not bad) health,female,% of population (crude rate),TUR,Turkey,2015,23.9
+Bad/very bad health,female,% of population (crude rate),TUR,Turkey,2015,14.3
+Good/very good health,total,% of population (crude rate),TUR,Turkey,2015,66.4
+Fair (not good, not bad) health,total,% of population (crude rate),TUR,Turkey,2015,21.6
+Bad/very bad health,total,% of population (crude rate),TUR,Turkey,2015,12
+Good/very good health,male,% of population (crude rate),GBR,United Kingdom,2015,69.8
+Fair (not good, not bad) health,male,% of population (crude rate),GBR,United Kingdom,2015,21.7
+Bad/very bad health,male,% of population (crude rate),GBR,United Kingdom,2015,8.5
+Good/very good health,female,% of population (crude rate),GBR,United Kingdom,2015,69.8
+Fair (not good, not bad) health,female,% of population (crude rate),GBR,United Kingdom,2015,21.5
+Bad/very bad health,female,% of population (crude rate),GBR,United Kingdom,2015,8.8
+Good/very good health,total,% of population (crude rate),GBR,United Kingdom,2015,69.8
+Fair (not good, not bad) health,total,% of population (crude rate),GBR,United Kingdom,2015,21.6
+Bad/very bad health,total,% of population (crude rate),GBR,United Kingdom,2015,8.7
