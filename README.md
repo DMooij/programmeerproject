@@ -1,7 +1,8 @@
 # Project
 
 Dewi Mooij 10752978
-[Project](https://DMooij.github.io/programmeerproject/)
+
+[Project](https://DMooij.github.io/programmeerproject/index.html)
 
 # Problem
 
