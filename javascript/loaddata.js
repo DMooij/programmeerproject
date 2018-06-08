@@ -2,9 +2,9 @@
 
 window.onload = function(){
 queue()
-	.defer(d3.json, 'scripts/2015_import_export.json')
-	.defer(d3.json, 'scripts/2015_consumption.json')
-  .defer(d3.json, 'scripts/2015_health.json')
+	.defer(d3.json, 'scripts/import_export_2010_2015.json')
+	.defer(d3.json, 'scripts/consumption_2010_2015.json')
+  .defer(d3.json, 'scripts/health_2010_2015.json')
 	.awaitAll(LoadData);
 };
 
