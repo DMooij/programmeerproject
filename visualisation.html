@@ -15,6 +15,8 @@
     <script src="javascript/datamaps.all.min.js"></script>
     <script src="javascript/loaddata.js"></script>
     <script src="javascript/map.js"></script>
+    <script src="javascript/donut.js"></script>
+    <script src="css/style.css"></script>
   </head>
 
   <body>
@@ -36,10 +38,23 @@
       <div class="container-fluid">
         <h1>Avocado consumption and health perception</h1></br>
 
-        <label class="radio-inline"><input type="radio" name="optradio" value="import">Import</label>
+        <label class="radio-inline"><input type="radio" name="optradio" value="import" checked>Import</label>
         <label class="radio-inline"><input type="radio" name="optradio" value="export">Export</label>
 
+        <div id ="map-legend"></div>
         <div id="map" style="position: relative; width: 800px; height: 600px;"></div>
+
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Select gender
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" value="male" href="#">Male</a></li>
+              <li><a class="dropdown-item" value="female" href="#">Female</a></li>
+              <li><a class="dropdown-item" value="total" href="#">Total</a></li>
+            </ul>
+        </div>
+
+        <div id="donut"></div>
 
       </div>
 

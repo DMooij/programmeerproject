@@ -10,26 +10,55 @@ queue()
 
 function LoadData(error, response){
   if (error) throw error;
-	console.log("Hello")
 
     var import_export_year = response[0];
-    console.log(import_export_year);
+    // console.log(import_export_year);
     var consumption = response[1];
     console.log(consumption);
-    var health_perception = response[2];
-    console.log(health_perception);
+    var health_2010_2015 = response[2];
+    console.log(health_2010_2015);
 
-		// all data select year
-		// data map select import/export from checkbox
+		// OPTIONAL SLIDER all data select year
 
-		// min and max values labourforce
-		var minValue = 0;
-		var maxValue = 200000;
+		// DONUT CHART DATA
+		var health_2015 = [];
+		for (var k = 0; k < health_2010_2015.length; k++){
+			if (health_2010_2015[k].YEAR == "2015"){
+				health_2015.push(health_2010_2015[k])
+			}
+			var health_2015_male = [];
+			var health_2015_female = [];
+			var health_2015_total = [];
+			for (var l = 0; l < health_2015.length; l++){
+				if (health_2015[l].GENDER == "male"){
+					health_2015_male.push(health_2015[l])
+				}
+				if (health_2015[l].GENDER == "female"){
+					health_2015_female.push(health_2015[l])
+				}
+				if (health_2015[l].GENDER == "total"){
+					health_2015_total.push(health_2015[l])
+				}
+			}
+		}
+
+		console.log(health_2015_total)
+
+		// MAP DATA
+		// min and max values import/export
+		var quantity_array = [];
+
+		for (var i = 1; i < import_export_year.length; i++){
+			quantity_array.push(import_export_year[i].QUANTITY_TON)
+		}
+
+		var minValue = Math.min.apply(Math, quantity_array);
+		var maxValue = Math.max.apply(Math, quantity_array);
 
 	// create color palette
 		var paletteScale = d3.scale.linear()
 			.domain([minValue, maxValue])
-			.range(["#99ff99", "#008000"]);
+			.range(["#b3ff66", "#336600"]);
 
 		// import 2015
 		var map_import = {};
@@ -59,20 +88,18 @@ function LoadData(error, response){
 				countries_2015_export = (countries_2015_export + 11)
 		};
 
-		console.log(map_import);
-		console.log(map_export);
-
 		d3.selectAll("input[name='optradio']").on("change", function(){
-			var map;
 			var value = this.value;
-			console.log(value)
 			if (value == "import"){
-				map = map_import
+				removeMap();
+				makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female);
 			}
 			if (value == "export"){
-				map = map_export
+				removeMap();
+				makeMap(error, map_export, health_2015_total, health_2015_male, health_2015_female);
 			}
 		});
 
-		makeMap(error, map_import, health_perception);
+		// default map import 2015
+		makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female);
 }

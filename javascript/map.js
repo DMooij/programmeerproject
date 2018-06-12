@@ -1,6 +1,6 @@
 // make map
 
-function makeMap(error, map, health_perception){
+function makeMap(error, map, health_2015_total, health_2015_male, health_2015_female){
 	if (error) throw error;
 
 		var map = new Datamap({
@@ -24,12 +24,54 @@ function makeMap(error, map, health_perception){
 				done: function(datamap){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 						var location = geography.id;
-						for (var loc = 0; loc < health_perception.length; loc++){
-							 if (location == health_perception[loc]["CODE"]){
-								 // make donut
-								 // make calendar
+
+						var data_donut = [];
+						for (var loc = 0; loc < health_2015_total.length; loc++){
+							 if (location == health_2015_total[loc].CODE){
+								 data_donut.push(health_2015_total[loc])
 							 }
 						}
+						// console.log(data_donut)
+						removeDonut();
+						makeDonut(data_donut);
+
+						d3.selectAll(".dropdown-item").on("click", function(){
+							var value = this.getAttribute("value");
+
+							if (value == "male"){
+								removeDonut();
+								var data_donut = [];
+								for (var loc = 0; loc < health_2015_male.length; loc++){
+									 if (location == health_2015_male[loc].CODE){
+										 data_donut.push(health_2015_male[loc])
+									 }
+								}
+								// console.log(data_donut)
+								makeDonut(data_donut);
+							}
+							if (value == "female"){
+								removeDonut();
+								var data_donut = [];
+								for (var loc = 0; loc < health_2015_female.length; loc++){
+									 if (location == health_2015_female[loc].CODE){
+										 data_donut.push(health_2015_female[loc])
+									 }
+								}
+								// console.log(data_donut)
+								makeDonut(data_donut);
+							}
+							if (value == "total"){
+								removeDonut();
+								var data_donut = [];
+								for (var loc = 0; loc < health_2015_total.length; loc++){
+									 if (location == health_2015_total[loc].CODE){
+										 data_donut.push(health_2015_total[loc])
+									 }
+								}
+								// console.log(data_donut)
+								makeDonut(data_donut);
+							}
+						});
 					});
 				},
 				geographyConfig: {
@@ -55,11 +97,7 @@ function makeMap(error, map, health_perception){
 			 });
 
 			 // add legend to datamap
-			 var leg = {
-				 defaultFillName: "no data available for this country:",
-			 };
-
-			 map.legend(leg);
+	
 
 			//  // resize map when window size is changed
 			//  d3.select(window).on('resize', function() {
@@ -67,3 +105,8 @@ function makeMap(error, map, health_perception){
 		 // });
 	 // });
 };
+
+// TO DO: function update map
+function removeMap(){
+	d3.select("#map").select("svg").remove()
+}

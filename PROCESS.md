@@ -20,3 +20,9 @@
 - managed to make a map containing the import data for the year 2015
 - starting working on the checkbox to update the map from import to export. The value is selected but the data does not get updated
 - started coupling the health data to the map data on location code
+
+## Day 7
+
+- checkbox to update the data on the map from import to export works. However remove is used instead of update
+- Coupled map data to health data, so on-click on a country on the map a donut chart appears displaying the health perception in that country. When a different country is clicked the chart changes, however this is also done with remove instead of update
+- made the dropdown button to select data the gender for donut chart works also by remove instead update
