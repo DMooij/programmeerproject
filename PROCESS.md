@@ -30,3 +30,10 @@
 ## Day 8 - 13 June 2018
 
 - started working on the calendar view. Turns out to be too difficult and not very useful as I only have data per month instead of per day so a barchart with each month as a bar is better even though this chart type seems a bit boring. The plan is to add animations like sort by value to the barchart to make it more special.
+
+## Day 9 - 14 June 2018
+
+- started working on a barchart that for a country clicked on the worldmap shows the number of avocados consumed per inhabitant in the time period 2010-2015.
+- with this deviation form the original plan, I should implement the slider to select the year for the map and donut chart as well to make it fit better with the barchart.
+- added the legend to the datamap
+- TO DO: clean-up code! + add title to donut chart

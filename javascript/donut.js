@@ -2,8 +2,9 @@
 // http://www.adeveloperdiary.com/d3-js/create-a-simple-donut-chart-using-d3-js/
 // https://bl.ocks.org/mbostock/3887193
 
-
 function donut(location, health_2015_total, health_2015_male, health_2015_female){
+  // donutData(health_2010_2015)
+
   var data_donut = [];
   for (var loc = 0; loc < health_2015_total.length; loc++){
      if (location == health_2015_total[loc].CODE){
@@ -54,9 +55,9 @@ function donut(location, health_2015_total, health_2015_male, health_2015_female
 }
 
 function makeDonut(data_donut){
-  var width = 550;
-  var height = 400;
-  var radius = Math.min(width, height)/2;
+  var width_donut = 550;
+  var height_donut = 400;
+  var radius = Math.min(width_donut, height_donut)/2;
 
   var color = d3.scale.ordinal()
     .range(["7fc97f","#beaed4", "#fdc086"])
@@ -69,11 +70,13 @@ function makeDonut(data_donut){
     .sort(null)
     .value(function(d) { return d.VALUE; });
 
-  var svg = d3.select("#donut").append("svg")
-    .attr("width", width)
-    .attr("height", height)
+  var svg = d3.select("#donut")
+  .append("svg")
+    .attr("width", width_donut)
+    .attr("height", height_donut)
+    // .attr("viewBox", [0, 0, width_donut, height_donut])
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + width_donut / 2 + "," + height_donut / 2 + ")");
 
   var g = svg.selectAll(".arc")
       .data(pie(data_donut))

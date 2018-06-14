@@ -1,7 +1,7 @@
 // make map
-
-function makeMap(error, map, health_2015_total, health_2015_male, health_2015_female, consumption_2015){
-	if (error) throw error;
+function makeMap(paletteScale, map, health_2015_total, health_2015_male, health_2015_female, consumption){
+// function makeMap(map){
+	// if (error) throw error;
 
 		var map = new Datamap({
 				element: document.getElementById("map"),
@@ -10,6 +10,7 @@ function makeMap(error, map, health_2015_total, health_2015_male, health_2015_fe
 					 height = 600;
 					 var projection = d3.geo.mercator()
 						   .center([ 13, 52 ])
+							 // .center([32, 47])
 						   .translate([ width/2, height/2 ])
 						   .scale([ width/1.5 ]);
 					 var path = d3.geo.path()
@@ -26,7 +27,7 @@ function makeMap(error, map, health_2015_total, health_2015_male, health_2015_fe
 
 						var location = geography.id;
 						donut(location, health_2015_total, health_2015_male, health_2015_female);
-						barchart(location, consumption_2015);
+						barchart(location, consumption);
 
 					});
 				},
@@ -53,11 +54,24 @@ function makeMap(error, map, health_2015_total, health_2015_male, health_2015_fe
 			 });
 
 			 // add legend to datamap
+		var svg = d3.select("svg");
+
+		var color_legend = d3.legend.color()
+		  .scale(paletteScale)
+			.shapePadding(5)
+			.shapeWidth(50)
+			.shapeHeight(20)
+			.labelOffset(12);
+
+		svg.append("g")
+		  .attr("transform", "translate(20,20)")
+			.call(color_legend);
+
+			 // resize map when window size is changed
+			 // d3.select(window).on('resize', function() {
+				//  map.resize();
 
 
-			//  // resize map when window size is changed
-			//  d3.select(window).on('resize', function() {
-			// 	 map.resize();
 		 // });
 	 // });
 };
