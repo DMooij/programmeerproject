@@ -3,7 +3,7 @@
 window.onload = function(){
 queue()
 	.defer(d3.json, 'scripts/import_export_year.json')
-	.defer(d3.json, 'scripts/consumption_2010_2015.json')
+	.defer(d3.json, 'scripts/consumption_avo_pp_year.json')
   .defer(d3.json, 'scripts/health_2010_2015.json')
 	.awaitAll(LoadData);
 };
@@ -16,7 +16,7 @@ function LoadData(error, response){
     var consumption = response[1];
     console.log(consumption);
     var health_2010_2015 = response[2];
-    console.log(health_2010_2015);
+    // console.log(health_2010_2015);
 
 		// OPTIONAL SLIDER all data select year
 
@@ -42,7 +42,11 @@ function LoadData(error, response){
 			}
 		}
 
-		console.log(health_2015_total)
+		// console.log(health_2015)
+		// console.log(health_2015_total)
+		// console.log(health_2015_male)
+		// console.log(health_2015_female)
+//
 
 		// MAP DATA
 		// min and max values import/export
@@ -88,18 +92,18 @@ function LoadData(error, response){
 				countries_2015_export = (countries_2015_export + 11)
 		};
 
+		// default map import 2015
+		makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female, consumption_2015);
+
 		d3.selectAll("input[name='optradio']").on("change", function(){
 			var value = this.value;
 			if (value == "import"){
 				removeMap();
-				makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female);
+				makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female, consumption_2015);
 			}
 			if (value == "export"){
 				removeMap();
-				makeMap(error, map_export, health_2015_total, health_2015_male, health_2015_female);
+				makeMap(error, map_export, health_2015_total, health_2015_male, health_2015_female, consumption_2015);
 			}
 		});
-
-		// default map import 2015
-		makeMap(error, map_import, health_2015_total, health_2015_male, health_2015_female);
 }

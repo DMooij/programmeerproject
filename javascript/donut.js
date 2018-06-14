@@ -2,6 +2,57 @@
 // http://www.adeveloperdiary.com/d3-js/create-a-simple-donut-chart-using-d3-js/
 // https://bl.ocks.org/mbostock/3887193
 
+
+function donut(location, health_2015_total, health_2015_male, health_2015_female){
+  var data_donut = [];
+  for (var loc = 0; loc < health_2015_total.length; loc++){
+     if (location == health_2015_total[loc].CODE){
+       data_donut.push(health_2015_total[loc])
+     }
+  }
+  // console.log(data_donut)
+  removeDonut();
+  makeDonut(data_donut);
+
+  d3.selectAll(".dropdown-item").on("click", function(){
+    var value = this.getAttribute("value");
+
+    if (value == "male"){
+      removeDonut();
+      var data_donut = [];
+      for (var loc = 0; loc < health_2015_male.length; loc++){
+         if (location == health_2015_male[loc].CODE){
+           data_donut.push(health_2015_male[loc])
+         }
+      }
+      // console.log(data_donut)
+      makeDonut(data_donut);
+    }
+    if (value == "female"){
+      removeDonut();
+      var data_donut = [];
+      for (var loc = 0; loc < health_2015_female.length; loc++){
+         if (location == health_2015_female[loc].CODE){
+           data_donut.push(health_2015_female[loc])
+         }
+      }
+      // console.log(data_donut)
+      makeDonut(data_donut);
+    }
+    if (value == "total"){
+      removeDonut();
+      var data_donut = [];
+      for (var loc = 0; loc < health_2015_total.length; loc++){
+         if (location == health_2015_total[loc].CODE){
+           data_donut.push(health_2015_total[loc])
+         }
+      }
+      // console.log(data_donut)
+      makeDonut(data_donut);
+    }
+  });
+}
+
 function makeDonut(data_donut){
   var width = 550;
   var height = 400;
