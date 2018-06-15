@@ -62,7 +62,7 @@ function LoadData(error, response){
 				var maxValue = Math.max.apply(Math, quantity_array);
 
 					var paletteScale = d3.scale.quantize()
-	  				.domain([minValue, maxValue ])
+	  				.domain([minValue, maxValue])
 						.range(colorbrewer.avo[8])
 
 				// import 2015

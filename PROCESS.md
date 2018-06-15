@@ -37,3 +37,8 @@
 - with this deviation form the original plan, I should implement the slider to select the year for the map and donut chart as well to make it fit better with the barchart.
 - added the legend to the datamap
 - TO DO: clean-up code! + add title to donut chart
+
+## Day 10 - 15 June 2018
+
+- presented the project in the weekly presentation meeting
+- added the slider with avocado icon
