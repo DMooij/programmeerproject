@@ -77,12 +77,12 @@ BEL,Belgium,2012,total,Bad/very bad health,8.8
 BEL,Belgium,2013,total,Bad/very bad health,8.6
 BEL,Belgium,2014,total,Bad/very bad health,9.2
 BEL,Belgium,2015,total,Bad/very bad health,9.4
-NLD,Netherlands,2010,female,Bad/very bad health,5.4
-NLD,Netherlands,2011,female,Bad/very bad health,6.4
-NLD,Netherlands,2012,female,Bad/very bad health,6.4
-NLD,Netherlands,2013,female,Bad/very bad health,6.1
-NLD,Netherlands,2014,female,Bad/very bad health,6
-NLD,Netherlands,2015,female,Bad/very bad health,5.8
+NLD,The Netherlands,2010,female,Bad/very bad health,5.4
+NLD,The Netherlands,2011,female,Bad/very bad health,6.4
+NLD,The Netherlands,2012,female,Bad/very bad health,6.4
+NLD,The Netherlands,2013,female,Bad/very bad health,6.1
+NLD,The Netherlands,2014,female,Bad/very bad health,6
+NLD,The Netherlands,2015,female,Bad/very bad health,5.8
 CZE,Czech Republic,2010,female,Bad/very bad health,13
 CZE,Czech Republic,2011,female,Bad/very bad health,13.5
 CZE,Czech Republic,2012,female,Bad/very bad health,13.8
@@ -323,18 +323,18 @@ LUX,Luxembourg,2012,female,Bad/very bad health,8.3
 LUX,Luxembourg,2013,female,Bad/very bad health,9.5
 LUX,Luxembourg,2014,female,Bad/very bad health,9
 LUX,Luxembourg,2015,female,Bad/very bad health,9.6
-NLD,Netherlands,2010,male,Bad/very bad health,4.6
-NLD,Netherlands,2011,male,Bad/very bad health,5
-NLD,Netherlands,2012,male,Bad/very bad health,5.1
-NLD,Netherlands,2013,male,Bad/very bad health,4.5
-NLD,Netherlands,2014,male,Bad/very bad health,4.9
-NLD,Netherlands,2015,male,Bad/very bad health,4.6
-NLD,Netherlands,2010,total,Bad/very bad health,5
-NLD,Netherlands,2011,total,Bad/very bad health,5.7
-NLD,Netherlands,2012,total,Bad/very bad health,5.8
-NLD,Netherlands,2013,total,Bad/very bad health,5.3
-NLD,Netherlands,2014,total,Bad/very bad health,5.4
-NLD,Netherlands,2015,total,Bad/very bad health,5.2
+NLD,The Netherlands,2010,male,Bad/very bad health,4.6
+NLD,The Netherlands,2011,male,Bad/very bad health,5
+NLD,The Netherlands,2012,male,Bad/very bad health,5.1
+NLD,The Netherlands,2013,male,Bad/very bad health,4.5
+NLD,The Netherlands,2014,male,Bad/very bad health,4.9
+NLD,The Netherlands,2015,male,Bad/very bad health,4.6
+NLD,The Netherlands,2010,total,Bad/very bad health,5
+NLD,The Netherlands,2011,total,Bad/very bad health,5.7
+NLD,The Netherlands,2012,total,Bad/very bad health,5.8
+NLD,The Netherlands,2013,total,Bad/very bad health,5.3
+NLD,The Netherlands,2014,total,Bad/very bad health,5.4
+NLD,The Netherlands,2015,total,Bad/very bad health,5.2
 AUT,Austria,2010,male,Bad/very bad health,8
 AUT,Austria,2011,male,Bad/very bad health,8
 AUT,Austria,2012,male,Bad/very bad health,8.4
@@ -617,12 +617,12 @@ GRC,Greece,2012,male,Fair (not good - not bad) health,14.2
 GRC,Greece,2013,male,Fair (not good - not bad) health,13.9
 GRC,Greece,2014,male,Fair (not good - not bad) health,14.1
 GRC,Greece,2015,male,Fair (not good - not bad) health,13.8
-NLD,Netherlands,2010,female,Fair (not good - not bad) health,18.7
-NLD,Netherlands,2011,female,Fair (not good - not bad) health,20.2
-NLD,Netherlands,2012,female,Fair (not good - not bad) health,21.5
-NLD,Netherlands,2013,female,Fair (not good - not bad) health,22.4
-NLD,Netherlands,2014,female,Fair (not good - not bad) health,19.8
-NLD,Netherlands,2015,female,Fair (not good - not bad) health,21.6
+NLD,The Netherlands,2010,female,Fair (not good - not bad) health,18.7
+NLD,The Netherlands,2011,female,Fair (not good - not bad) health,20.2
+NLD,The Netherlands,2012,female,Fair (not good - not bad) health,21.5
+NLD,The Netherlands,2013,female,Fair (not good - not bad) health,22.4
+NLD,The Netherlands,2014,female,Fair (not good - not bad) health,19.8
+NLD,The Netherlands,2015,female,Fair (not good - not bad) health,21.6
 GRC,Greece,2010,female,Fair (not good - not bad) health,16.3
 GRC,Greece,2011,female,Fair (not good - not bad) health,16
 GRC,Greece,2012,female,Fair (not good - not bad) health,17.3
@@ -641,24 +641,24 @@ FRA,France,2012,male,Fair (not good - not bad) health,22.1
 FRA,France,2013,male,Fair (not good - not bad) health,22
 FRA,France,2014,male,Fair (not good - not bad) health,21.6
 FRA,France,2015,male,Fair (not good - not bad) health,22.7
-NLD,Netherlands,2010,male,Fair (not good - not bad) health,15.2
-NLD,Netherlands,2011,male,Fair (not good - not bad) health,15.5
-NLD,Netherlands,2012,male,Fair (not good - not bad) health,15.6
-NLD,Netherlands,2013,male,Fair (not good - not bad) health,15.8
-NLD,Netherlands,2014,male,Fair (not good - not bad) health,14.6
-NLD,Netherlands,2015,male,Fair (not good - not bad) health,15.3
+NLD,The Netherlands,2010,male,Fair (not good - not bad) health,15.2
+NLD,The Netherlands,2011,male,Fair (not good - not bad) health,15.5
+NLD,The Netherlands,2012,male,Fair (not good - not bad) health,15.6
+NLD,The Netherlands,2013,male,Fair (not good - not bad) health,15.8
+NLD,The Netherlands,2014,male,Fair (not good - not bad) health,14.6
+NLD,The Netherlands,2015,male,Fair (not good - not bad) health,15.3
 LUX,Luxembourg,2010,female,Fair (not good - not bad) health,17.7
 LUX,Luxembourg,2011,female,Fair (not good - not bad) health,21.2
 LUX,Luxembourg,2012,female,Fair (not good - not bad) health,19.2
 LUX,Luxembourg,2013,female,Fair (not good - not bad) health,20.6
 LUX,Luxembourg,2014,female,Fair (not good - not bad) health,20
 LUX,Luxembourg,2015,female,Fair (not good - not bad) health,21.9
-NLD,Netherlands,2010,total,Fair (not good - not bad) health,17
-NLD,Netherlands,2011,total,Fair (not good - not bad) health,17.9
-NLD,Netherlands,2012,total,Fair (not good - not bad) health,18.6
-NLD,Netherlands,2013,total,Fair (not good - not bad) health,19.1
-NLD,Netherlands,2014,total,Fair (not good - not bad) health,17.2
-NLD,Netherlands,2015,total,Fair (not good - not bad) health,18.5
+NLD,The Netherlands,2010,total,Fair (not good - not bad) health,17
+NLD,The Netherlands,2011,total,Fair (not good - not bad) health,17.9
+NLD,The Netherlands,2012,total,Fair (not good - not bad) health,18.6
+NLD,The Netherlands,2013,total,Fair (not good - not bad) health,19.1
+NLD,The Netherlands,2014,total,Fair (not good - not bad) health,17.2
+NLD,The Netherlands,2015,total,Fair (not good - not bad) health,18.5
 GRC,Greece,2010,total,Fair (not good - not bad) health,14.8
 GRC,Greece,2011,total,Fair (not good - not bad) health,14.6
 GRC,Greece,2012,total,Fair (not good - not bad) health,15.8
@@ -1055,30 +1055,30 @@ CZE,Czech Republic,2012,total,Good/very good health,60.4
 CZE,Czech Republic,2013,total,Good/very good health,59.6
 CZE,Czech Republic,2014,total,Good/very good health,60.7
 CZE,Czech Republic,2015,total,Good/very good health,61.2
-NLD,Netherlands,2010,total,Good/very good health,78
-NLD,Netherlands,2011,total,Good/very good health,76.3
-NLD,Netherlands,2012,total,Good/very good health,75.6
-NLD,Netherlands,2013,total,Good/very good health,75.6
-NLD,Netherlands,2014,total,Good/very good health,77.3
-NLD,Netherlands,2015,total,Good/very good health,76.2
-NLD,Netherlands,2010,female,Good/very good health,75.9
-NLD,Netherlands,2011,female,Good/very good health,73.5
-NLD,Netherlands,2012,female,Good/very good health,72.1
-NLD,Netherlands,2013,female,Good/very good health,71.6
-NLD,Netherlands,2014,female,Good/very good health,74.2
-NLD,Netherlands,2015,female,Good/very good health,72.6
+NLD,The Netherlands,2010,total,Good/very good health,78
+NLD,The Netherlands,2011,total,Good/very good health,76.3
+NLD,The Netherlands,2012,total,Good/very good health,75.6
+NLD,The Netherlands,2013,total,Good/very good health,75.6
+NLD,The Netherlands,2014,total,Good/very good health,77.3
+NLD,The Netherlands,2015,total,Good/very good health,76.2
+NLD,The Netherlands,2010,female,Good/very good health,75.9
+NLD,The Netherlands,2011,female,Good/very good health,73.5
+NLD,The Netherlands,2012,female,Good/very good health,72.1
+NLD,The Netherlands,2013,female,Good/very good health,71.6
+NLD,The Netherlands,2014,female,Good/very good health,74.2
+NLD,The Netherlands,2015,female,Good/very good health,72.6
 POL,Poland,2010,total,Good/very good health,57.8
 POL,Poland,2011,total,Good/very good health,57.6
 POL,Poland,2012,total,Good/very good health,57.7
 POL,Poland,2013,total,Good/very good health,58.3
 POL,Poland,2014,total,Good/very good health,58.1
 POL,Poland,2015,total,Good/very good health,57.8
-NLD,Netherlands,2010,male,Good/very good health,80.3
-NLD,Netherlands,2011,male,Good/very good health,79.5
-NLD,Netherlands,2012,male,Good/very good health,79.4
-NLD,Netherlands,2013,male,Good/very good health,79.7
-NLD,Netherlands,2014,male,Good/very good health,80.5
-NLD,Netherlands,2015,male,Good/very good health,80.1
+NLD,The Netherlands,2010,male,Good/very good health,80.3
+NLD,The Netherlands,2011,male,Good/very good health,79.5
+NLD,The Netherlands,2012,male,Good/very good health,79.4
+NLD,The Netherlands,2013,male,Good/very good health,79.7
+NLD,The Netherlands,2014,male,Good/very good health,80.5
+NLD,The Netherlands,2015,male,Good/very good health,80.1
 CZE,Czech Republic,2010,male,Good/very good health,64.9
 CZE,Czech Republic,2011,male,Good/very good health,62.5
 CZE,Czech Republic,2012,male,Good/very good health,63.1

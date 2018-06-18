@@ -21,7 +21,7 @@ function LoadData(error, response){
 
 		// OPTIONAL SLIDER all data select year
 		mapYear(import_export_year);
-		// makeBarchart()
-		// makeDonut()
+		barchart("NLD");
+		donutData("NLD");
 
 };

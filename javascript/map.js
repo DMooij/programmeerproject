@@ -66,7 +66,7 @@ function mapColor(import_export_array){
 };
 
 // make map
-function makeMap(paletteScale, map){
+function makeMap(paletteScale, map_data){
 		var map = new Datamap({
 				element: document.getElementById("map"),
 				setProjection: function(element) {
@@ -83,7 +83,7 @@ function makeMap(paletteScale, map){
 				fills: {
 					defaultFill: "lightgrey"
 				},
-				data: map,
+				data: map_data,
 				done: function(datamap){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
@@ -127,6 +127,9 @@ function makeMap(paletteScale, map){
 		svg.append("g")
 		  .attr("transform", "translate(20,20)")
 			.call(color_legend);
+
+		var title = "Avocado import/export in " + map_data["YEAR"];
+			 d3.select("h3").text(title);
 };
 
 // TO DO: function update map

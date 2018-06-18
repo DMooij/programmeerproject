@@ -61,11 +61,11 @@
 }
 
 .bar {
-  fill: #66cc00;
+  fill: #66CC00;
 }
 
 .bar:hover {
-  fill: #336600;
+  fill: #405d27;
 }
 
 .d3-tip {
@@ -73,7 +73,7 @@
   font: 14px Verdana
   font-weight: bold;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  background: lightgrey;
+  color: black;
   border-radius: 2px;
 }

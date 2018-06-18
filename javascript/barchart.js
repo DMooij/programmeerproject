@@ -12,7 +12,7 @@ function barchart(location){
 }
 
 function makeBarchart(data_bar){
-  var margin = {top: 25, right: 20, bottom: 50, left: 50};
+  var margin = {top: 30, right: 20, bottom: 50, left: 50};
   var fullwidth = 500;
   var fullheight = 300;
   var bar_width = fullwidth - margin.left - margin.right;
@@ -77,7 +77,7 @@ function makeBarchart(data_bar){
     .attr("class", "d3-tip")
     .offset([-10, 0])
     .html(function(d){
-       return "<strong>Acovados consumed per inhabitant:  <span style='color:green'>" + d.AVO_PP_YEAR + "</span> </strong>"
+       return "<strong>Acovados consumed per inhabitant:  <span style='color:#405d27'>" + d.AVO_PP_YEAR + "</span> </strong>"
     });
 
   svg.call(tooltip);
@@ -103,11 +103,11 @@ function makeBarchart(data_bar){
 
    // title of bar chart
    svg.append("text")
-    .attr("x", (bar_width / 2))
-    .attr("y", 0 - (margin.top/2))
-    .attr("text-anchor", "middle")
-    .style("font-size", "16px")
-    .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
+   .attr("x", -45)
+   .attr("y", 0 - (margin.top/2))
+   .attr("text-anchor", "start")
+   .style("font-size", "18px")
+   .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
 };
 
 function removeBarchart(){

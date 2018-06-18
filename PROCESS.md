@@ -46,7 +46,9 @@
 ## Day 11 - 18 June 2018
 
 - managed to put the graphs in columns and rows
+- set default donut and bar chart to show when the page is opened
+- added title to donut chart
 - started working on a hover on the donut chart
 - map legend updates values depending on import/export
 - clean up code to make it more general and useable for the slider, if I have time to implement it
-- TO DO: default bar- and donut chart, title and hover for donut chart, slider?
+- TO DO: Hover for donut chart, slider?

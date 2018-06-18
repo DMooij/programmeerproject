@@ -7,11 +7,11 @@ import csv
 import json
 
 # open csv file and json file
-csvfile = open('avo_pp_year_data.csv', 'r')
-jsonfile = open('consumption_avo_pp_year.json', 'w')
+csvfile = open('Health_2010_2015_data.csv', 'r')
+jsonfile = open('health_2010_2015.json', 'w')
 
 # assign fieldnames
-fieldnames = ("CODE","DECLARANT","YEAR","QUANTITY_TON","PRODUCTION", "QUANTITY_TON","CONSUMPTION_TON","CONSUMPTION_G","CONSUMPTION_AVO","POPULATION","AVO_PP_YEAR")
+fieldnames = ("COU", "COUNTRY", "YEAR", "GENDER", "VARIABLE", "VALUE")
 
 # read csvfile
 reader = csv.DictReader(csvfile, fieldnames)

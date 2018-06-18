@@ -79,7 +79,8 @@ function makeDonut(data_donut){
   var radius = Math.min(width_donut, height_donut)/2;
 
   var color = d3.scale.ordinal()
-    .range(["7fc97f","#beaed4", "#fdc086"])
+    // .range(["7fc97f","#beaed4", "#fdc086"])
+    .range(["#568203", "#7ebe03", "#bbfc3d"])
 
   var arc = d3.svg.arc()
     .outerRadius(radius - 10)
@@ -166,6 +167,9 @@ function makeDonut(data_donut){
               fill:"black",
               'font-size':'14px'
           });
+
+       var title = "Health perception of " + data_donut[0]["GENDER"] + " in " + data_donut[0]["COUNTRY"] + " in " + data_donut[0]["YEAR"];
+        d3.select("#donut").select("h4").text(title);
 }
 
 function removeDonut(){
