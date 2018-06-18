@@ -1,0 +1,1297 @@
+COU,Country,Year,Gender,Variable,Value
+FRA,France,2010,male,Bad/very bad health,7.8
+FRA,France,2011,male,Bad/very bad health,7.7
+FRA,France,2012,male,Bad/very bad health,7.5
+FRA,France,2013,male,Bad/very bad health,7.7
+FRA,France,2014,male,Bad/very bad health,7.5
+FRA,France,2015,male,Bad/very bad health,7.1
+SWE,Sweden,2010,male,Bad/very bad health,3.6
+SWE,Sweden,2011,male,Bad/very bad health,3.8
+SWE,Sweden,2012,male,Bad/very bad health,3.8
+SWE,Sweden,2013,male,Bad/very bad health,3.3
+SWE,Sweden,2014,male,Bad/very bad health,3.2
+SWE,Sweden,2015,male,Bad/very bad health,2.7
+SWE,Sweden,2010,total,Bad/very bad health,4.7
+SWE,Sweden,2011,total,Bad/very bad health,4.6
+SWE,Sweden,2012,total,Bad/very bad health,4.3
+SWE,Sweden,2013,total,Bad/very bad health,4.1
+SWE,Sweden,2014,total,Bad/very bad health,4
+SWE,Sweden,2015,total,Bad/very bad health,3.8
+SWE,Sweden,2010,female,Bad/very bad health,5.7
+SWE,Sweden,2011,female,Bad/very bad health,5.4
+SWE,Sweden,2012,female,Bad/very bad health,4.7
+SWE,Sweden,2013,female,Bad/very bad health,4.8
+SWE,Sweden,2014,female,Bad/very bad health,4.8
+SWE,Sweden,2015,female,Bad/very bad health,5
+FRA,France,2010,total,Bad/very bad health,8.9
+FRA,France,2011,total,Bad/very bad health,8.8
+FRA,France,2012,total,Bad/very bad health,8.5
+FRA,France,2013,total,Bad/very bad health,8.5
+FRA,France,2014,total,Bad/very bad health,8.4
+FRA,France,2015,total,Bad/very bad health,7.8
+DEU,Germany,2010,female,Bad/very bad health,8.3
+DEU,Germany,2011,female,Bad/very bad health,8.2
+DEU,Germany,2012,female,Bad/very bad health,9.2
+DEU,Germany,2013,female,Bad/very bad health,8.8
+DEU,Germany,2014,female,Bad/very bad health,8.2
+DEU,Germany,2015,female,Bad/very bad health,8.2
+SVN,Slovenia,2010,female,Bad/very bad health,15
+SVN,Slovenia,2011,female,Bad/very bad health,14.7
+SVN,Slovenia,2012,female,Bad/very bad health,13.9
+SVN,Slovenia,2013,female,Bad/very bad health,11.6
+SVN,Slovenia,2014,female,Bad/very bad health,12.4
+SVN,Slovenia,2015,female,Bad/very bad health,13.3
+PRT,Portugal,2010,female,Bad/very bad health,23.9
+PRT,Portugal,2011,female,Bad/very bad health,21.1
+PRT,Portugal,2012,female,Bad/very bad health,21.5
+PRT,Portugal,2013,female,Bad/very bad health,22.3
+PRT,Portugal,2014,female,Bad/very bad health,21.7
+PRT,Portugal,2015,female,Bad/very bad health,21
+DEU,Germany,2010,male,Bad/very bad health,8
+DEU,Germany,2011,male,Bad/very bad health,8.1
+DEU,Germany,2012,male,Bad/very bad health,7.9
+DEU,Germany,2013,male,Bad/very bad health,7.4
+DEU,Germany,2014,male,Bad/very bad health,7.8
+DEU,Germany,2015,male,Bad/very bad health,8.4
+FRA,France,2010,female,Bad/very bad health,10
+FRA,France,2011,female,Bad/very bad health,9.8
+FRA,France,2012,female,Bad/very bad health,9.4
+FRA,France,2013,female,Bad/very bad health,9.2
+FRA,France,2014,female,Bad/very bad health,9.2
+FRA,France,2015,female,Bad/very bad health,8.4
+DEU,Germany,2010,total,Bad/very bad health,8.1
+DEU,Germany,2011,total,Bad/very bad health,8.2
+DEU,Germany,2012,total,Bad/very bad health,8.6
+DEU,Germany,2013,total,Bad/very bad health,8.1
+DEU,Germany,2014,total,Bad/very bad health,8
+DEU,Germany,2015,total,Bad/very bad health,8.3
+ITA,Italy,2010,female,Bad/very bad health,11.2
+ITA,Italy,2011,female,Bad/very bad health,15.3
+ITA,Italy,2012,female,Bad/very bad health,14.2
+ITA,Italy,2013,female,Bad/very bad health,14.4
+ITA,Italy,2014,female,Bad/very bad health,13.7
+ITA,Italy,2015,female,Bad/very bad health,14.2
+BEL,Belgium,2010,total,Bad/very bad health,9.1
+BEL,Belgium,2011,total,Bad/very bad health,9.6
+BEL,Belgium,2012,total,Bad/very bad health,8.8
+BEL,Belgium,2013,total,Bad/very bad health,8.6
+BEL,Belgium,2014,total,Bad/very bad health,9.2
+BEL,Belgium,2015,total,Bad/very bad health,9.4
+NLD,Netherlands,2010,female,Bad/very bad health,5.4
+NLD,Netherlands,2011,female,Bad/very bad health,6.4
+NLD,Netherlands,2012,female,Bad/very bad health,6.4
+NLD,Netherlands,2013,female,Bad/very bad health,6.1
+NLD,Netherlands,2014,female,Bad/very bad health,6
+NLD,Netherlands,2015,female,Bad/very bad health,5.8
+CZE,Czech Republic,2010,female,Bad/very bad health,13
+CZE,Czech Republic,2011,female,Bad/very bad health,13.5
+CZE,Czech Republic,2012,female,Bad/very bad health,13.8
+CZE,Czech Republic,2013,female,Bad/very bad health,13.6
+CZE,Czech Republic,2014,female,Bad/very bad health,12.3
+CZE,Czech Republic,2015,female,Bad/very bad health,11.8
+PRT,Portugal,2010,total,Bad/very bad health,20.3
+PRT,Portugal,2011,total,Bad/very bad health,18
+PRT,Portugal,2012,total,Bad/very bad health,18.2
+PRT,Portugal,2013,total,Bad/very bad health,18.6
+PRT,Portugal,2014,total,Bad/very bad health,18.3
+PRT,Portugal,2015,total,Bad/very bad health,18
+CZE,Czech Republic,2010,male,Bad/very bad health,11.3
+CZE,Czech Republic,2011,male,Bad/very bad health,11.3
+CZE,Czech Republic,2012,male,Bad/very bad health,11.5
+CZE,Czech Republic,2013,male,Bad/very bad health,11.8
+CZE,Czech Republic,2014,male,Bad/very bad health,10.7
+CZE,Czech Republic,2015,male,Bad/very bad health,10.1
+SVN,Slovenia,2010,total,Bad/very bad health,13.3
+SVN,Slovenia,2011,total,Bad/very bad health,13.3
+SVN,Slovenia,2012,total,Bad/very bad health,12.5
+SVN,Slovenia,2013,total,Bad/very bad health,10.7
+SVN,Slovenia,2014,total,Bad/very bad health,11
+SVN,Slovenia,2015,total,Bad/very bad health,11.6
+SVN,Slovenia,2010,male,Bad/very bad health,11.5
+SVN,Slovenia,2011,male,Bad/very bad health,11.7
+SVN,Slovenia,2012,male,Bad/very bad health,10.9
+SVN,Slovenia,2013,male,Bad/very bad health,9.8
+SVN,Slovenia,2014,male,Bad/very bad health,9.7
+SVN,Slovenia,2015,male,Bad/very bad health,10
+CZE,Czech Republic,2010,total,Bad/very bad health,12.2
+CZE,Czech Republic,2011,total,Bad/very bad health,12.6
+CZE,Czech Republic,2012,total,Bad/very bad health,12.8
+CZE,Czech Republic,2013,total,Bad/very bad health,12.8
+CZE,Czech Republic,2014,total,Bad/very bad health,11.6
+CZE,Czech Republic,2015,total,Bad/very bad health,11.1
+PRT,Portugal,2010,male,Bad/very bad health,16.4
+PRT,Portugal,2011,male,Bad/very bad health,14.7
+PRT,Portugal,2012,male,Bad/very bad health,14.5
+PRT,Portugal,2013,male,Bad/very bad health,14.4
+PRT,Portugal,2014,male,Bad/very bad health,14.5
+PRT,Portugal,2015,male,Bad/very bad health,14.6
+ESP,Spain,2010,female,Bad/very bad health,9.6
+ESP,Spain,2011,female,Bad/very bad health,8.6
+ESP,Spain,2012,female,Bad/very bad health,9.2
+ESP,Spain,2013,female,Bad/very bad health,9.8
+ESP,Spain,2014,female,Bad/very bad health,9.8
+ESP,Spain,2015,female,Bad/very bad health,8.8
+FIN,Finland,2010,female,Bad/very bad health,7.5
+FIN,Finland,2011,female,Bad/very bad health,7.8
+FIN,Finland,2012,female,Bad/very bad health,7.1
+FIN,Finland,2013,female,Bad/very bad health,7.2
+FIN,Finland,2014,female,Bad/very bad health,6.8
+FIN,Finland,2015,female,Bad/very bad health,5.9
+FIN,Finland,2010,male,Bad/very bad health,6.8
+FIN,Finland,2011,male,Bad/very bad health,7.1
+FIN,Finland,2012,male,Bad/very bad health,6.4
+FIN,Finland,2013,male,Bad/very bad health,6.1
+FIN,Finland,2014,male,Bad/very bad health,6.1
+FIN,Finland,2015,male,Bad/very bad health,5.6
+ESP,Spain,2010,total,Bad/very bad health,8.1
+ESP,Spain,2011,total,Bad/very bad health,7.4
+ESP,Spain,2012,total,Bad/very bad health,8.1
+ESP,Spain,2013,total,Bad/very bad health,8.4
+ESP,Spain,2014,total,Bad/very bad health,8.3
+ESP,Spain,2015,total,Bad/very bad health,7.5
+ESP,Spain,2010,male,Bad/very bad health,6.6
+ESP,Spain,2011,male,Bad/very bad health,6.2
+ESP,Spain,2012,male,Bad/very bad health,6.9
+ESP,Spain,2013,male,Bad/very bad health,7.1
+ESP,Spain,2014,male,Bad/very bad health,6.7
+ESP,Spain,2015,male,Bad/very bad health,6.1
+DNK,Denmark,2010,female,Bad/very bad health,9
+DNK,Denmark,2011,female,Bad/very bad health,9.6
+DNK,Denmark,2012,female,Bad/very bad health,8.3
+DNK,Denmark,2013,female,Bad/very bad health,8.6
+DNK,Denmark,2014,female,Bad/very bad health,8.2
+DNK,Denmark,2015,female,Bad/very bad health,8.8
+SVK,Slovak Republic,2010,female,Bad/very bad health,16
+SVK,Slovak Republic,2011,female,Bad/very bad health,16
+SVK,Slovak Republic,2012,female,Bad/very bad health,14.5
+SVK,Slovak Republic,2013,female,Bad/very bad health,13.6
+SVK,Slovak Republic,2014,female,Bad/very bad health,14.5
+SVK,Slovak Republic,2015,female,Bad/very bad health,14.1
+GRC,Greece,2010,total,Bad/very bad health,9.7
+GRC,Greece,2011,total,Bad/very bad health,9
+GRC,Greece,2012,total,Bad/very bad health,9.3
+GRC,Greece,2013,total,Bad/very bad health,10.5
+GRC,Greece,2014,total,Bad/very bad health,10.8
+GRC,Greece,2015,total,Bad/very bad health,10
+SVK,Slovak Republic,2010,male,Bad/very bad health,11.5
+SVK,Slovak Republic,2011,male,Bad/very bad health,10.8
+SVK,Slovak Republic,2012,male,Bad/very bad health,10.5
+SVK,Slovak Republic,2013,male,Bad/very bad health,10
+SVK,Slovak Republic,2014,male,Bad/very bad health,10.7
+SVK,Slovak Republic,2015,male,Bad/very bad health,10.4
+GRC,Greece,2010,male,Bad/very bad health,9
+GRC,Greece,2011,male,Bad/very bad health,8.1
+GRC,Greece,2012,male,Bad/very bad health,8
+GRC,Greece,2013,male,Bad/very bad health,9.2
+GRC,Greece,2014,male,Bad/very bad health,9.8
+GRC,Greece,2015,male,Bad/very bad health,9
+HUN,Hungary,2010,total,Bad/very bad health,16.6
+HUN,Hungary,2011,total,Bad/very bad health,16.2
+HUN,Hungary,2012,total,Bad/very bad health,16
+HUN,Hungary,2013,total,Bad/very bad health,15.7
+HUN,Hungary,2014,total,Bad/very bad health,15.9
+HUN,Hungary,2015,total,Bad/very bad health,15.8
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+POL,Poland,2010,total,Bad/very bad health,15.4
+POL,Poland,2011,total,Bad/very bad health,14.9
+POL,Poland,2012,total,Bad/very bad health,14.7
+POL,Poland,2013,total,Bad/very bad health,14.3
+POL,Poland,2014,total,Bad/very bad health,13.7
+POL,Poland,2015,total,Bad/very bad health,14.3
+POL,Poland,2010,female,Bad/very bad health,16.9
+POL,Poland,2011,female,Bad/very bad health,16.2
+POL,Poland,2012,female,Bad/very bad health,15.9
+POL,Poland,2013,female,Bad/very bad health,15.3
+POL,Poland,2014,female,Bad/very bad health,14.9
+POL,Poland,2015,female,Bad/very bad health,15.3
+POL,Poland,2010,male,Bad/very bad health,13.6
+POL,Poland,2011,male,Bad/very bad health,13.4
+POL,Poland,2012,male,Bad/very bad health,13.2
+POL,Poland,2013,male,Bad/very bad health,13.1
+POL,Poland,2014,male,Bad/very bad health,12.4
+POL,Poland,2015,male,Bad/very bad health,13.1
+SVK,Slovak Republic,2010,total,Bad/very bad health,13.8
+SVK,Slovak Republic,2011,total,Bad/very bad health,13.5
+SVK,Slovak Republic,2012,total,Bad/very bad health,12.6
+SVK,Slovak Republic,2013,total,Bad/very bad health,11.9
+SVK,Slovak Republic,2014,total,Bad/very bad health,12.7
+SVK,Slovak Republic,2015,total,Bad/very bad health,12.3
+GBR,United Kingdom,2010,male,Bad/very bad health,6
+GBR,United Kingdom,2011,male,Bad/very bad health,5.4
+GBR,United Kingdom,2012,male,Bad/very bad health,7.6
+GBR,United Kingdom,2013,male,Bad/very bad health,8.6
+GBR,United Kingdom,2014,male,Bad/very bad health,9.3
+GBR,United Kingdom,2015,male,Bad/very bad health,8.5
+GBR,United Kingdom,2010,female,Bad/very bad health,5.7
+GBR,United Kingdom,2011,female,Bad/very bad health,5.9
+GBR,United Kingdom,2012,female,Bad/very bad health,8.7
+GBR,United Kingdom,2013,female,Bad/very bad health,8.1
+GBR,United Kingdom,2014,female,Bad/very bad health,8.8
+GBR,United Kingdom,2015,female,Bad/very bad health,8.8
+GBR,United Kingdom,2010,total,Bad/very bad health,5.8
+GBR,United Kingdom,2011,total,Bad/very bad health,5.7
+GBR,United Kingdom,2012,total,Bad/very bad health,8.2
+GBR,United Kingdom,2013,total,Bad/very bad health,8.4
+GBR,United Kingdom,2014,total,Bad/very bad health,9
+GBR,United Kingdom,2015,total,Bad/very bad health,8.7
+IRL,Ireland,2010,female,Bad/very bad health,3.6
+IRL,Ireland,2011,female,Bad/very bad health,2.9
+IRL,Ireland,2012,female,Bad/very bad health,2.8
+IRL,Ireland,2013,female,Bad/very bad health,4
+IRL,Ireland,2014,female,Bad/very bad health,4.3
+IRL,Ireland,2015,female,Bad/very bad health,3.8
+IRL,Ireland,2010,total,Bad/very bad health,3.2
+IRL,Ireland,2011,total,Bad/very bad health,2.9
+IRL,Ireland,2012,total,Bad/very bad health,3
+IRL,Ireland,2013,total,Bad/very bad health,3.7
+IRL,Ireland,2014,total,Bad/very bad health,4
+IRL,Ireland,2015,total,Bad/very bad health,3.9
+IRL,Ireland,2010,male,Bad/very bad health,2.8
+IRL,Ireland,2011,male,Bad/very bad health,2.8
+IRL,Ireland,2012,male,Bad/very bad health,3.2
+IRL,Ireland,2013,male,Bad/very bad health,3.4
+IRL,Ireland,2014,male,Bad/very bad health,3.7
+IRL,Ireland,2015,male,Bad/very bad health,4
+DNK,Denmark,2010,male,Bad/very bad health,6.8
+DNK,Denmark,2011,male,Bad/very bad health,6.8
+DNK,Denmark,2012,male,Bad/very bad health,7
+DNK,Denmark,2013,male,Bad/very bad health,6.3
+DNK,Denmark,2014,male,Bad/very bad health,6.5
+DNK,Denmark,2015,male,Bad/very bad health,6.3
+DNK,Denmark,2010,total,Bad/very bad health,7.9
+DNK,Denmark,2011,total,Bad/very bad health,8.2
+DNK,Denmark,2012,total,Bad/very bad health,7.7
+DNK,Denmark,2013,total,Bad/very bad health,7.5
+DNK,Denmark,2014,total,Bad/very bad health,7.4
+DNK,Denmark,2015,total,Bad/very bad health,7.6
+EST,Estonia,2010,male,Bad/very bad health,12.7
+EST,Estonia,2011,male,Bad/very bad health,14.4
+EST,Estonia,2012,male,Bad/very bad health,14.1
+EST,Estonia,2013,male,Bad/very bad health,13.7
+EST,Estonia,2014,male,Bad/very bad health,15.6
+EST,Estonia,2015,male,Bad/very bad health,13.7
+EST,Estonia,2010,female,Bad/very bad health,16.3
+EST,Estonia,2011,female,Bad/very bad health,17.5
+EST,Estonia,2012,female,Bad/very bad health,17.7
+EST,Estonia,2013,female,Bad/very bad health,17
+EST,Estonia,2014,female,Bad/very bad health,17.2
+EST,Estonia,2015,female,Bad/very bad health,17.1
+HUN,Hungary,2010,female,Bad/very bad health,18.7
+HUN,Hungary,2011,female,Bad/very bad health,18.6
+HUN,Hungary,2012,female,Bad/very bad health,18.2
+HUN,Hungary,2013,female,Bad/very bad health,17.7
+HUN,Hungary,2014,female,Bad/very bad health,18.3
+HUN,Hungary,2015,female,Bad/very bad health,17.7
+EST,Estonia,2010,total,Bad/very bad health,14.9
+EST,Estonia,2011,total,Bad/very bad health,16.3
+EST,Estonia,2012,total,Bad/very bad health,16.3
+EST,Estonia,2013,total,Bad/very bad health,15.6
+EST,Estonia,2014,total,Bad/very bad health,16.5
+EST,Estonia,2015,total,Bad/very bad health,15.7
+HUN,Hungary,2010,male,Bad/very bad health,14.3
+HUN,Hungary,2011,male,Bad/very bad health,13.5
+HUN,Hungary,2012,male,Bad/very bad health,13.6
+HUN,Hungary,2013,male,Bad/very bad health,13.4
+HUN,Hungary,2014,male,Bad/very bad health,13.1
+HUN,Hungary,2015,male,Bad/very bad health,13.7
+AUT,Austria,2010,female,Bad/very bad health,10.3
+AUT,Austria,2011,female,Bad/very bad health,10.2
+AUT,Austria,2012,female,Bad/very bad health,9.6
+AUT,Austria,2013,female,Bad/very bad health,9.8
+AUT,Austria,2014,female,Bad/very bad health,10
+AUT,Austria,2015,female,Bad/very bad health,9.3
+LUX,Luxembourg,2010,total,Bad/very bad health,8
+LUX,Luxembourg,2011,total,Bad/very bad health,7.9
+LUX,Luxembourg,2012,total,Bad/very bad health,7.4
+LUX,Luxembourg,2013,total,Bad/very bad health,8.3
+LUX,Luxembourg,2014,total,Bad/very bad health,8.3
+LUX,Luxembourg,2015,total,Bad/very bad health,8.7
+LUX,Luxembourg,2010,male,Bad/very bad health,7.5
+LUX,Luxembourg,2011,male,Bad/very bad health,7.1
+LUX,Luxembourg,2012,male,Bad/very bad health,6.4
+LUX,Luxembourg,2013,male,Bad/very bad health,7.1
+LUX,Luxembourg,2014,male,Bad/very bad health,7.6
+LUX,Luxembourg,2015,male,Bad/very bad health,7.8
+LUX,Luxembourg,2010,female,Bad/very bad health,8.5
+LUX,Luxembourg,2011,female,Bad/very bad health,8.7
+LUX,Luxembourg,2012,female,Bad/very bad health,8.3
+LUX,Luxembourg,2013,female,Bad/very bad health,9.5
+LUX,Luxembourg,2014,female,Bad/very bad health,9
+LUX,Luxembourg,2015,female,Bad/very bad health,9.6
+NLD,Netherlands,2010,male,Bad/very bad health,4.6
+NLD,Netherlands,2011,male,Bad/very bad health,5
+NLD,Netherlands,2012,male,Bad/very bad health,5.1
+NLD,Netherlands,2013,male,Bad/very bad health,4.5
+NLD,Netherlands,2014,male,Bad/very bad health,4.9
+NLD,Netherlands,2015,male,Bad/very bad health,4.6
+NLD,Netherlands,2010,total,Bad/very bad health,5
+NLD,Netherlands,2011,total,Bad/very bad health,5.7
+NLD,Netherlands,2012,total,Bad/very bad health,5.8
+NLD,Netherlands,2013,total,Bad/very bad health,5.3
+NLD,Netherlands,2014,total,Bad/very bad health,5.4
+NLD,Netherlands,2015,total,Bad/very bad health,5.2
+AUT,Austria,2010,male,Bad/very bad health,8
+AUT,Austria,2011,male,Bad/very bad health,8
+AUT,Austria,2012,male,Bad/very bad health,8.4
+AUT,Austria,2013,male,Bad/very bad health,8.3
+AUT,Austria,2014,male,Bad/very bad health,7.7
+AUT,Austria,2015,male,Bad/very bad health,8.2
+AUT,Austria,2010,total,Bad/very bad health,9.2
+AUT,Austria,2011,total,Bad/very bad health,9.1
+AUT,Austria,2012,total,Bad/very bad health,9
+AUT,Austria,2013,total,Bad/very bad health,9.1
+AUT,Austria,2014,total,Bad/very bad health,8.9
+AUT,Austria,2015,total,Bad/very bad health,8.8
+ITA,Italy,2010,male,Bad/very bad health,7.6
+ITA,Italy,2011,male,Bad/very bad health,10.9
+ITA,Italy,2012,male,Bad/very bad health,10.4
+ITA,Italy,2013,male,Bad/very bad health,10.8
+ITA,Italy,2014,male,Bad/very bad health,10.3
+ITA,Italy,2015,male,Bad/very bad health,10.5
+BEL,Belgium,2010,male,Bad/very bad health,7.8
+BEL,Belgium,2011,male,Bad/very bad health,8.5
+BEL,Belgium,2012,male,Bad/very bad health,7.7
+BEL,Belgium,2013,male,Bad/very bad health,7.3
+BEL,Belgium,2014,male,Bad/very bad health,8
+BEL,Belgium,2015,male,Bad/very bad health,7.5
+ITA,Italy,2010,total,Bad/very bad health,9.5
+ITA,Italy,2011,total,Bad/very bad health,13.2
+ITA,Italy,2012,total,Bad/very bad health,12.4
+ITA,Italy,2013,total,Bad/very bad health,12.7
+ITA,Italy,2014,total,Bad/very bad health,12
+ITA,Italy,2015,total,Bad/very bad health,12.4
+BEL,Belgium,2010,female,Bad/very bad health,10.3
+BEL,Belgium,2011,female,Bad/very bad health,10.6
+BEL,Belgium,2012,female,Bad/very bad health,9.9
+BEL,Belgium,2013,female,Bad/very bad health,9.8
+BEL,Belgium,2014,female,Bad/very bad health,10.4
+BEL,Belgium,2015,female,Bad/very bad health,11.3
+FIN,Finland,2010,total,Bad/very bad health,7.2
+FIN,Finland,2011,total,Bad/very bad health,7.5
+FIN,Finland,2012,total,Bad/very bad health,6.8
+FIN,Finland,2013,total,Bad/very bad health,6.7
+FIN,Finland,2014,total,Bad/very bad health,6.4
+FIN,Finland,2015,total,Bad/very bad health,5.8
+GRC,Greece,2010,female,Bad/very bad health,10.3
+GRC,Greece,2011,female,Bad/very bad health,9.9
+GRC,Greece,2012,female,Bad/very bad health,10.6
+GRC,Greece,2013,female,Bad/very bad health,11.8
+GRC,Greece,2014,female,Bad/very bad health,11.8
+GRC,Greece,2015,female,Bad/very bad health,10.9
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+LVA,Latvia,2010,female,Bad/very bad health,19.9
+LVA,Latvia,2011,female,Bad/very bad health,20.1
+LVA,Latvia,2012,female,Bad/very bad health,17.3
+LVA,Latvia,2013,female,Bad/very bad health,19.3
+LVA,Latvia,2014,female,Bad/very bad health,19.5
+LVA,Latvia,2015,female,Bad/very bad health,18.9
+LTU,Lithuania,2010,total,Bad/very bad health,18.7
+LTU,Lithuania,2011,total,Bad/very bad health,19.9
+LTU,Lithuania,2012,total,Bad/very bad health,20.6
+LTU,Lithuania,2013,total,Bad/very bad health,18.7
+LTU,Lithuania,2014,total,Bad/very bad health,17.9
+LTU,Lithuania,2015,total,Bad/very bad health,17.7
+LVA,Latvia,2010,male,Bad/very bad health,14.5
+LVA,Latvia,2011,male,Bad/very bad health,14.6
+LVA,Latvia,2012,male,Bad/very bad health,12.8
+LVA,Latvia,2013,male,Bad/very bad health,13.6
+LVA,Latvia,2014,male,Bad/very bad health,14.1
+LVA,Latvia,2015,male,Bad/very bad health,13.1
+LVA,Latvia,2010,total,Bad/very bad health,17.5
+LVA,Latvia,2011,total,Bad/very bad health,17.7
+LVA,Latvia,2012,total,Bad/very bad health,15.4
+LVA,Latvia,2013,total,Bad/very bad health,16.8
+LVA,Latvia,2014,total,Bad/very bad health,17.1
+LVA,Latvia,2015,total,Bad/very bad health,16.3
+LTU,Lithuania,2010,female,Bad/very bad health,20.9
+LTU,Lithuania,2011,female,Bad/very bad health,22.6
+LTU,Lithuania,2012,female,Bad/very bad health,23.4
+LTU,Lithuania,2013,female,Bad/very bad health,21.5
+LTU,Lithuania,2014,female,Bad/very bad health,20.6
+LTU,Lithuania,2015,female,Bad/very bad health,20.5
+LTU,Lithuania,2010,male,Bad/very bad health,15.5
+LTU,Lithuania,2011,male,Bad/very bad health,16.2
+LTU,Lithuania,2012,male,Bad/very bad health,16.5
+LTU,Lithuania,2013,male,Bad/very bad health,14.7
+LTU,Lithuania,2014,male,Bad/very bad health,14.2
+LTU,Lithuania,2015,male,Bad/very bad health,13.5
+GBR,United Kingdom,2010,female,Fair (not good - not bad) health,15.6
+GBR,United Kingdom,2011,female,Fair (not good - not bad) health,17.6
+GBR,United Kingdom,2012,female,Fair (not good - not bad) health,18.1
+GBR,United Kingdom,2013,female,Fair (not good - not bad) health,18
+GBR,United Kingdom,2014,female,Fair (not good - not bad) health,21.6
+GBR,United Kingdom,2015,female,Fair (not good - not bad) health,21.5
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+GBR,United Kingdom,2010,male,Fair (not good - not bad) health,13.9
+GBR,United Kingdom,2011,male,Fair (not good - not bad) health,16
+GBR,United Kingdom,2012,male,Fair (not good - not bad) health,16
+GBR,United Kingdom,2013,male,Fair (not good - not bad) health,17.8
+GBR,United Kingdom,2014,male,Fair (not good - not bad) health,20.3
+GBR,United Kingdom,2015,male,Fair (not good - not bad) health,21.7
+HUN,Hungary,2010,female,Fair (not good - not bad) health,29.9
+HUN,Hungary,2011,female,Fair (not good - not bad) health,29
+HUN,Hungary,2012,female,Fair (not good - not bad) health,28
+HUN,Hungary,2013,female,Fair (not good - not bad) health,29
+HUN,Hungary,2014,female,Fair (not good - not bad) health,27.6
+HUN,Hungary,2015,female,Fair (not good - not bad) health,29
+ITA,Italy,2010,female,Fair (not good - not bad) health,25.5
+ITA,Italy,2011,female,Fair (not good - not bad) health,23.1
+ITA,Italy,2012,female,Fair (not good - not bad) health,20.8
+ITA,Italy,2013,female,Fair (not good - not bad) health,23.2
+ITA,Italy,2014,female,Fair (not good - not bad) health,21.8
+ITA,Italy,2015,female,Fair (not good - not bad) health,23.3
+ITA,Italy,2010,total,Fair (not good - not bad) health,23.8
+ITA,Italy,2011,total,Fair (not good - not bad) health,22.2
+ITA,Italy,2012,total,Fair (not good - not bad) health,19.2
+ITA,Italy,2013,total,Fair (not good - not bad) health,21.3
+ITA,Italy,2014,total,Fair (not good - not bad) health,20
+ITA,Italy,2015,total,Fair (not good - not bad) health,22
+ITA,Italy,2010,male,Fair (not good - not bad) health,21.9
+ITA,Italy,2011,male,Fair (not good - not bad) health,21.2
+ITA,Italy,2012,male,Fair (not good - not bad) health,17.4
+ITA,Italy,2013,male,Fair (not good - not bad) health,19.2
+ITA,Italy,2014,male,Fair (not good - not bad) health,18.1
+ITA,Italy,2015,male,Fair (not good - not bad) health,20.6
+DNK,Denmark,2010,total,Fair (not good - not bad) health,21.1
+DNK,Denmark,2011,total,Fair (not good - not bad) health,20.9
+DNK,Denmark,2012,total,Fair (not good - not bad) health,21.6
+DNK,Denmark,2013,total,Fair (not good - not bad) health,20.9
+DNK,Denmark,2014,total,Fair (not good - not bad) health,20.2
+DNK,Denmark,2015,total,Fair (not good - not bad) health,20.8
+DNK,Denmark,2010,female,Fair (not good - not bad) health,21.8
+DNK,Denmark,2011,female,Fair (not good - not bad) health,21.6
+DNK,Denmark,2012,female,Fair (not good - not bad) health,21.6
+DNK,Denmark,2013,female,Fair (not good - not bad) health,22
+DNK,Denmark,2014,female,Fair (not good - not bad) health,21.3
+DNK,Denmark,2015,female,Fair (not good - not bad) health,21.1
+DNK,Denmark,2010,male,Fair (not good - not bad) health,20.4
+DNK,Denmark,2011,male,Fair (not good - not bad) health,20.3
+DNK,Denmark,2012,male,Fair (not good - not bad) health,21.6
+DNK,Denmark,2013,male,Fair (not good - not bad) health,19.7
+DNK,Denmark,2014,male,Fair (not good - not bad) health,19.1
+DNK,Denmark,2015,male,Fair (not good - not bad) health,20.6
+PRT,Portugal,2010,male,Fair (not good - not bad) health,28.8
+PRT,Portugal,2011,male,Fair (not good - not bad) health,29.9
+PRT,Portugal,2012,male,Fair (not good - not bad) health,31.5
+PRT,Portugal,2013,male,Fair (not good - not bad) health,34.1
+PRT,Portugal,2014,male,Fair (not good - not bad) health,35.1
+PRT,Portugal,2015,male,Fair (not good - not bad) health,33.9
+PRT,Portugal,2010,female,Fair (not good - not bad) health,32
+PRT,Portugal,2011,female,Fair (not good - not bad) health,34.4
+PRT,Portugal,2012,female,Fair (not good - not bad) health,35.7
+PRT,Portugal,2013,female,Fair (not good - not bad) health,36.3
+PRT,Portugal,2014,female,Fair (not good - not bad) health,36.3
+PRT,Portugal,2015,female,Fair (not good - not bad) health,37.1
+SVN,Slovenia,2010,male,Fair (not good - not bad) health,25.3
+SVN,Slovenia,2011,male,Fair (not good - not bad) health,24.8
+SVN,Slovenia,2012,male,Fair (not good - not bad) health,22.4
+SVN,Slovenia,2013,male,Fair (not good - not bad) health,22.3
+SVN,Slovenia,2014,male,Fair (not good - not bad) health,22.2
+SVN,Slovenia,2015,male,Fair (not good - not bad) health,21.9
+FRA,France,2010,total,Fair (not good - not bad) health,23.8
+FRA,France,2011,total,Fair (not good - not bad) health,23.6
+FRA,France,2012,total,Fair (not good - not bad) health,23.4
+FRA,France,2013,total,Fair (not good - not bad) health,24.3
+FRA,France,2014,total,Fair (not good - not bad) health,23.5
+FRA,France,2015,total,Fair (not good - not bad) health,24.4
+SVN,Slovenia,2010,female,Fair (not good - not bad) health,28.7
+SVN,Slovenia,2011,female,Fair (not good - not bad) health,27.7
+SVN,Slovenia,2012,female,Fair (not good - not bad) health,26.4
+SVN,Slovenia,2013,female,Fair (not good - not bad) health,26.6
+SVN,Slovenia,2014,female,Fair (not good - not bad) health,26.1
+SVN,Slovenia,2015,female,Fair (not good - not bad) health,25.1
+SVN,Slovenia,2010,total,Fair (not good - not bad) health,27.1
+SVN,Slovenia,2011,total,Fair (not good - not bad) health,26.3
+SVN,Slovenia,2012,total,Fair (not good - not bad) health,24.4
+SVN,Slovenia,2013,total,Fair (not good - not bad) health,24.5
+SVN,Slovenia,2014,total,Fair (not good - not bad) health,24.2
+SVN,Slovenia,2015,total,Fair (not good - not bad) health,23.6
+PRT,Portugal,2010,total,Fair (not good - not bad) health,30.5
+PRT,Portugal,2011,total,Fair (not good - not bad) health,32.2
+PRT,Portugal,2012,total,Fair (not good - not bad) health,33.8
+PRT,Portugal,2013,total,Fair (not good - not bad) health,35.3
+PRT,Portugal,2014,total,Fair (not good - not bad) health,35.7
+PRT,Portugal,2015,total,Fair (not good - not bad) health,35.6
+ESP,Spain,2010,total,Fair (not good - not bad) health,20.1
+ESP,Spain,2011,total,Fair (not good - not bad) health,17.2
+ESP,Spain,2012,total,Fair (not good - not bad) health,17.6
+ESP,Spain,2013,total,Fair (not good - not bad) health,19.9
+ESP,Spain,2014,total,Fair (not good - not bad) health,19.1
+ESP,Spain,2015,total,Fair (not good - not bad) health,20.2
+HUN,Hungary,2010,total,Fair (not good - not bad) health,28.4
+HUN,Hungary,2011,total,Fair (not good - not bad) health,27.9
+HUN,Hungary,2012,total,Fair (not good - not bad) health,26.4
+HUN,Hungary,2013,total,Fair (not good - not bad) health,27.3
+HUN,Hungary,2014,total,Fair (not good - not bad) health,26.7
+HUN,Hungary,2015,total,Fair (not good - not bad) health,27.9
+GBR,United Kingdom,2010,total,Fair (not good - not bad) health,14.8
+GBR,United Kingdom,2011,total,Fair (not good - not bad) health,16.8
+GBR,United Kingdom,2012,total,Fair (not good - not bad) health,17.1
+GBR,United Kingdom,2013,total,Fair (not good - not bad) health,18
+GBR,United Kingdom,2014,total,Fair (not good - not bad) health,21
+GBR,United Kingdom,2015,total,Fair (not good - not bad) health,21.6
+HUN,Hungary,2010,male,Fair (not good - not bad) health,26.7
+HUN,Hungary,2011,male,Fair (not good - not bad) health,26.6
+HUN,Hungary,2012,male,Fair (not good - not bad) health,24.5
+HUN,Hungary,2013,male,Fair (not good - not bad) health,25.5
+HUN,Hungary,2014,male,Fair (not good - not bad) health,25.6
+HUN,Hungary,2015,male,Fair (not good - not bad) health,26.8
+ESP,Spain,2010,male,Fair (not good - not bad) health,18.1
+ESP,Spain,2011,male,Fair (not good - not bad) health,15.2
+ESP,Spain,2012,male,Fair (not good - not bad) health,15.9
+ESP,Spain,2013,male,Fair (not good - not bad) health,17.7
+ESP,Spain,2014,male,Fair (not good - not bad) health,17
+ESP,Spain,2015,male,Fair (not good - not bad) health,18.6
+FIN,Finland,2010,female,Fair (not good - not bad) health,25.8
+FIN,Finland,2011,female,Fair (not good - not bad) health,24.8
+FIN,Finland,2012,female,Fair (not good - not bad) health,26.8
+FIN,Finland,2013,female,Fair (not good - not bad) health,28.9
+FIN,Finland,2014,female,Fair (not good - not bad) health,24.1
+FIN,Finland,2015,female,Fair (not good - not bad) health,24.7
+ESP,Spain,2010,female,Fair (not good - not bad) health,22
+ESP,Spain,2011,female,Fair (not good - not bad) health,19.2
+ESP,Spain,2012,female,Fair (not good - not bad) health,19.2
+ESP,Spain,2013,female,Fair (not good - not bad) health,22
+ESP,Spain,2014,female,Fair (not good - not bad) health,21
+ESP,Spain,2015,female,Fair (not good - not bad) health,21.7
+EST,Estonia,2010,male,Fair (not good - not bad) health,31.7
+EST,Estonia,2011,male,Fair (not good - not bad) health,31.2
+EST,Estonia,2012,male,Fair (not good - not bad) health,31
+EST,Estonia,2013,male,Fair (not good - not bad) health,29.6
+EST,Estonia,2014,male,Fair (not good - not bad) health,29.8
+EST,Estonia,2015,male,Fair (not good - not bad) health,32.8
+LUX,Luxembourg,2010,total,Fair (not good - not bad) health,16.8
+LUX,Luxembourg,2011,total,Fair (not good - not bad) health,19.6
+LUX,Luxembourg,2012,total,Fair (not good - not bad) health,18.9
+LUX,Luxembourg,2013,total,Fair (not good - not bad) health,19.8
+LUX,Luxembourg,2014,total,Fair (not good - not bad) health,18.9
+LUX,Luxembourg,2015,total,Fair (not good - not bad) health,20.9
+EST,Estonia,2010,female,Fair (not good - not bad) health,32.9
+EST,Estonia,2011,female,Fair (not good - not bad) health,32.5
+EST,Estonia,2012,female,Fair (not good - not bad) health,31.6
+EST,Estonia,2013,female,Fair (not good - not bad) health,31.9
+EST,Estonia,2014,female,Fair (not good - not bad) health,32.9
+EST,Estonia,2015,female,Fair (not good - not bad) health,32.8
+IRL,Ireland,2010,male,Fair (not good - not bad) health,13.9
+IRL,Ireland,2011,male,Fair (not good - not bad) health,13.6
+IRL,Ireland,2012,male,Fair (not good - not bad) health,13.9
+IRL,Ireland,2013,male,Fair (not good - not bad) health,13.5
+IRL,Ireland,2014,male,Fair (not good - not bad) health,13.1
+IRL,Ireland,2015,male,Fair (not good - not bad) health,13.1
+IRL,Ireland,2010,female,Fair (not good - not bad) health,14.2
+IRL,Ireland,2011,female,Fair (not good - not bad) health,14.3
+IRL,Ireland,2012,female,Fair (not good - not bad) health,14.7
+IRL,Ireland,2013,female,Fair (not good - not bad) health,15.2
+IRL,Ireland,2014,female,Fair (not good - not bad) health,13.9
+IRL,Ireland,2015,female,Fair (not good - not bad) health,14.5
+LUX,Luxembourg,2010,male,Fair (not good - not bad) health,15.8
+LUX,Luxembourg,2011,male,Fair (not good - not bad) health,17.9
+LUX,Luxembourg,2012,male,Fair (not good - not bad) health,18.5
+LUX,Luxembourg,2013,male,Fair (not good - not bad) health,18.9
+LUX,Luxembourg,2014,male,Fair (not good - not bad) health,17.8
+LUX,Luxembourg,2015,male,Fair (not good - not bad) health,19.9
+GRC,Greece,2010,male,Fair (not good - not bad) health,13.2
+GRC,Greece,2011,male,Fair (not good - not bad) health,13.1
+GRC,Greece,2012,male,Fair (not good - not bad) health,14.2
+GRC,Greece,2013,male,Fair (not good - not bad) health,13.9
+GRC,Greece,2014,male,Fair (not good - not bad) health,14.1
+GRC,Greece,2015,male,Fair (not good - not bad) health,13.8
+NLD,Netherlands,2010,female,Fair (not good - not bad) health,18.7
+NLD,Netherlands,2011,female,Fair (not good - not bad) health,20.2
+NLD,Netherlands,2012,female,Fair (not good - not bad) health,21.5
+NLD,Netherlands,2013,female,Fair (not good - not bad) health,22.4
+NLD,Netherlands,2014,female,Fair (not good - not bad) health,19.8
+NLD,Netherlands,2015,female,Fair (not good - not bad) health,21.6
+GRC,Greece,2010,female,Fair (not good - not bad) health,16.3
+GRC,Greece,2011,female,Fair (not good - not bad) health,16
+GRC,Greece,2012,female,Fair (not good - not bad) health,17.3
+GRC,Greece,2013,female,Fair (not good - not bad) health,17.1
+GRC,Greece,2014,female,Fair (not good - not bad) health,17.3
+GRC,Greece,2015,female,Fair (not good - not bad) health,17.4
+FRA,France,2010,female,Fair (not good - not bad) health,25
+FRA,France,2011,female,Fair (not good - not bad) health,25.8
+FRA,France,2012,female,Fair (not good - not bad) health,24.6
+FRA,France,2013,female,Fair (not good - not bad) health,26.5
+FRA,France,2014,female,Fair (not good - not bad) health,25.3
+FRA,France,2015,female,Fair (not good - not bad) health,26.1
+FRA,France,2010,male,Fair (not good - not bad) health,22.4
+FRA,France,2011,male,Fair (not good - not bad) health,21.2
+FRA,France,2012,male,Fair (not good - not bad) health,22.1
+FRA,France,2013,male,Fair (not good - not bad) health,22
+FRA,France,2014,male,Fair (not good - not bad) health,21.6
+FRA,France,2015,male,Fair (not good - not bad) health,22.7
+NLD,Netherlands,2010,male,Fair (not good - not bad) health,15.2
+NLD,Netherlands,2011,male,Fair (not good - not bad) health,15.5
+NLD,Netherlands,2012,male,Fair (not good - not bad) health,15.6
+NLD,Netherlands,2013,male,Fair (not good - not bad) health,15.8
+NLD,Netherlands,2014,male,Fair (not good - not bad) health,14.6
+NLD,Netherlands,2015,male,Fair (not good - not bad) health,15.3
+LUX,Luxembourg,2010,female,Fair (not good - not bad) health,17.7
+LUX,Luxembourg,2011,female,Fair (not good - not bad) health,21.2
+LUX,Luxembourg,2012,female,Fair (not good - not bad) health,19.2
+LUX,Luxembourg,2013,female,Fair (not good - not bad) health,20.6
+LUX,Luxembourg,2014,female,Fair (not good - not bad) health,20
+LUX,Luxembourg,2015,female,Fair (not good - not bad) health,21.9
+NLD,Netherlands,2010,total,Fair (not good - not bad) health,17
+NLD,Netherlands,2011,total,Fair (not good - not bad) health,17.9
+NLD,Netherlands,2012,total,Fair (not good - not bad) health,18.6
+NLD,Netherlands,2013,total,Fair (not good - not bad) health,19.1
+NLD,Netherlands,2014,total,Fair (not good - not bad) health,17.2
+NLD,Netherlands,2015,total,Fair (not good - not bad) health,18.5
+GRC,Greece,2010,total,Fair (not good - not bad) health,14.8
+GRC,Greece,2011,total,Fair (not good - not bad) health,14.6
+GRC,Greece,2012,total,Fair (not good - not bad) health,15.8
+GRC,Greece,2013,total,Fair (not good - not bad) health,15.6
+GRC,Greece,2014,total,Fair (not good - not bad) health,15.8
+GRC,Greece,2015,total,Fair (not good - not bad) health,15.6
+SVK,Slovak Republic,2010,female,Fair (not good - not bad) health,24.9
+SVK,Slovak Republic,2011,female,Fair (not good - not bad) health,25.2
+SVK,Slovak Republic,2012,female,Fair (not good - not bad) health,24.8
+SVK,Slovak Republic,2013,female,Fair (not good - not bad) health,25
+SVK,Slovak Republic,2014,female,Fair (not good - not bad) health,24.3
+SVK,Slovak Republic,2015,female,Fair (not good - not bad) health,23.7
+SWE,Sweden,2010,total,Fair (not good - not bad) health,15.4
+SWE,Sweden,2011,total,Fair (not good - not bad) health,15.4
+SWE,Sweden,2012,total,Fair (not good - not bad) health,14.8
+SWE,Sweden,2013,total,Fair (not good - not bad) health,14.8
+SWE,Sweden,2014,total,Fair (not good - not bad) health,15.9
+SWE,Sweden,2015,total,Fair (not good - not bad) health,16.5
+BEL,Belgium,2010,total,Fair (not good - not bad) health,17.9
+BEL,Belgium,2011,total,Fair (not good - not bad) health,16.9
+BEL,Belgium,2012,total,Fair (not good - not bad) health,16.7
+BEL,Belgium,2013,total,Fair (not good - not bad) health,17.1
+BEL,Belgium,2014,total,Fair (not good - not bad) health,15.8
+BEL,Belgium,2015,total,Fair (not good - not bad) health,16
+SWE,Sweden,2010,male,Fair (not good - not bad) health,14.2
+SWE,Sweden,2011,male,Fair (not good - not bad) health,14.3
+SWE,Sweden,2012,male,Fair (not good - not bad) health,13.2
+SWE,Sweden,2013,male,Fair (not good - not bad) health,13.2
+SWE,Sweden,2014,male,Fair (not good - not bad) health,14.2
+SWE,Sweden,2015,male,Fair (not good - not bad) health,15
+SWE,Sweden,2010,female,Fair (not good - not bad) health,16.5
+SWE,Sweden,2011,female,Fair (not good - not bad) health,16.6
+SWE,Sweden,2012,female,Fair (not good - not bad) health,16.4
+SWE,Sweden,2013,female,Fair (not good - not bad) health,16.4
+SWE,Sweden,2014,female,Fair (not good - not bad) health,17.6
+SWE,Sweden,2015,female,Fair (not good - not bad) health,18
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+BEL,Belgium,2010,male,Fair (not good - not bad) health,16.9
+BEL,Belgium,2011,male,Fair (not good - not bad) health,16
+BEL,Belgium,2012,male,Fair (not good - not bad) health,15.4
+BEL,Belgium,2013,male,Fair (not good - not bad) health,15.8
+BEL,Belgium,2014,male,Fair (not good - not bad) health,14.7
+BEL,Belgium,2015,male,Fair (not good - not bad) health,14.6
+SVK,Slovak Republic,2010,male,Fair (not good - not bad) health,20.2
+SVK,Slovak Republic,2011,male,Fair (not good - not bad) health,21.2
+SVK,Slovak Republic,2012,male,Fair (not good - not bad) health,18.4
+SVK,Slovak Republic,2013,male,Fair (not good - not bad) health,19.1
+SVK,Slovak Republic,2014,male,Fair (not good - not bad) health,20.8
+SVK,Slovak Republic,2015,male,Fair (not good - not bad) health,19.9
+CZE,Czech Republic,2010,total,Fair (not good - not bad) health,25.6
+CZE,Czech Republic,2011,total,Fair (not good - not bad) health,28
+CZE,Czech Republic,2012,total,Fair (not good - not bad) health,26.8
+CZE,Czech Republic,2013,total,Fair (not good - not bad) health,27.6
+CZE,Czech Republic,2014,total,Fair (not good - not bad) health,27.7
+CZE,Czech Republic,2015,total,Fair (not good - not bad) health,27.7
+CZE,Czech Republic,2010,male,Fair (not good - not bad) health,23.8
+CZE,Czech Republic,2011,male,Fair (not good - not bad) health,26.2
+CZE,Czech Republic,2012,male,Fair (not good - not bad) health,25.4
+CZE,Czech Republic,2013,male,Fair (not good - not bad) health,26
+CZE,Czech Republic,2014,male,Fair (not good - not bad) health,26.2
+CZE,Czech Republic,2015,male,Fair (not good - not bad) health,26.4
+SVK,Slovak Republic,2010,total,Fair (not good - not bad) health,22.6
+SVK,Slovak Republic,2011,total,Fair (not good - not bad) health,23.3
+SVK,Slovak Republic,2012,total,Fair (not good - not bad) health,21.7
+SVK,Slovak Republic,2013,total,Fair (not good - not bad) health,22.2
+SVK,Slovak Republic,2014,total,Fair (not good - not bad) health,22.6
+SVK,Slovak Republic,2015,total,Fair (not good - not bad) health,21.8
+CZE,Czech Republic,2010,female,Fair (not good - not bad) health,27
+CZE,Czech Republic,2011,female,Fair (not good - not bad) health,29.4
+CZE,Czech Republic,2012,female,Fair (not good - not bad) health,27.8
+CZE,Czech Republic,2013,female,Fair (not good - not bad) health,28.8
+CZE,Czech Republic,2014,female,Fair (not good - not bad) health,28.9
+CZE,Czech Republic,2015,female,Fair (not good - not bad) health,28.6
+POL,Poland,2010,male,Fair (not good - not bad) health,25
+POL,Poland,2011,male,Fair (not good - not bad) health,25.7
+POL,Poland,2012,male,Fair (not good - not bad) health,25.2
+POL,Poland,2013,male,Fair (not good - not bad) health,24.5
+POL,Poland,2014,male,Fair (not good - not bad) health,26
+POL,Poland,2015,male,Fair (not good - not bad) health,25.4
+BEL,Belgium,2010,female,Fair (not good - not bad) health,18.9
+BEL,Belgium,2011,female,Fair (not good - not bad) health,17.8
+BEL,Belgium,2012,female,Fair (not good - not bad) health,17.9
+BEL,Belgium,2013,female,Fair (not good - not bad) health,18.4
+BEL,Belgium,2014,female,Fair (not good - not bad) health,16.8
+BEL,Belgium,2015,female,Fair (not good - not bad) health,17.3
+POL,Poland,2010,female,Fair (not good - not bad) health,28.4
+POL,Poland,2011,female,Fair (not good - not bad) health,29.1
+POL,Poland,2012,female,Fair (not good - not bad) health,29.7
+POL,Poland,2013,female,Fair (not good - not bad) health,29.9
+POL,Poland,2014,female,Fair (not good - not bad) health,29.9
+POL,Poland,2015,female,Fair (not good - not bad) health,30.1
+FIN,Finland,2010,total,Fair (not good - not bad) health,24.5
+FIN,Finland,2011,total,Fair (not good - not bad) health,23.7
+FIN,Finland,2012,total,Fair (not good - not bad) health,26.1
+FIN,Finland,2013,total,Fair (not good - not bad) health,28.7
+FIN,Finland,2014,total,Fair (not good - not bad) health,24.4
+FIN,Finland,2015,total,Fair (not good - not bad) health,24.4
+FIN,Finland,2010,male,Fair (not good - not bad) health,23.1
+FIN,Finland,2011,male,Fair (not good - not bad) health,22.6
+FIN,Finland,2012,male,Fair (not good - not bad) health,25.4
+FIN,Finland,2013,male,Fair (not good - not bad) health,28.5
+FIN,Finland,2014,male,Fair (not good - not bad) health,24.6
+FIN,Finland,2015,male,Fair (not good - not bad) health,24.1
+POL,Poland,2010,total,Fair (not good - not bad) health,26.8
+POL,Poland,2011,total,Fair (not good - not bad) health,27.5
+POL,Poland,2012,total,Fair (not good - not bad) health,27.6
+POL,Poland,2013,total,Fair (not good - not bad) health,27.4
+POL,Poland,2014,total,Fair (not good - not bad) health,28.1
+POL,Poland,2015,total,Fair (not good - not bad) health,27.9
+EST,Estonia,2010,total,Fair (not good - not bad) health,32.4
+EST,Estonia,2011,total,Fair (not good - not bad) health,32
+EST,Estonia,2012,total,Fair (not good - not bad) health,31.4
+EST,Estonia,2013,total,Fair (not good - not bad) health,30.9
+EST,Estonia,2014,total,Fair (not good - not bad) health,31.7
+EST,Estonia,2015,total,Fair (not good - not bad) health,32.8
+AUT,Austria,2010,total,Fair (not good - not bad) health,21.2
+AUT,Austria,2011,total,Fair (not good - not bad) health,21.5
+AUT,Austria,2012,total,Fair (not good - not bad) health,21
+AUT,Austria,2013,total,Fair (not good - not bad) health,22.4
+AUT,Austria,2014,total,Fair (not good - not bad) health,21.6
+AUT,Austria,2015,total,Fair (not good - not bad) health,21.4
+DEU,Germany,2010,female,Fair (not good - not bad) health,27.6
+DEU,Germany,2011,female,Fair (not good - not bad) health,28.6
+DEU,Germany,2012,female,Fair (not good - not bad) health,27
+DEU,Germany,2013,female,Fair (not good - not bad) health,28.4
+DEU,Germany,2014,female,Fair (not good - not bad) health,28.3
+DEU,Germany,2015,female,Fair (not good - not bad) health,28.7
+DEU,Germany,2010,total,Fair (not good - not bad) health,26.7
+DEU,Germany,2011,total,Fair (not good - not bad) health,27
+DEU,Germany,2012,total,Fair (not good - not bad) health,26
+DEU,Germany,2013,total,Fair (not good - not bad) health,27
+DEU,Germany,2014,total,Fair (not good - not bad) health,26.8
+DEU,Germany,2015,total,Fair (not good - not bad) health,27.1
+AUT,Austria,2010,female,Fair (not good - not bad) health,22.5
+AUT,Austria,2011,female,Fair (not good - not bad) health,22.2
+AUT,Austria,2012,female,Fair (not good - not bad) health,22
+AUT,Austria,2013,female,Fair (not good - not bad) health,23.5
+AUT,Austria,2014,female,Fair (not good - not bad) health,22.8
+AUT,Austria,2015,female,Fair (not good - not bad) health,22.8
+DEU,Germany,2010,male,Fair (not good - not bad) health,25.6
+DEU,Germany,2011,male,Fair (not good - not bad) health,25.5
+DEU,Germany,2012,male,Fair (not good - not bad) health,25.1
+DEU,Germany,2013,male,Fair (not good - not bad) health,25.6
+DEU,Germany,2014,male,Fair (not good - not bad) health,25.3
+DEU,Germany,2015,male,Fair (not good - not bad) health,25.5
+AUT,Austria,2010,male,Fair (not good - not bad) health,19.9
+AUT,Austria,2011,male,Fair (not good - not bad) health,20.7
+AUT,Austria,2012,male,Fair (not good - not bad) health,19.9
+AUT,Austria,2013,male,Fair (not good - not bad) health,21.2
+AUT,Austria,2014,male,Fair (not good - not bad) health,20.4
+AUT,Austria,2015,male,Fair (not good - not bad) health,19.9
+IRL,Ireland,2010,total,Fair (not good - not bad) health,14
+IRL,Ireland,2011,total,Fair (not good - not bad) health,14
+IRL,Ireland,2012,total,Fair (not good - not bad) health,14.3
+IRL,Ireland,2013,total,Fair (not good - not bad) health,14.4
+IRL,Ireland,2014,total,Fair (not good - not bad) health,13.5
+IRL,Ireland,2015,total,Fair (not good - not bad) health,13.8
+LTU,Lithuania,2010,female,Fair (not good - not bad) health,32.1
+LTU,Lithuania,2011,female,Fair (not good - not bad) health,37.8
+LTU,Lithuania,2012,female,Fair (not good - not bad) health,36.2
+LTU,Lithuania,2013,female,Fair (not good - not bad) health,36.7
+LTU,Lithuania,2014,female,Fair (not good - not bad) health,39
+LTU,Lithuania,2015,female,Fair (not good - not bad) health,41.2
+LVA,Latvia,2010,female,Fair (not good - not bad) health,36.5
+LVA,Latvia,2011,female,Fair (not good - not bad) health,37.6
+LVA,Latvia,2012,female,Fair (not good - not bad) health,39.6
+LVA,Latvia,2013,female,Fair (not good - not bad) health,39.6
+LVA,Latvia,2014,female,Fair (not good - not bad) health,38.5
+LVA,Latvia,2015,female,Fair (not good - not bad) health,39
+LVA,Latvia,2010,male,Fair (not good - not bad) health,32.5
+LVA,Latvia,2011,male,Fair (not good - not bad) health,34.7
+LVA,Latvia,2012,male,Fair (not good - not bad) health,35.9
+LVA,Latvia,2013,male,Fair (not good - not bad) health,36.1
+LVA,Latvia,2014,male,Fair (not good - not bad) health,35.4
+LVA,Latvia,2015,male,Fair (not good - not bad) health,35.5
+LVA,Latvia,2010,total,Fair (not good - not bad) health,34.7
+LVA,Latvia,2011,total,Fair (not good - not bad) health,36.3
+LVA,Latvia,2012,total,Fair (not good - not bad) health,38
+LVA,Latvia,2013,total,Fair (not good - not bad) health,38.1
+LVA,Latvia,2014,total,Fair (not good - not bad) health,37.1
+LVA,Latvia,2015,total,Fair (not good - not bad) health,37.5
+LTU,Lithuania,2010,male,Fair (not good - not bad) health,29.8
+LTU,Lithuania,2011,male,Fair (not good - not bad) health,34
+LTU,Lithuania,2012,male,Fair (not good - not bad) health,33.5
+LTU,Lithuania,2013,male,Fair (not good - not bad) health,32.9
+LTU,Lithuania,2014,male,Fair (not good - not bad) health,34.6
+LTU,Lithuania,2015,male,Fair (not good - not bad) health,37.3
+LTU,Lithuania,2010,total,Fair (not good - not bad) health,31.1
+LTU,Lithuania,2011,total,Fair (not good - not bad) health,36.2
+LTU,Lithuania,2012,total,Fair (not good - not bad) health,35.1
+LTU,Lithuania,2013,total,Fair (not good - not bad) health,35.2
+LTU,Lithuania,2014,total,Fair (not good - not bad) health,37.2
+LTU,Lithuania,2015,total,Fair (not good - not bad) health,39.7
+AUT,Austria,2010,male,Good/very good health,72.1
+AUT,Austria,2011,male,Good/very good health,71.3
+AUT,Austria,2012,male,Good/very good health,71.7
+AUT,Austria,2013,male,Good/very good health,70.5
+AUT,Austria,2014,male,Good/very good health,71.9
+AUT,Austria,2015,male,Good/very good health,71.8
+LUX,Luxembourg,2010,female,Good/very good health,73.9
+LUX,Luxembourg,2011,female,Good/very good health,70.1
+LUX,Luxembourg,2012,female,Good/very good health,72.4
+LUX,Luxembourg,2013,female,Good/very good health,69.8
+LUX,Luxembourg,2014,female,Good/very good health,71
+LUX,Luxembourg,2015,female,Good/very good health,68.5
+AUT,Austria,2010,total,Good/very good health,69.6
+AUT,Austria,2011,total,Good/very good health,69.4
+AUT,Austria,2012,total,Good/very good health,70
+AUT,Austria,2013,total,Good/very good health,68.6
+AUT,Austria,2014,total,Good/very good health,69.5
+AUT,Austria,2015,total,Good/very good health,69.8
+AUT,Austria,2010,female,Good/very good health,67.2
+AUT,Austria,2011,female,Good/very good health,67.6
+AUT,Austria,2012,female,Good/very good health,68.4
+AUT,Austria,2013,female,Good/very good health,66.7
+AUT,Austria,2014,female,Good/very good health,67.2
+AUT,Austria,2015,female,Good/very good health,67.9
+BEL,Belgium,2010,male,Good/very good health,75.4
+BEL,Belgium,2011,male,Good/very good health,75.5
+BEL,Belgium,2012,male,Good/very good health,76.9
+BEL,Belgium,2013,male,Good/very good health,77
+BEL,Belgium,2014,male,Good/very good health,77.3
+BEL,Belgium,2015,male,Good/very good health,77.9
+BEL,Belgium,2010,total,Good/very good health,73
+BEL,Belgium,2011,total,Good/very good health,73.5
+BEL,Belgium,2012,total,Good/very good health,74.5
+BEL,Belgium,2013,total,Good/very good health,74.3
+BEL,Belgium,2014,total,Good/very good health,75
+BEL,Belgium,2015,total,Good/very good health,74.6
+BEL,Belgium,2010,female,Good/very good health,70.8
+BEL,Belgium,2011,female,Good/very good health,71.6
+BEL,Belgium,2012,female,Good/very good health,72.2
+BEL,Belgium,2013,female,Good/very good health,71.8
+BEL,Belgium,2014,female,Good/very good health,72.9
+BEL,Belgium,2015,female,Good/very good health,71.5
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+DEU,Germany,2010,male,Good/very good health,66.4
+DEU,Germany,2011,male,Good/very good health,66.4
+DEU,Germany,2012,male,Good/very good health,67
+DEU,Germany,2013,male,Good/very good health,67
+DEU,Germany,2014,male,Good/very good health,66.9
+DEU,Germany,2015,male,Good/very good health,66
+DEU,Germany,2010,female,Good/very good health,64.1
+DEU,Germany,2011,female,Good/very good health,63.3
+DEU,Germany,2012,female,Good/very good health,63.8
+DEU,Germany,2013,female,Good/very good health,62.9
+DEU,Germany,2014,female,Good/very good health,63.5
+DEU,Germany,2015,female,Good/very good health,63.1
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+IRL,Ireland,2010,total,Good/very good health,82.8
+IRL,Ireland,2011,total,Good/very good health,83.2
+IRL,Ireland,2012,total,Good/very good health,82.7
+IRL,Ireland,2013,total,Good/very good health,82
+IRL,Ireland,2014,total,Good/very good health,82.5
+IRL,Ireland,2015,total,Good/very good health,82.3
+HUN,Hungary,2010,female,Good/very good health,51.4
+HUN,Hungary,2011,female,Good/very good health,52.4
+HUN,Hungary,2012,female,Good/very good health,53.8
+HUN,Hungary,2013,female,Good/very good health,53.3
+HUN,Hungary,2014,female,Good/very good health,54.1
+HUN,Hungary,2015,female,Good/very good health,53.3
+HUN,Hungary,2010,total,Good/very good health,55
+HUN,Hungary,2011,total,Good/very good health,55.9
+HUN,Hungary,2012,total,Good/very good health,57.6
+HUN,Hungary,2013,total,Good/very good health,56.9
+HUN,Hungary,2014,total,Good/very good health,57.5
+HUN,Hungary,2015,total,Good/very good health,56.3
+EST,Estonia,2010,total,Good/very good health,52.7
+EST,Estonia,2011,total,Good/very good health,51.8
+EST,Estonia,2012,total,Good/very good health,52.4
+EST,Estonia,2013,total,Good/very good health,53.4
+EST,Estonia,2014,total,Good/very good health,51.8
+EST,Estonia,2015,total,Good/very good health,51.4
+EST,Estonia,2010,male,Good/very good health,55.6
+EST,Estonia,2011,male,Good/very good health,54.4
+EST,Estonia,2012,male,Good/very good health,54.9
+EST,Estonia,2013,male,Good/very good health,56.8
+EST,Estonia,2014,male,Good/very good health,54.7
+EST,Estonia,2015,male,Good/very good health,53.5
+HUN,Hungary,2010,male,Good/very good health,59
+HUN,Hungary,2011,male,Good/very good health,59.9
+HUN,Hungary,2012,male,Good/very good health,61.9
+HUN,Hungary,2013,male,Good/very good health,61.1
+HUN,Hungary,2014,male,Good/very good health,61.3
+HUN,Hungary,2015,male,Good/very good health,59.6
+SWE,Sweden,2010,male,Good/very good health,82.2
+SWE,Sweden,2011,male,Good/very good health,81.9
+SWE,Sweden,2012,male,Good/very good health,83
+SWE,Sweden,2013,male,Good/very good health,83.5
+SWE,Sweden,2014,male,Good/very good health,82.6
+SWE,Sweden,2015,male,Good/very good health,82.3
+SWE,Sweden,2010,female,Good/very good health,77.8
+SWE,Sweden,2011,female,Good/very good health,78
+SWE,Sweden,2012,female,Good/very good health,78.9
+SWE,Sweden,2013,female,Good/very good health,78.8
+SWE,Sweden,2014,female,Good/very good health,77.6
+SWE,Sweden,2015,female,Good/very good health,77.1
+IRL,Ireland,2010,male,Good/very good health,83.4
+IRL,Ireland,2011,male,Good/very good health,83.6
+IRL,Ireland,2012,male,Good/very good health,82.9
+IRL,Ireland,2013,male,Good/very good health,83.1
+IRL,Ireland,2014,male,Good/very good health,83.3
+IRL,Ireland,2015,male,Good/very good health,83
+IRL,Ireland,2010,female,Good/very good health,82.2
+IRL,Ireland,2011,female,Good/very good health,82.7
+IRL,Ireland,2012,female,Good/very good health,82.6
+IRL,Ireland,2013,female,Good/very good health,80.9
+IRL,Ireland,2014,female,Good/very good health,81.8
+IRL,Ireland,2015,female,Good/very good health,81.7
+LUX,Luxembourg,2010,total,Good/very good health,75.3
+LUX,Luxembourg,2011,total,Good/very good health,72.5
+LUX,Luxembourg,2012,total,Good/very good health,73.8
+LUX,Luxembourg,2013,total,Good/very good health,71.9
+LUX,Luxembourg,2014,total,Good/very good health,72.8
+LUX,Luxembourg,2015,total,Good/very good health,70.4
+LUX,Luxembourg,2010,male,Good/very good health,76.7
+LUX,Luxembourg,2011,male,Good/very good health,75
+LUX,Luxembourg,2012,male,Good/very good health,75.1
+LUX,Luxembourg,2013,male,Good/very good health,73.9
+LUX,Luxembourg,2014,male,Good/very good health,74.6
+LUX,Luxembourg,2015,male,Good/very good health,72.4
+EST,Estonia,2010,female,Good/very good health,50.8
+EST,Estonia,2011,female,Good/very good health,50
+EST,Estonia,2012,female,Good/very good health,50.6
+EST,Estonia,2013,female,Good/very good health,51.1
+EST,Estonia,2014,female,Good/very good health,49.9
+EST,Estonia,2015,female,Good/very good health,50
+SVK,Slovak Republic,2010,total,Good/very good health,63.5
+SVK,Slovak Republic,2011,total,Good/very good health,63.2
+SVK,Slovak Republic,2012,total,Good/very good health,65.7
+SVK,Slovak Republic,2013,total,Good/very good health,65.9
+SVK,Slovak Republic,2014,total,Good/very good health,64.7
+SVK,Slovak Republic,2015,total,Good/very good health,65.9
+DNK,Denmark,2010,male,Good/very good health,72.8
+DNK,Denmark,2011,male,Good/very good health,72.9
+DNK,Denmark,2012,male,Good/very good health,71.4
+DNK,Denmark,2013,male,Good/very good health,74
+DNK,Denmark,2014,male,Good/very good health,74.4
+DNK,Denmark,2015,male,Good/very good health,73.1
+SVK,Slovak Republic,2010,female,Good/very good health,59.2
+SVK,Slovak Republic,2011,female,Good/very good health,58.8
+SVK,Slovak Republic,2012,female,Good/very good health,60.7
+SVK,Slovak Republic,2013,female,Good/very good health,61.4
+SVK,Slovak Republic,2014,female,Good/very good health,61.1
+SVK,Slovak Republic,2015,female,Good/very good health,62.3
+DNK,Denmark,2010,total,Good/very good health,71
+DNK,Denmark,2011,total,Good/very good health,70.8
+DNK,Denmark,2012,total,Good/very good health,70.7
+DNK,Denmark,2013,total,Good/very good health,71.7
+DNK,Denmark,2014,total,Good/very good health,72.4
+DNK,Denmark,2015,total,Good/very good health,71.6
+DNK,Denmark,2010,female,Good/very good health,69.3
+DNK,Denmark,2011,female,Good/very good health,68.9
+DNK,Denmark,2012,female,Good/very good health,70.1
+DNK,Denmark,2013,female,Good/very good health,69.4
+DNK,Denmark,2014,female,Good/very good health,70.5
+DNK,Denmark,2015,female,Good/very good health,70.1
+SVK,Slovak Republic,2010,male,Good/very good health,68.3
+SVK,Slovak Republic,2011,male,Good/very good health,68
+SVK,Slovak Republic,2012,male,Good/very good health,71
+SVK,Slovak Republic,2013,male,Good/very good health,70.9
+SVK,Slovak Republic,2014,male,Good/very good health,68.5
+SVK,Slovak Republic,2015,male,Good/very good health,69.7
+CZE,Czech Republic,2010,total,Good/very good health,62.2
+CZE,Czech Republic,2011,total,Good/very good health,59.4
+CZE,Czech Republic,2012,total,Good/very good health,60.4
+CZE,Czech Republic,2013,total,Good/very good health,59.6
+CZE,Czech Republic,2014,total,Good/very good health,60.7
+CZE,Czech Republic,2015,total,Good/very good health,61.2
+NLD,Netherlands,2010,total,Good/very good health,78
+NLD,Netherlands,2011,total,Good/very good health,76.3
+NLD,Netherlands,2012,total,Good/very good health,75.6
+NLD,Netherlands,2013,total,Good/very good health,75.6
+NLD,Netherlands,2014,total,Good/very good health,77.3
+NLD,Netherlands,2015,total,Good/very good health,76.2
+NLD,Netherlands,2010,female,Good/very good health,75.9
+NLD,Netherlands,2011,female,Good/very good health,73.5
+NLD,Netherlands,2012,female,Good/very good health,72.1
+NLD,Netherlands,2013,female,Good/very good health,71.6
+NLD,Netherlands,2014,female,Good/very good health,74.2
+NLD,Netherlands,2015,female,Good/very good health,72.6
+POL,Poland,2010,total,Good/very good health,57.8
+POL,Poland,2011,total,Good/very good health,57.6
+POL,Poland,2012,total,Good/very good health,57.7
+POL,Poland,2013,total,Good/very good health,58.3
+POL,Poland,2014,total,Good/very good health,58.1
+POL,Poland,2015,total,Good/very good health,57.8
+NLD,Netherlands,2010,male,Good/very good health,80.3
+NLD,Netherlands,2011,male,Good/very good health,79.5
+NLD,Netherlands,2012,male,Good/very good health,79.4
+NLD,Netherlands,2013,male,Good/very good health,79.7
+NLD,Netherlands,2014,male,Good/very good health,80.5
+NLD,Netherlands,2015,male,Good/very good health,80.1
+CZE,Czech Republic,2010,male,Good/very good health,64.9
+CZE,Czech Republic,2011,male,Good/very good health,62.5
+CZE,Czech Republic,2012,male,Good/very good health,63.1
+CZE,Czech Republic,2013,male,Good/very good health,62.2
+CZE,Czech Republic,2014,male,Good/very good health,63.2
+CZE,Czech Republic,2015,male,Good/very good health,63.4
+CZE,Czech Republic,2010,female,Good/very good health,60
+CZE,Czech Republic,2011,female,Good/very good health,57
+CZE,Czech Republic,2012,female,Good/very good health,58.4
+CZE,Czech Republic,2013,female,Good/very good health,57.6
+CZE,Czech Republic,2014,female,Good/very good health,58.8
+CZE,Czech Republic,2015,female,Good/very good health,59.6
+DEU,Germany,2010,total,Good/very good health,65.2
+DEU,Germany,2011,total,Good/very good health,64.8
+DEU,Germany,2012,total,Good/very good health,65.4
+DEU,Germany,2013,total,Good/very good health,64.9
+DEU,Germany,2014,total,Good/very good health,65.2
+DEU,Germany,2015,total,Good/very good health,64.5
+FIN,Finland,2010,male,Good/very good health,70.1
+FIN,Finland,2011,male,Good/very good health,70.3
+FIN,Finland,2012,male,Good/very good health,68.3
+FIN,Finland,2013,male,Good/very good health,65.4
+FIN,Finland,2014,male,Good/very good health,69.3
+FIN,Finland,2015,male,Good/very good health,70.3
+FIN,Finland,2010,total,Good/very good health,68.3
+FIN,Finland,2011,total,Good/very good health,68.8
+FIN,Finland,2012,total,Good/very good health,67.1
+FIN,Finland,2013,total,Good/very good health,64.6
+FIN,Finland,2014,total,Good/very good health,69.2
+FIN,Finland,2015,total,Good/very good health,69.8
+FIN,Finland,2010,female,Good/very good health,66.7
+FIN,Finland,2011,female,Good/very good health,67.4
+FIN,Finland,2012,female,Good/very good health,66
+FIN,Finland,2013,female,Good/very good health,63.9
+FIN,Finland,2014,female,Good/very good health,69.1
+FIN,Finland,2015,female,Good/very good health,69.3
+SVN,Slovenia,2010,female,Good/very good health,56.3
+SVN,Slovenia,2011,female,Good/very good health,57.6
+SVN,Slovenia,2012,female,Good/very good health,59.7
+SVN,Slovenia,2013,female,Good/very good health,61.8
+SVN,Slovenia,2014,female,Good/very good health,61.5
+SVN,Slovenia,2015,female,Good/very good health,61.6
+PRT,Portugal,2010,female,Good/very good health,44.1
+PRT,Portugal,2011,female,Good/very good health,44.5
+PRT,Portugal,2012,female,Good/very good health,42.7
+PRT,Portugal,2013,female,Good/very good health,41.4
+PRT,Portugal,2014,female,Good/very good health,41.9
+PRT,Portugal,2015,female,Good/very good health,41.8
+PRT,Portugal,2010,total,Good/very good health,49.2
+PRT,Portugal,2011,total,Good/very good health,49.7
+PRT,Portugal,2012,total,Good/very good health,48
+PRT,Portugal,2013,total,Good/very good health,46.1
+PRT,Portugal,2014,total,Good/very good health,45.9
+PRT,Portugal,2015,total,Good/very good health,46.4
+SVN,Slovenia,2010,male,Good/very good health,63.2
+SVN,Slovenia,2011,male,Good/very good health,63.4
+SVN,Slovenia,2012,male,Good/very good health,66.7
+SVN,Slovenia,2013,male,Good/very good health,67.8
+SVN,Slovenia,2014,male,Good/very good health,68.1
+SVN,Slovenia,2015,male,Good/very good health,68.1
+PRT,Portugal,2010,male,Good/very good health,54.7
+PRT,Portugal,2011,male,Good/very good health,55.4
+PRT,Portugal,2012,male,Good/very good health,54
+PRT,Portugal,2013,male,Good/very good health,51.4
+PRT,Portugal,2014,male,Good/very good health,50.4
+PRT,Portugal,2015,male,Good/very good health,51.5
+ITA,Italy,2010,male,Good/very good health,70.5
+ITA,Italy,2011,male,Good/very good health,67.8
+ITA,Italy,2012,male,Good/very good health,72.1
+ITA,Italy,2013,male,Good/very good health,70
+ITA,Italy,2014,male,Good/very good health,71.7
+ITA,Italy,2015,male,Good/very good health,68.9
+SVN,Slovenia,2010,total,Good/very good health,59.6
+SVN,Slovenia,2011,total,Good/very good health,60.4
+SVN,Slovenia,2012,total,Good/very good health,63.1
+SVN,Slovenia,2013,total,Good/very good health,64.8
+SVN,Slovenia,2014,total,Good/very good health,64.8
+SVN,Slovenia,2015,total,Good/very good health,64.8
+ITA,Italy,2010,female,Good/very good health,63.2
+ITA,Italy,2011,female,Good/very good health,61.6
+ITA,Italy,2012,female,Good/very good health,65
+ITA,Italy,2013,female,Good/very good health,62.4
+ITA,Italy,2014,female,Good/very good health,64.5
+ITA,Italy,2015,female,Good/very good health,62.6
+ESP,Spain,2010,total,Good/very good health,71.8
+ESP,Spain,2011,total,Good/very good health,75.3
+ESP,Spain,2012,total,Good/very good health,74.3
+ESP,Spain,2013,total,Good/very good health,71.6
+ESP,Spain,2014,total,Good/very good health,72.6
+ESP,Spain,2015,total,Good/very good health,72.4
+ESP,Spain,2010,male,Good/very good health,75.4
+ESP,Spain,2011,male,Good/very good health,78.6
+ESP,Spain,2012,male,Good/very good health,77.2
+ESP,Spain,2013,male,Good/very good health,75.2
+ESP,Spain,2014,male,Good/very good health,76.3
+ESP,Spain,2015,male,Good/very good health,75.3
+GRC,Greece,2010,female,Good/very good health,73.3
+GRC,Greece,2011,female,Good/very good health,74.1
+GRC,Greece,2012,female,Good/very good health,72.1
+GRC,Greece,2013,female,Good/very good health,71.1
+GRC,Greece,2014,female,Good/very good health,71
+GRC,Greece,2015,female,Good/very good health,71.8
+GRC,Greece,2010,total,Good/very good health,75.5
+GRC,Greece,2011,total,Good/very good health,76.4
+GRC,Greece,2012,total,Good/very good health,74.9
+GRC,Greece,2013,total,Good/very good health,73.9
+GRC,Greece,2014,total,Good/very good health,73.5
+GRC,Greece,2015,total,Good/very good health,74.4
+FRA,France,2010,female,Good/very good health,64.9
+FRA,France,2011,female,Good/very good health,64.4
+FRA,France,2012,female,Good/very good health,65.9
+FRA,France,2013,female,Good/very good health,64.3
+FRA,France,2014,female,Good/very good health,65.5
+FRA,France,2015,female,Good/very good health,65.6
+GRC,Greece,2010,male,Good/very good health,77.8
+GRC,Greece,2011,male,Good/very good health,78.8
+GRC,Greece,2012,male,Good/very good health,77.8
+GRC,Greece,2013,male,Good/very good health,76.9
+GRC,Greece,2014,male,Good/very good health,76.1
+GRC,Greece,2015,male,Good/very good health,77.2
+ESP,Spain,2010,female,Good/very good health,68.4
+ESP,Spain,2011,female,Good/very good health,72.2
+ESP,Spain,2012,female,Good/very good health,71.5
+ESP,Spain,2013,female,Good/very good health,68.2
+ESP,Spain,2014,female,Good/very good health,69.2
+ESP,Spain,2015,female,Good/very good health,69.6
+ITA,Italy,2010,total,Good/very good health,66.7
+ITA,Italy,2011,total,Good/very good health,64.6
+ITA,Italy,2012,total,Good/very good health,68.4
+ITA,Italy,2013,total,Good/very good health,66.1
+ITA,Italy,2014,total,Good/very good health,67.9
+ITA,Italy,2015,total,Good/very good health,65.6
+GBR,United Kingdom,2010,male,Good/very good health,80.1
+GBR,United Kingdom,2011,male,Good/very good health,78.6
+GBR,United Kingdom,2012,male,Good/very good health,76.4
+GBR,United Kingdom,2013,male,Good/very good health,73.5
+GBR,United Kingdom,2014,male,Good/very good health,70.4
+GBR,United Kingdom,2015,male,Good/very good health,69.8
+GBR,United Kingdom,2010,total,Good/very good health,79.4
+GBR,United Kingdom,2011,total,Good/very good health,77.5
+GBR,United Kingdom,2012,total,Good/very good health,74.7
+GBR,United Kingdom,2013,total,Good/very good health,73.7
+GBR,United Kingdom,2014,total,Good/very good health,70
+GBR,United Kingdom,2015,total,Good/very good health,69.8
+FRA,France,2010,male,Good/very good health,69.8
+FRA,France,2011,male,Good/very good health,71
+FRA,France,2012,male,Good/very good health,70.4
+FRA,France,2013,male,Good/very good health,70.3
+FRA,France,2014,male,Good/very good health,70.9
+FRA,France,2015,male,Good/very good health,70.2
+POL,Poland,2010,female,Good/very good health,54.7
+POL,Poland,2011,female,Good/very good health,54.7
+POL,Poland,2012,female,Good/very good health,54.3
+POL,Poland,2013,female,Good/very good health,54.8
+POL,Poland,2014,female,Good/very good health,55.1
+POL,Poland,2015,female,Good/very good health,54.6
+FRA,France,2010,total,Good/very good health,67.3
+FRA,France,2011,total,Good/very good health,67.6
+FRA,France,2012,total,Good/very good health,68.1
+FRA,France,2013,total,Good/very good health,67.2
+FRA,France,2014,total,Good/very good health,68.1
+FRA,France,2015,total,Good/very good health,67.8
+POL,Poland,2010,male,Good/very good health,61.4
+POL,Poland,2011,male,Good/very good health,60.9
+POL,Poland,2012,male,Good/very good health,61.6
+POL,Poland,2013,male,Good/very good health,62.3
+POL,Poland,2014,male,Good/very good health,61.6
+POL,Poland,2015,male,Good/very good health,61.5
+SWE,Sweden,2010,total,Good/very good health,80
+SWE,Sweden,2011,total,Good/very good health,79.9
+SWE,Sweden,2012,total,Good/very good health,80.9
+SWE,Sweden,2013,total,Good/very good health,81.1
+SWE,Sweden,2014,total,Good/very good health,80.1
+SWE,Sweden,2015,total,Good/very good health,79.7
+GBR,United Kingdom,2010,female,Good/very good health,78.8
+GBR,United Kingdom,2011,female,Good/very good health,76.5
+GBR,United Kingdom,2012,female,Good/very good health,73.2
+GBR,United Kingdom,2013,female,Good/very good health,73.8
+GBR,United Kingdom,2014,female,Good/very good health,69.6
+GBR,United Kingdom,2015,female,Good/very good health,69.8
+LTU,Lithuania,2010,female,Good/very good health,47.1
+LTU,Lithuania,2011,female,Good/very good health,39.6
+LTU,Lithuania,2012,female,Good/very good health,40.4
+LTU,Lithuania,2013,female,Good/very good health,41.8
+LTU,Lithuania,2014,female,Good/very good health,40.4
+LTU,Lithuania,2015,female,Good/very good health,38.4
+LTU,Lithuania,2010,male,Good/very good health,54.7
+LTU,Lithuania,2011,male,Good/very good health,49.7
+LTU,Lithuania,2012,male,Good/very good health,50
+LTU,Lithuania,2013,male,Good/very good health,52.4
+LTU,Lithuania,2014,male,Good/very good health,51.2
+LTU,Lithuania,2015,male,Good/very good health,49.2
+LTU,Lithuania,2010,total,Good/very good health,50.2
+LTU,Lithuania,2011,total,Good/very good health,43.9
+LTU,Lithuania,2012,total,Good/very good health,44.3
+LTU,Lithuania,2013,total,Good/very good health,46.1
+LTU,Lithuania,2014,total,Good/very good health,44.9
+LTU,Lithuania,2015,total,Good/very good health,42.6
+LVA,Latvia,2010,female,Good/very good health,43.6
+LVA,Latvia,2011,female,Good/very good health,42.3
+LVA,Latvia,2012,female,Good/very good health,43
+LVA,Latvia,2013,female,Good/very good health,41.2
+LVA,Latvia,2014,female,Good/very good health,42
+LVA,Latvia,2015,female,Good/very good health,42.1
+LVA,Latvia,2010,male,Good/very good health,53
+LVA,Latvia,2011,male,Good/very good health,50.7
+LVA,Latvia,2012,male,Good/very good health,51.2
+LVA,Latvia,2013,male,Good/very good health,50.3
+LVA,Latvia,2014,male,Good/very good health,50.5
+LVA,Latvia,2015,male,Good/very good health,51.3
+LVA,Latvia,2010,total,Good/very good health,47.8
+LVA,Latvia,2011,total,Good/very good health,46
+LVA,Latvia,2012,total,Good/very good health,46.7
+LVA,Latvia,2013,total,Good/very good health,45.2
+LVA,Latvia,2014,total,Good/very good health,45.8
+LVA,Latvia,2015,total,Good/very good health,46.2

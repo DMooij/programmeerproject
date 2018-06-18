@@ -42,3 +42,11 @@
 
 - presented the project in the weekly presentation meeting
 - added the slider with avocado icon
+
+## Day 11 - 18 June 2018
+
+- managed to put the graphs in columns and rows
+- started working on a hover on the donut chart
+- map legend updates values depending on import/export
+- clean up code to make it more general and useable for the slider, if I have time to implement it
+- TO DO: default bar- and donut chart, title and hover for donut chart, slider?

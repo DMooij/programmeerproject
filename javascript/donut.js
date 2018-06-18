@@ -1,17 +1,39 @@
 // Donut chart
 // http://www.adeveloperdiary.com/d3-js/create-a-simple-donut-chart-using-d3-js/
 // https://bl.ocks.org/mbostock/3887193
+function donutData(location){
 
-function donut(location, health_2015_total, health_2015_male, health_2015_female){
-  // donutData(health_2010_2015)
+  var health_year = [];
+  for (var k = 0; k < health_2010_2015.length; k++){
+    if (health_2010_2015[k].YEAR == "2015"){
+      health_year.push(health_2010_2015[k])
+    }
+    var health_year_male = [];
+    var health_year_female = [];
+    var health_year_total = [];
+    for (var l = 0; l < health_year.length; l++){
+      if (health_year[l].GENDER == "male"){
+        health_year_male.push(health_year[l])
+      }
+      if (health_year[l].GENDER == "female"){
+        health_year_female.push(health_year[l])
+      }
+      if (health_year[l].GENDER == "total"){
+        health_year_total.push(health_year[l])
+      }
+    }
+  }
+  donut(location, health_year_total, health_year_male, health_year_female);
+};
+
+function donut(location, health_total, health_male, health_female){
 
   var data_donut = [];
-  for (var loc = 0; loc < health_2015_total.length; loc++){
-     if (location == health_2015_total[loc].CODE){
-       data_donut.push(health_2015_total[loc])
+  for (var loc = 0; loc < health_total.length; loc++){
+     if (location == health_total[loc].COU){
+       data_donut.push(health_total[loc])
      }
   }
-  // console.log(data_donut)
   removeDonut();
   makeDonut(data_donut);
 
@@ -21,34 +43,31 @@ function donut(location, health_2015_total, health_2015_male, health_2015_female
     if (value == "male"){
       removeDonut();
       var data_donut = [];
-      for (var loc = 0; loc < health_2015_male.length; loc++){
-         if (location == health_2015_male[loc].CODE){
-           data_donut.push(health_2015_male[loc])
+      for (var loc = 0; loc < health_male.length; loc++){
+         if (location == health_male[loc].COU){
+           data_donut.push(health_male[loc])
          }
       }
-      // console.log(data_donut)
       makeDonut(data_donut);
     }
     if (value == "female"){
       removeDonut();
       var data_donut = [];
-      for (var loc = 0; loc < health_2015_female.length; loc++){
-         if (location == health_2015_female[loc].CODE){
-           data_donut.push(health_2015_female[loc])
+      for (var loc = 0; loc < health_female.length; loc++){
+         if (location == health_female[loc].COU){
+           data_donut.push(health_female[loc])
          }
       }
-      // console.log(data_donut)
       makeDonut(data_donut);
     }
     if (value == "total"){
       removeDonut();
       var data_donut = [];
-      for (var loc = 0; loc < health_2015_total.length; loc++){
-         if (location == health_2015_total[loc].CODE){
-           data_donut.push(health_2015_total[loc])
+      for (var loc = 0; loc < health_total.length; loc++){
+         if (location == health_total[loc].COU){
+           data_donut.push(health_total[loc])
          }
       }
-      // console.log(data_donut)
       makeDonut(data_donut);
     }
   });
@@ -74,7 +93,6 @@ function makeDonut(data_donut){
   .append("svg")
     .attr("width", width_donut)
     .attr("height", height_donut)
-    // .attr("viewBox", [0, 0, width_donut, height_donut])
   .append("g")
     .attr("transform", "translate(" + width_donut / 2 + "," + height_donut / 2 + ")");
 
@@ -84,7 +102,15 @@ function makeDonut(data_donut){
       .attr("class", "arc");
       g.append("path")
         .attr("d", arc)
-        .style("fill", function(d) { return color(d.data.VARIABLE); });
+        .style("fill", function(d) { return color(d.data.VARIABLE); })
+        // .on("mouseover", function (d) {
+        //     d3.select(this).transition()
+        //       .duration(500)
+        //       .attr("d", arc.over)})
+        // .on("mouseout", function (d) {
+        //     d3.select(this).transition()
+        //       .duration(500)
+        //       .attr("d", arc)})
 
   var text = svg.selectAll("text")
     .data(pie(data_donut))

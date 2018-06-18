@@ -1,16 +1,79 @@
-// make map
-function makeMap(paletteScale, map, health_2015_total, health_2015_male, health_2015_female, consumption){
-// function makeMap(map){
-	// if (error) throw error;
+// MAP DATA
+// select data for the correct year slider??
+function mapYear(import_export_length){
+	year_quantities = [];
+	for (var year = 0; year < import_export_year.length; year++){
+		if (import_export_year[year].YEAR == "2015"){
+			year_quantities.push(import_export_year[year])
+		}
+	}
+	mapData(year_quantities)
+};
 
+// order data in export and import array
+function mapData(year_quantities){
+		import_array = [];
+		export_array = [];
+		for (var flow = 0; flow < year_quantities.length; flow++){
+			if (year_quantities[flow].FLOW == "IMPORT"){
+				import_array.push(year_quantities[flow])
+			}
+			else if (year_quantities[flow].FLOW == "EXPORT"){
+				export_array.push(year_quantities[flow])
+			};
+		};
+
+// default map import 2015
+	mapColor(import_array)
+
+	d3.selectAll("input[name='optradio']").on("change", function(){
+		var value = this.value;
+		if (value == "import"){
+			mapColor(import_array)
+		}
+		if (value == "export"){
+			mapColor(export_array)
+		}
+	});
+};
+
+// colors for countries
+function mapColor(import_export_array){
+		var quantity = [];
+		for (var i = 0; i < import_export_array.length; i++){
+			quantity.push(import_export_array[i].QUANTITY_TON)
+		};
+
+		var minValue = Math.min.apply(Math, quantity);
+		var maxValue = Math.max.apply(Math, quantity);
+
+		var paletteScale = d3.scale.quantize()
+			.domain([Math.round(minValue), Math.round(maxValue)])
+			.range(colorbrewer.avo[8]);
+
+		var map_data = {};
+		for (var place = 0; place < import_export_array.length; place++){
+			country = import_export_array[place]["CODE"];
+			map_data[country] = {
+				YEAR: import_export_array[place]["YEAR"],
+				FLOW: import_export_array[place]["FLOW"],
+				QUANTITY_TON: import_export_array[place]["QUANTITY_TON"],
+				fillColor:paletteScale(import_export_array[place]["QUANTITY_TON"]),
+			};
+		};
+		removeMap();
+		makeMap(paletteScale, map_data);
+};
+
+// make map
+function makeMap(paletteScale, map){
 		var map = new Datamap({
 				element: document.getElementById("map"),
 				setProjection: function(element) {
-					 width = 1000;
+					 width = 960;
 					 height = 600;
 					 var projection = d3.geo.mercator()
 						   .center([ 13, 52 ])
-							 // .center([32, 47])
 						   .translate([ width/2, height/2 ])
 						   .scale([ width/1.5 ]);
 					 var path = d3.geo.path()
@@ -21,13 +84,12 @@ function makeMap(paletteScale, map, health_2015_total, health_2015_male, health_
 					defaultFill: "lightgrey"
 				},
 				data: map,
-				// responsive: true,
 				done: function(datamap){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
 						var location = geography.id;
-						donut(location, health_2015_total, health_2015_male, health_2015_female);
-						barchart(location, consumption);
+						donutData(location);
+						barchart(location);
 
 					});
 				},
@@ -53,7 +115,6 @@ function makeMap(paletteScale, map, health_2015_total, health_2015_male, health_
 					},
 			 });
 
-			 // add legend to datamap
 		var svg = d3.select("svg");
 
 		var color_legend = d3.legend.color()
@@ -66,14 +127,6 @@ function makeMap(paletteScale, map, health_2015_total, health_2015_male, health_
 		svg.append("g")
 		  .attr("transform", "translate(20,20)")
 			.call(color_legend);
-
-			 // resize map when window size is changed
-			 // d3.select(window).on('resize', function() {
-				//  map.resize();
-
-
-		 // });
-	 // });
 };
 
 // TO DO: function update map

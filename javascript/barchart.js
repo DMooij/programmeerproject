@@ -1,13 +1,12 @@
 // Barchart
 
-function barchart(location, consumption){
+function barchart(location){
   var data_bar = [];
   for (var l = 0; l < consumption.length; l++){
     if (location == consumption[l].CODE){
       data_bar.push(consumption[l]);
     }
   }
-  console.log(data_bar);
   removeBarchart();
   makeBarchart(data_bar)
 }
@@ -33,7 +32,7 @@ function makeBarchart(data_bar){
 
   // set y scale
   var yscale = d3.scale.linear()
-     .domain([0, Math.max.apply(Math, data_bar.map(function(d){return d.CONSUMPTION_AVO_PP}))])
+     .domain([0, Math.max.apply(Math, data_bar.map(function(d){return d.AVO_PP_YEAR}))])
      .range([bar_height, margin.top]);
 
   // create axes
@@ -78,7 +77,7 @@ function makeBarchart(data_bar){
     .attr("class", "d3-tip")
     .offset([-10, 0])
     .html(function(d){
-       return "<strong>Acovados consumed per inhabitant: </strong> <span style='color:crimson'>" + d.CONSUMPTION_AVO_PP + "</span>"
+       return "<strong>Acovados consumed per inhabitant:  <span style='color:green'>" + d.AVO_PP_YEAR + "</span> </strong>"
     });
 
   svg.call(tooltip);
@@ -93,11 +92,11 @@ function makeBarchart(data_bar){
       return xscale(i);
     })
     .attr("y", function (d){
-      return yscale(d.CONSUMPTION_AVO_PP);
+      return yscale(d.AVO_PP_YEAR);
     })
     .attr("width", xscale.rangeBand())
     .attr("height", function (d){
-      return bar_height - yscale(d.CONSUMPTION_AVO_PP);
+      return bar_height - yscale(d.AVO_PP_YEAR);
     })
     .on("mouseover", tooltip.show)
     .on("mouseout", tooltip.hide);
@@ -107,10 +106,10 @@ function makeBarchart(data_bar){
     .attr("x", (bar_width / 2))
     .attr("y", 0 - (margin.top/2))
     .attr("text-anchor", "middle")
-    .style("font-size", "14px")
+    .style("font-size", "16px")
     .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
 };
 
 function removeBarchart(){
-d3.select("#barchart").select("svg").remove()
+d3.select("#barchart").selectAll("svg").remove()
 };
