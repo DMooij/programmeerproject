@@ -52,3 +52,8 @@
 - map legend updates values depending on import/export
 - clean up code to make it more general and useable for the slider, if I have time to implement it
 - TO DO: Hover for donut chart, slider?
+
+## Day 12 - 19 June 2018
+
+- Hover on donut to enlarge the segment works, enlarging the text on hover does not work yet
+- Slider to change year data for the map works

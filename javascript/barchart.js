@@ -21,7 +21,9 @@ function makeBarchart(data_bar){
   // Create SVG element
   var svg = d3.select("#barchart")
     .append("svg")
-     .attr("viewBox", [0, 0, fullwidth, fullheight])
+     // .attr("viewBox", [0, 0, fullwidth, fullheight])
+     .attr("width", fullwidth)
+     .attr("height", fullheight)
     .append("g")
      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -77,7 +79,7 @@ function makeBarchart(data_bar){
     .attr("class", "d3-tip")
     .offset([-10, 0])
     .html(function(d){
-       return "<strong>Acovados consumed per inhabitant:  <span style='color:#405d27'>" + d.AVO_PP_YEAR + "</span> </strong>"
+       return "<strong>Avocados consumed per inhabitant:  <span style='color:#405d27'>" + d.AVO_PP_YEAR + "</span> </strong>"
     });
 
   svg.call(tooltip);

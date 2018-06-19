@@ -3,6 +3,7 @@
 var import_export_year;
 var consumption;
 var health_2010_2015;
+var value_year
 
 window.onload = function(){
 queue()
@@ -19,9 +20,11 @@ function LoadData(error, response){
     consumption = response[1];
     health_2010_2015 = response[2];
 
-		// OPTIONAL SLIDER all data select year
-		mapYear(import_export_year);
+		mapYear("2015", import_export_year);
+		// mapFlow("2015", import_export_year)
 		barchart("NLD");
-		donutData("NLD");
+		donutData("NLD", "2015");
+
+		slider()
 
 };

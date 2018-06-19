@@ -1,13 +1,13 @@
 // Donut chart
 // http://www.adeveloperdiary.com/d3-js/create-a-simple-donut-chart-using-d3-js/
 // https://bl.ocks.org/mbostock/3887193
-function donutData(location){
-
+function donutData(location, value_year){
   var health_year = [];
   for (var k = 0; k < health_2010_2015.length; k++){
-    if (health_2010_2015[k].YEAR == "2015"){
+    if (health_2010_2015[k].YEAR == value_year){
       health_year.push(health_2010_2015[k])
     }
+  }
     var health_year_male = [];
     var health_year_female = [];
     var health_year_total = [];
@@ -22,11 +22,18 @@ function donutData(location){
         health_year_total.push(health_year[l])
       }
     }
-  }
+    // console.log(health_year_male)
+    // console.log(health_year_female)
+    // console.log(health_year_total)
   donut(location, health_year_total, health_year_male, health_year_female);
 };
 
 function donut(location, health_total, health_male, health_female){
+  // console.log(health_total)
+  // console.log(health_male)
+  // console.log(health_female)
+
+  // console.log(location)
 
   var data_donut = [];
   for (var loc = 0; loc < health_total.length; loc++){
@@ -34,7 +41,9 @@ function donut(location, health_total, health_male, health_female){
        data_donut.push(health_total[loc])
      }
   }
+    // console.log(data_donut)
   removeDonut();
+
   makeDonut(data_donut);
 
   d3.selectAll(".dropdown-item").on("click", function(){
@@ -74,17 +83,23 @@ function donut(location, health_total, health_male, health_female){
 }
 
 function makeDonut(data_donut){
+
+  // console.log(data_donut)
+
   var width_donut = 550;
   var height_donut = 400;
-  var radius = Math.min(width_donut, height_donut)/2;
+  var radius = Math.min(width_donut - 10 , height_donut - 10)/2;
 
   var color = d3.scale.ordinal()
-    // .range(["7fc97f","#beaed4", "#fdc086"])
     .range(["#568203", "#7ebe03", "#bbfc3d"])
 
   var arc = d3.svg.arc()
     .outerRadius(radius - 10)
     .innerRadius(radius - 80);
+
+  var arcOver = d3.svg.arc()
+    .outerRadius(radius + 5)
+    .innerRadius(radius - 80)
 
   var pie = d3.layout.pie()
     .sort(null)
@@ -104,14 +119,26 @@ function makeDonut(data_donut){
       g.append("path")
         .attr("d", arc)
         .style("fill", function(d) { return color(d.data.VARIABLE); })
-        // .on("mouseover", function (d) {
-        //     d3.select(this).transition()
-        //       .duration(500)
-        //       .attr("d", arc.over)})
-        // .on("mouseout", function (d) {
-        //     d3.select(this).transition()
-        //       .duration(500)
-        //       .attr("d", arc)})
+        .on("mouseover", function (d) {
+            d3.select(this).transition()
+              .duration(200)
+              .attr("d", arcOver)
+              .selectAll("text")
+                .style({
+                     fill:"black",
+                     'font-size':'18px',
+                     'font-weight': 'bold'
+                 })})
+        .on("mouseout", function (d) {
+            d3.select(this).transition()
+              .duration(200)
+              .attr("d", arc)
+              .selectAll("text")
+              .style({
+                  fill:"black",
+                  'font-size':'14px'
+              })})
+
 
   var text = svg.selectAll("text")
     .data(pie(data_donut))
@@ -128,7 +155,7 @@ function makeDonut(data_donut){
      .style({
          fill:"black",
          'font-size':'14px'
-     });
+     })
 
      var legend_size = 20;
      var legend_space = 7;
@@ -141,7 +168,7 @@ function makeDonut(data_donut){
         .attr({
         class:'legend',
         transform:function(d,i){
-            return 'translate(-110,' + ((i*legend_height)-40) + ')';}
+            return 'translate(-109,' + ((i*legend_height)-40) + ')';}
         });
 
       legend.append("rect")

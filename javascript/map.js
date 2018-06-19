@@ -1,9 +1,11 @@
 // MAP DATA
 // select data for the correct year slider??
-function mapYear(import_export_length){
+var map;
+
+function mapYear(value_year, import_export_length){
 	year_quantities = [];
 	for (var year = 0; year < import_export_year.length; year++){
-		if (import_export_year[year].YEAR == "2015"){
+		if (import_export_year[year].YEAR == value_year){
 			year_quantities.push(import_export_year[year])
 		}
 	}
@@ -61,13 +63,14 @@ function mapColor(import_export_array){
 				fillColor:paletteScale(import_export_array[place]["QUANTITY_TON"]),
 			};
 		};
-		removeMap();
+
+		removeMap()
 		makeMap(paletteScale, map_data);
 };
 
 // make map
 function makeMap(paletteScale, map_data){
-		var map = new Datamap({
+		map = new Datamap({
 				element: document.getElementById("map"),
 				setProjection: function(element) {
 					 width = 960;
@@ -88,7 +91,7 @@ function makeMap(paletteScale, map_data){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
 						var location = geography.id;
-						donutData(location);
+						donutData(location, value_year);
 						barchart(location);
 
 					});
@@ -128,7 +131,7 @@ function makeMap(paletteScale, map_data){
 		  .attr("transform", "translate(20,20)")
 			.call(color_legend);
 
-		var title = "Avocado import/export in " + map_data["YEAR"];
+		var title = "Avocado import/export"
 			 d3.select("h3").text(title);
 };
 
@@ -136,3 +139,15 @@ function makeMap(paletteScale, map_data){
 function removeMap(){
 	d3.select("#map").select("svg").remove()
 }
+
+// function updateMap(){
+// 	d3.selectAll("input[name='optradio']").on("change", function(){
+// 		var value = this.value;
+// 		if (value == "import"){
+// 			mapColor(import_array)
+// 		}
+// 		if (value == "export"){
+// 			mapColor(export_array)
+// 		}
+// 	});
+// }
