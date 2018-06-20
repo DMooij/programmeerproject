@@ -232,21 +232,21 @@ function updateDonut(data_donut){
     .attr("class", "arc")
 
   arcpath.append("path")
-    .transition()
-    .duration(1000)
     .attr("d", arc)
     .style("fill", function(d) { return color(d.data.VARIABLE); })
 
   g.exit().remove();
 
   var arcpath = g.select("path")
+    .transition()
+    .duration(1000)
     .attr("d", arc)
     .style("fill", function(d) { return color(d.data.VARIABLE); })
 
   var text = svg.selectAll("text")
       .data(pie(data_donut))
       .transition()
-      .duration(1000)
+      .duration(500)
       .attr("transform", function (d) {
           return "translate(" + arc.centroid(d) + ")";
        })
