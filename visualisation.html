@@ -10,17 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.1.0/d3-legend.js"></script>
-    <script src="javascript/colorbrewer.js"></script>
+    <script src="code/javascript/libraries/colorbrewer.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="code/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="javascript/datamaps.all.min.js"></script>
-    <script src="javascript/loaddata.js"></script>
-    <script src="javascript/map.js"></script>
-    <script src="javascript/slider.js"></script>
-    <script src="javascript/donut.js"></script>
-    <script src="javascript/barchart.js"></script>
+    <script src="code/javascript/libraries/datamaps.all.min.js"></script>
+    <script src="code/javascript/loaddata.js"></script>
+    <script src="code/javascript/slider.js"></script>
+    <script src="code/javascript/map.js"></script>
+    <script src="code/javascript/donut.js"></script>
+    <script src="code/javascript/barchart.js"></script>
   </head>
 
   <body>
@@ -47,14 +47,14 @@
               <h3></h3>
                   <div class="slidecontainer">
                       <input type="range" min="2010" max="2015" value="2015" class="slider" id="slider">
-                      <p>Year: <span id="year"></span></p>
+                      <p><strong>Year: <span id="year"></strong></span></p>
                   </div>
                 </br>
 
                         <label class="radio-inline"><input type="radio" name="optradio" value="import" checked>Import</label>
                         <label class="radio-inline"><input type="radio" name="optradio" value="export">Export</label>
                 </br>
-                        <div id="map" style="position: relative; width: 760px; height: 600px; "></div>
+                        <div id="map" style="position: relative; width: 700px; height: 600px; "></div>
             </div>
 
             <div class="col-md-6">

@@ -2,50 +2,38 @@
 // select data for the correct year slider??
 var map;
 
-function mapYear(value_year, import_export_length){
-	year_quantities = [];
-	for (var year = 0; year < import_export_year.length; year++){
-		if (import_export_year[year].YEAR == value_year){
-			year_quantities.push(import_export_year[year])
-		}
-	}
-	mapData(year_quantities)
-};
-
-// order data in export and import array
-function mapData(year_quantities){
+function mapFlow(error, value_year, import_export_year){
+	if (error) throw error;
 		import_array = [];
 		export_array = [];
-		for (var flow = 0; flow < year_quantities.length; flow++){
-			if (year_quantities[flow].FLOW == "IMPORT"){
-				import_array.push(year_quantities[flow])
+		for (var flow = 0; flow < import_export_year.length; flow++){
+			if (import_export_year[flow].FLOW == "IMPORT"){
+				import_array.push(import_export_year[flow])
+
 			}
-			else if (year_quantities[flow].FLOW == "EXPORT"){
-				export_array.push(year_quantities[flow])
+			else if (import_export_year[flow].FLOW == "EXPORT"){
+				export_array.push(import_export_year[flow])
 			};
 		};
+	  mapData(error, value_year, import_array)
 
-// default map import 2015
-	mapColor(import_array)
-
-	d3.selectAll("input[name='optradio']").on("change", function(){
-		var value = this.value;
-		if (value == "import"){
-			mapColor(import_array)
-		}
-		if (value == "export"){
-			mapColor(export_array)
-		}
-	});
+		d3.selectAll("input[name='optradio']").on("change", function(){
+			var value = this.value;
+			if (value == "import"){
+				mapData(error, value_year, import_array)
+			}
+			if (value == "export"){
+				mapData(error, value_year, export_array)
+			}
+		});
 };
 
-// colors for countries
-function mapColor(import_export_array){
+function mapData(error, value_year, import_export_array){
+	if (error) throw error;
 		var quantity = [];
 		for (var i = 0; i < import_export_array.length; i++){
 			quantity.push(import_export_array[i].QUANTITY_TON)
 		};
-
 		var minValue = Math.min.apply(Math, quantity);
 		var maxValue = Math.max.apply(Math, quantity);
 
@@ -53,23 +41,31 @@ function mapColor(import_export_array){
 			.domain([Math.round(minValue), Math.round(maxValue)])
 			.range(colorbrewer.avo[8]);
 
+		year_quantities = [];
+		for (var year = 0; year < import_export_array.length; year++){
+			if (import_export_array[year].YEAR == value_year){
+				year_quantities.push(import_export_array[year])
+			}
+		}
+		// console.log(year_quantities)
 		var map_data = {};
-		for (var place = 0; place < import_export_array.length; place++){
-			country = import_export_array[place]["CODE"];
-			map_data[country] = {
-				YEAR: import_export_array[place]["YEAR"],
-				FLOW: import_export_array[place]["FLOW"],
-				QUANTITY_TON: import_export_array[place]["QUANTITY_TON"],
-				fillColor:paletteScale(import_export_array[place]["QUANTITY_TON"]),
+			for (var place = 0; place < year_quantities.length; place++){
+				country = year_quantities[place]["CODE"];
+				map_data[country] = {
+					YEAR: year_quantities[place]["YEAR"],
+					FLOW: year_quantities[place]["FLOW"],
+					QUANTITY_TON: year_quantities[place]["QUANTITY_TON"],
+					fillColor: paletteScale(year_quantities[place]["QUANTITY_TON"])
+				};
 			};
-		};
-
-		removeMap()
-		makeMap(paletteScale, map_data);
-};
-
+			// console.log(map_data)
+			removeMap()
+			makeMap(error, paletteScale, map_data)
+}
+//
 // make map
-function makeMap(paletteScale, map_data){
+function makeMap(error, paletteScale, map_data){
+	 if (error) throw error;
 		map = new Datamap({
 				element: document.getElementById("map"),
 				setProjection: function(element) {
@@ -91,8 +87,10 @@ function makeMap(paletteScale, map_data){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
 						var location = geography.id;
-						donutData(location, value_year);
-						barchart(location);
+						donutData(error, location, "2015");
+						console.log(value_year)
+						// donutData(location, value_year)
+						makeBarchart(error, location);
 
 					});
 				},

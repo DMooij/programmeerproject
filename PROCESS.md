@@ -56,4 +56,10 @@
 ## Day 12 - 19 June 2018
 
 - Hover on donut to enlarge the segment works, enlarging the text on hover does not work yet
-- Slider to change year data for the map works
+- Slider to change year data for the map works for import
+- TO DO: slider after selecting export and then sliding it changes back to import. Donut - clicking on country and then changing year goes back to default as location is unknown.
+
+## Day 13 - 20 June 2018
+
+- Update function with transition for Barchart
+- fixed the slider import/export change and slide issue

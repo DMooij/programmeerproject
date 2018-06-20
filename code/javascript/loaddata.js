@@ -3,13 +3,12 @@
 var import_export_year;
 var consumption;
 var health_2010_2015;
-var value_year
 
 window.onload = function(){
 queue()
-	.defer(d3.json, 'scripts/import_export_year.json')
-	.defer(d3.json, 'scripts/consumption_avo_pp_year.json')
-  .defer(d3.json, 'scripts/health_2010_2015.json')
+	.defer(d3.json, 'data/import_export_year.json')
+	.defer(d3.json, 'data/consumption_avo_pp_year.json')
+  .defer(d3.json, 'data/health_2010_2015.json')
 	.awaitAll(LoadData);
 };
 
@@ -20,11 +19,10 @@ function LoadData(error, response){
     consumption = response[1];
     health_2010_2015 = response[2];
 
+		// DEFAULT
 		mapYear("2015", import_export_year);
-		// mapFlow("2015", import_export_year)
-		barchart("NLD");
+		makeBarchart("NLD")
 		donutData("NLD", "2015");
 
-		slider()
-
+		sliderDefault("NLD")
 };
