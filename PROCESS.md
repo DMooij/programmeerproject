@@ -63,3 +63,5 @@
 
 - Update function with transition for Barchart
 - fixed the slider import/export change and slide issue
+- slider works on donut as well
+- ISSUE: if the year is 2015 and another country is clicked before sliding, the donut and barchart can't be made because the location or year is unknown
