@@ -239,7 +239,7 @@ function updateDonut(data_donut){
 
   var arcpath = g.select("path")
     .transition()
-    .duration(1000)
+    .duration(800)
     .attr("d", arc)
     .style("fill", function(d) { return color(d.data.VARIABLE); })
 
