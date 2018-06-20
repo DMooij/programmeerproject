@@ -75,8 +75,10 @@ function mapColor(import_export_array){
 			};
 		};
 
+		// updateMap(map_data)
 		removeMap()
-		makeMap(paletteScale, map_data);
+		makeMap(paletteScale, map_data)
+
 };
 
 // make map
@@ -157,3 +159,7 @@ function makeMap(paletteScale, map_data){
 function removeMap(){
 	d3.select("#map").select("svg").remove()
 }
+
+// function updateMap(map_data){
+// 	map.updateChoropleth(map_data)
+// }

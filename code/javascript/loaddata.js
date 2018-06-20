@@ -22,7 +22,8 @@ function LoadData(error, response){
 		// DEFAULT
 		mapYear("2015", import_export_year);
 		makeBarchart("NLD")
-		donutData("NLD", "2015");
+		// donutData("NLD", "2015");
+		makeDonut("NLD")
 
 		sliderDefault("NLD")
 };
