@@ -120,7 +120,7 @@ function makeBarchart(location){
 
      d3.select("#info_bar")
        .append("text")
-       .text("Hallo barchart");
+       .text("The barchart shows the development of avocado consumption. Change the year and see if people feel healthier when more avocados are eaten.");
 };
 
 function updateBarchart(data_bar){

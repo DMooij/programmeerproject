@@ -65,3 +65,10 @@
 - fixed the slider import/export change and slide issue
 - slider works on donut as well
 - ISSUE: if the year is 2015 and another country is clicked before sliding, the donut and barchart can't be made because the location is unknown
+
+## Day 14 - 21 June 2018
+
+- fixed the default situation change country slider issue
+- function to make a legend once, the legend doesn't change when the map is updated
+- created space to add text about the figures
+- implemented carousel on the main page
