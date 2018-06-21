@@ -26,4 +26,5 @@ function LoadData(error, response){
 		makeLegend(paletteScale);
 		makeBarchart("NLD");
 		makeDonut("NLD");
+		donutData("NLD", "2015")
 };
