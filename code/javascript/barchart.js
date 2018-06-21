@@ -5,18 +5,18 @@ function barchart(current_location){
   for (var l = 0; l < consumption.length; l++){
     if (current_location == consumption[l].CODE){
       data_bar.push(consumption[l]);
-    }
-  }
-  updateBarchart(data_bar)
-}
+    };
+  };
+  updateBarchart(data_bar);
+};
 
 function makeBarchart(location){
     var data_bar = [];
     for (var l = 0; l < consumption.length; l++){
       if (location == consumption[l].CODE){
          data_bar.push(consumption[l]);
-      }
-    }
+      };
+    };
 
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
     var fullwidth = 500;
@@ -117,6 +117,10 @@ function makeBarchart(location){
      .attr("text-anchor", "start")
      .style("font-size", "18px")
      .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
+
+     d3.select("#info_bar")
+       .append("text")
+       .text("Hallo barchart");
 };
 
 function updateBarchart(data_bar){
@@ -128,14 +132,14 @@ function updateBarchart(data_bar){
   var bar_height = fullheight - margin.top - margin.bottom;
 
   // find max value for y axis
-  var max_y = Math.max.apply(Math, data_bar.map(function(d){return d.AVO_PP_YEAR}))
+  var max_y = Math.max.apply(Math, data_bar.map(function(d){return d.AVO_PP_YEAR}));
 
   // update y scale
   var yscale = d3.scale.linear()
      .domain([0, max_y])
      .range([bar_height, margin.top]);
 
-  var svg = d3.select("#barchart").select("svg")
+  var svg = d3.select("#barchart").select("svg");
 
   // update title
   svg.select(".title")
@@ -151,7 +155,7 @@ function updateBarchart(data_bar){
     })
     .attr("height", function (d){
       return bar_height - yscale(d.AVO_PP_YEAR);
-    })
+    });
 
   // update axis
   var yaxis = d3.svg.axis()
@@ -162,5 +166,5 @@ function updateBarchart(data_bar){
   svg.select(".y_axis")
     .transition()
     .duration(1000)
-    .call(yaxis)
+    .call(yaxis);
 };

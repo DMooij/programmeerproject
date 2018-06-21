@@ -19,11 +19,11 @@ function LoadData(error, response){
     consumption = response[1];
     health_2010_2015 = response[2];
 
+		sliderDefault("NLD", "2015");
+
 		// DEFAULT
 		mapYear("2015", import_export_year);
-		makeBarchart("NLD")
-		// donutData("NLD", "2015");
-		makeDonut("NLD")
-
-		sliderDefault("NLD")
+		makeLegend(paletteScale);
+		makeBarchart("NLD");
+		makeDonut("NLD");
 };
