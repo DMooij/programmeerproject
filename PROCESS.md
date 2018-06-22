@@ -72,3 +72,8 @@
 - function to make a legend once, the legend doesn't change when the map is updated
 - created space to add text about the figures
 - implemented carousel on the main page
+
+## Day 15 - 22 June 2018
+
+- presented progress in weekly meeting
+- TO DO: remove .0 in legend, donut update (arctween?), size donut?, add text below legend

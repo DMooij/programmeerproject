@@ -51,7 +51,8 @@ function makeBarchart(location){
     var yaxis = d3.svg.axis()
                       .scale(yscale)
                       .orient("left")
-                      .ticks(6);
+                      .ticks(6)
+                      .nice();
 
     // x axis
     svg.append("g")
