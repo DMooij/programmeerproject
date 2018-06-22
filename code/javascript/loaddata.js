@@ -19,12 +19,16 @@ function LoadData(error, response){
     consumption = response[1];
     health_2010_2015 = response[2];
 
+		// enable slider in default situation
 		sliderDefault("NLD", "2015");
 
-		// DEFAULT
+		// make default map, legend, barchart and donut chart
 		mapYear("2015", import_export_year);
 		makeLegend(paletteScale);
 		makeBarchart("NLD");
 		makeDonut("NLD");
+
+		// enable changing the gender in default situation
 		donutData("NLD", "2015")
+
 };

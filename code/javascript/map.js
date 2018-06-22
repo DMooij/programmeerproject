@@ -138,7 +138,7 @@ function makeMap(map_data){
 
 function makeLegend(paletteScale){
 
-	var legend_height = 300;
+	var legend_height = 230;
 	var legend_width = 300;
 
 	var color_legend = d3.legend.color()

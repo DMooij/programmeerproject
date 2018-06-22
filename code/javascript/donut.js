@@ -235,14 +235,14 @@ function updateDonut(data_donut){
     .attr("transform", "translate(" + width_donut / 2 + "," + height_donut / 2 + ")");
 
   arcpath.append("path")
+    .transition()
+    .duration(800)
     .attr("d", arc)
     .style("fill", function(d) { return color(d.data.VARIABLE); });
 
   g.exit().remove();
 
   var arcpath = g.select("path")
-    .transition()
-    .duration(800)
     .attr("d", arc)
     .style("fill", function(d) { return color(d.data.VARIABLE); });
 
