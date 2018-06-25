@@ -1,8 +1,13 @@
-/* CSS Style*/
+/*
+* Dewi Mooij
+* 10752978
+* style.css
+* Stylesheet for the webpage
+*/
 
 /* SLIDER */
 .slidecontainer {
-    width: 92%;
+    width: 100%;
 }
 
 .slider {
@@ -48,7 +53,6 @@
 .arc path {
   stroke: #fff;
 }
-
 
 /* BARCHART */
 .y_axis path,

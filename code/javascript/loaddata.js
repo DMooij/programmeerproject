@@ -1,4 +1,9 @@
-// Load the data
+/*
+* Dewi Mooij
+* 10752978
+* loaddata.js
+* load all the data and display default site
+*/
 
 var import_export_year;
 var consumption;
@@ -12,6 +17,7 @@ queue()
 	.awaitAll(LoadData);
 };
 
+// load all the data
 function LoadData(error, response){
   if (error) throw error;
 
@@ -24,7 +30,7 @@ function LoadData(error, response){
 
 		// make default map, legend, barchart and donut chart
 		mapYear("2015", import_export_year);
-		makeLegend(paletteScale);
+		makeLegend();
 		makeBarchart("NLD");
 		makeDonut("NLD");
 

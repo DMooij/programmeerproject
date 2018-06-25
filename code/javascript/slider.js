@@ -1,4 +1,10 @@
-// slider
+/*
+* Dewi Mooij
+* 10752978
+* slider.js
+* implementation of slider, ensuring the correct data is matched to the slider value
+*/
+
 var value_year;
 
 // display 2015 as default year, enable updating map and donut gender from default situation

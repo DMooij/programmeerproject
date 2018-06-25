@@ -1,15 +1,22 @@
-// Barchart
+/*
+* Dewi Mooij
+* 10752978
+* barchart.js
+* Select data in the right format to make and update barchart
+*/
 
+// select correct data for the barchart
 function barchart(current_location){
   var data_bar = [];
   for (var l = 0; l < consumption.length; l++){
     if (current_location == consumption[l].CODE){
       data_bar.push(consumption[l]);
-    };
+    }
   };
   updateBarchart(data_bar);
 };
 
+// make default barchart of location NLD
 function makeBarchart(location){
     var data_bar = [];
     for (var l = 0; l < consumption.length; l++){
@@ -120,9 +127,15 @@ function makeBarchart(location){
 
      d3.select("#info_bar")
        .append("text")
-       .text("The barchart shows the development of avocado consumption. Change the year and see if people feel healthier when more avocados are eaten.");
+       .text("The barchart shows avocado consumption in the time period 2010-2015. \
+       Use the slider to update the year of the donut chart and see if people feel \
+       healthier when more avocados are eaten. Use the button to change the gender \
+       and discover whether there is a difference in health perception between \
+       males and females.")
+      .style("font-style", "italic");
 };
 
+// update barchart on change of location
 function updateBarchart(data_bar){
 
   var margin = {top: 30, right: 20, bottom: 50, left: 50};

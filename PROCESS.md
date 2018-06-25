@@ -77,3 +77,10 @@
 
 - presented progress in weekly meeting
 - TO DO: remove .0 in legend, donut update (arctween?), size donut?, add text below legend
+
+## Day 16 - 24 June 2018
+
+- fixed leged .0 problem
+- made the donut smaller so no scrolling is necessary to view all three visualisations
+- added a soundtrack with play/pause to the home page
+- TO DO: donut when country with no data is clicked

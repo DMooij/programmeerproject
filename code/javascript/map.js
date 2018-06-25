@@ -1,8 +1,16 @@
-// MAP DATA
+/*
+* Dewi Mooij
+* 10752978
+* map.js
+* Select data in the right format to make a map
+*/
+
 var map;
 var paletteScale;
+// set default flow to import
 var current_flow = "import";
 
+// filter data for the selected year
 function mapYear(value_year, import_export_length){
 	year_quantities = [];
 	for (var year = 0; year < import_export_year.length; year++){
@@ -10,11 +18,13 @@ function mapYear(value_year, import_export_length){
 			year_quantities.push(import_export_year[year]);
 		};
 	}
-	mapData(year_quantities);
+	mapFlow(year_quantities);
 };
 
 // order data in export and import array
-function mapData(year_quantities){
+function mapFlow(year_quantities){
+
+		// filter data on flow
 		var import_array = [];
 		var export_array = [];
 		for (var flow = 0; flow < year_quantities.length; flow++){
@@ -26,45 +36,36 @@ function mapData(year_quantities){
 			};
 		};
 
+	// make map of import or export depending on what is checked in the checkbox
 	if (current_flow == "import"){
-		mapColor(import_array);
+		mapData(import_array);
 	};
 	if (current_flow == "export"){
-		mapColor(export_array);
+		mapData(export_array);
 	};
 
+	// update map when checkbox is changed
 	d3.selectAll("input[name='optradio']").on("change", function(){
 		var value = this.value;
 		if (value == "import"){
 			current_flow = "import";
-			mapColor(import_array);
+			mapData(import_array);
 		};
 		if (value == "export" ){
 			current_flow = "export";
-			mapColor(export_array);
+			mapData(export_array);
 		};
 	});
 };
 
-// colors for countries
-function mapColor(import_export_array){
-		// console.log(import_export_array)
-		// var quantity = [];
-		// for (var i = 0; i < import_export_array.length; i++){
-		// 	quantity.push(import_export_array[i].QUANTITY_TON)
-		// };
-		//
-		// var minValue = Math.min.apply(Math, quantity);
-		// var maxValue = Math.max.apply(Math, quantity);
-		//
-		// var paletteScale = d3.scale.quantize()
-		// 	.domain([Math.round(minValue), Math.round(maxValue)])
-		// 	.range(colorbrewer.avo[8]);
-
+// convert data to the correct format for the map and add colourscale
+function mapData(import_export_array){
+		// colour country according to value
 		paletteScale = d3.scale.quantize()
 			.domain([0, 200000])
-			.range(colorbrewer.avo[8]);
+			.range(["#bfff80", "#b3ff66", "#99ff33", "#80ff00", "#66cc00", "#4d9900", "#336600", "#1a3300"])
 
+		// convert to data format needed for the map
 		var map_data = {};
 		for (var place = 0; place < import_export_array.length; place++){
 			country = import_export_array[place]["CODE"];
@@ -81,7 +82,7 @@ function mapColor(import_export_array){
 
 };
 
-// make map
+// make datamap
 function makeMap(map_data){
 		map = new Datamap({
 				element: document.getElementById("map"),
@@ -89,7 +90,7 @@ function makeMap(map_data){
 					 width = 960;
 					 height = 600;
 					 var projection = d3.geo.mercator()
-							 .center([25, 52])
+							 .center([32, 52])
 						   .translate([ width/2, height/2 ])
 						   .scale([ width/1.5 ]);
 					 var path = d3.geo.path()
@@ -104,6 +105,7 @@ function makeMap(map_data){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
 						var current_location = geography.id;
+						// if (current_location != )
 						donutData(current_location, value_year);
 						barchart(current_location);
 						slider(current_location);
@@ -136,13 +138,15 @@ function makeMap(map_data){
 			 d3.select("h3").text(title);
 };
 
-function makeLegend(paletteScale){
+// make legend for the datamap
+function makeLegend(){
 
 	var legend_height = 230;
 	var legend_width = 300;
 
 	var color_legend = d3.legend.color()
 	 .scale(paletteScale)
+	 .labelFormat(d3.format(".0f"))
 	 .shapePadding(5)
 	 .shapeWidth(50)
 	 .shapeHeight(20)
@@ -157,11 +161,7 @@ function makeLegend(paletteScale){
 		 .call(color_legend);
 };
 
-// TO DO: function update map
+// remove the datamap
 function removeMap(){
 	d3.select("#map").select("svg").remove();
 }
-
-// function updateMap(map_data){
-// 	map.updateChoropleth(map_data)
-// }
