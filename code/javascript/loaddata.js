@@ -5,9 +5,9 @@
 * load all the data and display default site
 */
 
-var import_export_year;
+var importExportYear;
 var consumption;
-var health_2010_2015;
+var healthYears;
 
 window.onload = function(){
 queue()
@@ -21,15 +21,15 @@ queue()
 function LoadData(error, response){
   if (error) throw error;
 
-    import_export_year = response[0];
+    importExportYear = response[0];
     consumption = response[1];
-    health_2010_2015 = response[2];
+    healthYears = response[2];
 
 		// enable slider in default situation
 		sliderDefault("NLD", "2015");
 
 		// make default map, legend, barchart and donut chart
-		mapYear("2015", import_export_year);
+		mapYear("2015", importExportYear);
 		makeLegend();
 		makeBarchart("NLD");
 		makeDonut("NLD");

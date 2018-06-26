@@ -80,7 +80,12 @@
 
 ## Day 16 - 24 June 2018
 
-- fixed leged .0 problem
+- fixed legend .0 problem
 - made the donut smaller so no scrolling is necessary to view all three visualisations
 - added a soundtrack with play/pause to the home page
 - TO DO: donut when country with no data is clicked
+
+## Day 17 - 25 June 2018
+
+- fixed the issue with errors in the console when a country without data is clicked
+- worked on the slider issue; when female is selected and the slider is used the gender changes back to total so this needs to be remembered

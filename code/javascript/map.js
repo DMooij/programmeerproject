@@ -5,85 +5,84 @@
 * Select data in the right format to make a map
 */
 
-var map;
 var paletteScale;
 // set default flow to import
-var current_flow = "import";
+var currentFlow = "import";
 
 // filter data for the selected year
-function mapYear(value_year, import_export_length){
-	year_quantities = [];
-	for (var year = 0; year < import_export_year.length; year++){
-		if (import_export_year[year].YEAR == value_year){
-			year_quantities.push(import_export_year[year]);
+function mapYear(valueYear, importExportYear){
+	yearQuantities = [];
+	for (var year = 0; year < importExportYear.length; year++){
+		if (importExportYear[year].YEAR == valueYear){
+			yearQuantities.push(importExportYear[year]);
 		};
 	}
-	mapFlow(year_quantities);
+	mapFlow(yearQuantities);
 };
 
 // order data in export and import array
-function mapFlow(year_quantities){
+function mapFlow(yearQuantities){
 
 		// filter data on flow
-		var import_array = [];
-		var export_array = [];
-		for (var flow = 0; flow < year_quantities.length; flow++){
-			if (year_quantities[flow].FLOW == "IMPORT"){
-				import_array.push(year_quantities[flow]);
+		var importArray = [];
+		var exportArray = [];
+		for (var flow = 0; flow < yearQuantities.length; flow++){
+			if (yearQuantities[flow].FLOW == "IMPORT"){
+				importArray.push(yearQuantities[flow]);
 			}
-			else if (year_quantities[flow].FLOW == "EXPORT"){
-				export_array.push(year_quantities[flow]);
+			else if (yearQuantities[flow].FLOW == "EXPORT"){
+				exportArray.push(yearQuantities[flow]);
 			};
 		};
 
 	// make map of import or export depending on what is checked in the checkbox
-	if (current_flow == "import"){
-		mapData(import_array);
+	if (currentFlow == "import"){
+		mapData(importArray);
 	};
-	if (current_flow == "export"){
-		mapData(export_array);
+	if (currentFlow == "export"){
+		mapData(exportArray);
 	};
 
 	// update map when checkbox is changed
 	d3.selectAll("input[name='optradio']").on("change", function(){
 		var value = this.value;
 		if (value == "import"){
-			current_flow = "import";
-			mapData(import_array);
+			currentFlow = "import";
+			mapData(importArray);
 		};
 		if (value == "export" ){
-			current_flow = "export";
-			mapData(export_array);
+			currentFlow = "export";
+			mapData(exportArray);
 		};
 	});
 };
 
 // convert data to the correct format for the map and add colourscale
-function mapData(import_export_array){
+function mapData(importExportArray){
 		// colour country according to value
 		paletteScale = d3.scale.quantize()
 			.domain([0, 200000])
 			.range(["#bfff80", "#b3ff66", "#99ff33", "#80ff00", "#66cc00", "#4d9900", "#336600", "#1a3300"])
 
 		// convert to data format needed for the map
-		var map_data = {};
-		for (var place = 0; place < import_export_array.length; place++){
-			country = import_export_array[place]["CODE"];
-			map_data[country] = {
-				YEAR: import_export_array[place]["YEAR"],
-				FLOW: import_export_array[place]["FLOW"],
-				QUANTITY_TON: parseInt(import_export_array[place]["QUANTITY_TON"]),
-				fillColor:paletteScale(import_export_array[place]["QUANTITY_TON"]),
+		var dataMap = {};
+		for (var place = 0; place < importExportArray.length; place++){
+			country = importExportArray[place]["CODE"];
+			dataMap[country] = {
+				YEAR: importExportArray[place]["YEAR"],
+				FLOW: importExportArray[place]["FLOW"],
+				QUANTITY_TON: parseInt(importExportArray[place]["QUANTITY_TON"]),
+				fillColor:paletteScale(importExportArray[place]["QUANTITY_TON"]),
 			};
 		};
 
 		removeMap();
-		makeMap(map_data);
+		makeMap(dataMap);
 
 };
 
 // make datamap
-function makeMap(map_data){
+function makeMap(dataMap){
 		map = new Datamap({
 				element: document.getElementById("map"),
 				setProjection: function(element) {
@@ -100,15 +99,14 @@ function makeMap(map_data){
 				fills: {
 					defaultFill: "lightgrey"
 				},
-				data: map_data,
+				data: dataMap,
 				done: function(datamap){
 					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
 
-						var current_location = geography.id;
-						// if (current_location != )
-						donutData(current_location, value_year);
-						barchart(current_location);
-						slider(current_location);
+						var currentLocation = geography.id;
+						donutData(currentLocation, valueYear);
+						barchart(currentLocation);
+						slider(currentLocation);
 
 					});
 				},
@@ -141,10 +139,10 @@ function makeMap(map_data){
 // make legend for the datamap
 function makeLegend(){
 
-	var legend_height = 230;
-	var legend_width = 300;
+	var legendHeight = 230;
+	var legendWidth = 300;
 
-	var color_legend = d3.legend.color()
+	var colorLegend = d3.legend.color()
 	 .scale(paletteScale)
 	 .labelFormat(d3.format(".0f"))
 	 .shapePadding(5)
@@ -154,11 +152,11 @@ function makeLegend(){
 
 	var svg = d3.select("#maplegend")
 		.append("svg")
-		 .attr("width", legend_width)
-		 .attr("height", legend_height)
+		 .attr("width", legendWidth)
+		 .attr("height", legendHeight)
 		.append("g")
 		 .attr("transform", "translate(20,20)")
-		 .call(color_legend);
+		 .call(colorLegend);
 };
 
 // remove the datamap

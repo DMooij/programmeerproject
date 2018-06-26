@@ -5,20 +5,20 @@
 * implementation of slider, ensuring the correct data is matched to the slider value
 */
 
-var value_year;
+var valueYear;
 
 // display 2015 as default year, enable updating map and donut gender from default situation
-function sliderDefault(location, init_year){
+function sliderDefault(location, initYear){
   var slider = d3.select("#slider");
   var output = d3.select("#year");
-  output.html(init_year);
-  value_year = init_year;
+  output.html(initYear);
+  valueYear = initYear;
 
   slider.on("input", function() {
-    value_year = this.value;
-    output.html(value_year);
-    mapYear(value_year, import_export_year);
-    donutData(location, value_year);
+    valueYear = this.value;
+    output.html(valueYear);
+    mapYear(valueYear, importExportYear);
+    donutData(location, valueYear);
   });
 };
 
@@ -28,9 +28,9 @@ function slider(location){
   var output = d3.select("#year");
 
   slider.on("input", function() {
-    value_year = this.value;
-    output.html(value_year);
-    mapYear(value_year, import_export_year);
-    donutData(location, value_year);
+    valueYear = this.value;
+    output.html(valueYear);
+    mapYear(valueYear, importExportYear);
+    donutData(location, valueYear);
   });
 };

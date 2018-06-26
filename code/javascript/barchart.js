@@ -6,30 +6,30 @@
 */
 
 // select correct data for the barchart
-function barchart(current_location){
-  var data_bar = [];
-  for (var l = 0; l < consumption.length; l++){
-    if (current_location == consumption[l].CODE){
-      data_bar.push(consumption[l]);
-    }
-  };
-  updateBarchart(data_bar);
+function barchart(currentLocation){
+    var dataBar = [];
+    for (var l = 0; l < consumption.length; l++){
+      if (currentLocation == consumption[l].CODE){
+        dataBar.push(consumption[l]);
+      }
+    };
+    updateBarchart(dataBar);
 };
 
 // make default barchart of location NLD
 function makeBarchart(location){
-    var data_bar = [];
+    var dataBar = [];
     for (var l = 0; l < consumption.length; l++){
       if (location == consumption[l].CODE){
-         data_bar.push(consumption[l]);
+         dataBar.push(consumption[l]);
       };
     };
 
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
     var fullwidth = 500;
     var fullheight = 300;
-    var bar_width = fullwidth - margin.left - margin.right;
-    var bar_height = fullheight - margin.top - margin.bottom;
+    var barWidth = fullwidth - margin.left - margin.right;
+    var barHeight = fullheight - margin.top - margin.bottom;
 
     // Create SVG element
     var svg = d3.select("#barchart")
@@ -41,19 +41,19 @@ function makeBarchart(location){
 
     // set x scale
     var xscale = d3.scale.ordinal()
-       .domain(d3.range(data_bar.length))
-       .rangeRoundBands([0, bar_width], .05);
+       .domain(d3.range(dataBar.length))
+       .rangeRoundBands([0, barWidth], .05);
 
     // set y scale
     var yscale = d3.scale.linear()
-       .domain([0, Math.max.apply(Math, data_bar.map(function(d){return d.AVO_PP_YEAR}))])
-       .range([bar_height, margin.top]);
+       .domain([0, Math.max.apply(Math, dataBar.map(function(d){return d.AVO_PP_YEAR}))])
+       .range([barHeight, margin.top]);
 
     // create axes
     var xaxis = d3.svg.axis()
         .scale(xscale)
         .orient("bottom")
-        .tickFormat(function(d) { return data_bar[d]["YEAR"]; });
+        .tickFormat(function(d) { return dataBar[d]["YEAR"]; });
 
     var yaxis = d3.svg.axis()
                       .scale(yscale)
@@ -63,7 +63,7 @@ function makeBarchart(location){
     // x axis
     svg.append("g")
          .attr("class", "x_axis")
-         .attr("transform", "translate(0," + bar_height + ")")
+         .attr("transform", "translate(0," + barHeight + ")")
          .call(xaxis)
          .append("text")
          .attr("text-anchor", "middle");
@@ -71,8 +71,8 @@ function makeBarchart(location){
      // x axis label
      svg.append("text")
      .attr("text-anchor", "end")
-     .attr("x", bar_width)
-     .attr("y", bar_height + 40)
+     .attr("x", barWidth)
+     .attr("y", barHeight + 40)
      .attr("dy", ".71em")
      .text("Year");
 
@@ -99,7 +99,7 @@ function makeBarchart(location){
 
     // create bars
     svg.selectAll("rect")
-      .data(data_bar)
+      .data(dataBar)
       .enter()
       .append("rect")
       .attr("class", "bar")
@@ -111,7 +111,7 @@ function makeBarchart(location){
       })
       .attr("width", xscale.rangeBand())
       .attr("height", function (d){
-        return bar_height - yscale(d.AVO_PP_YEAR);
+        return barHeight - yscale(d.AVO_PP_YEAR);
       })
       .on("mouseover", tooltip.show)
       .on("mouseout", tooltip.hide);
@@ -123,7 +123,7 @@ function makeBarchart(location){
      .attr("y", 0 - (margin.top/2))
      .attr("text-anchor", "start")
      .style("font-size", "18px")
-     .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
+     .text("Avocados consumed per inhabitant in " + dataBar[0].DECLARANT);
 
      d3.select("#info_bar")
        .append("text")
@@ -136,48 +136,52 @@ function makeBarchart(location){
 };
 
 // update barchart on change of location
-function updateBarchart(data_bar){
+function updateBarchart(dataBar){
 
-  var margin = {top: 30, right: 20, bottom: 50, left: 50};
-  var fullwidth = 500;
-  var fullheight = 300;
-  var bar_width = fullwidth - margin.left - margin.right;
-  var bar_height = fullheight - margin.top - margin.bottom;
+  if (dataBar.length != 0){
 
-  // find max value for y axis
-  var max_y = Math.max.apply(Math, data_bar.map(function(d){return d.AVO_PP_YEAR}));
+    var margin = {top: 30, right: 20, bottom: 50, left: 50};
+    var fullwidth = 500;
+    var fullheight = 300;
+    var barWidth = fullwidth - margin.left - margin.right;
+    var barHeight = fullheight - margin.top - margin.bottom;
 
-  // update y scale
-  var yscale = d3.scale.linear()
-     .domain([0, max_y])
-     .range([bar_height, margin.top]);
+    // find max value for y axis
+    var maxY = Math.max.apply(Math, dataBar.map(function(d){return d.AVO_PP_YEAR}));
 
-  var svg = d3.select("#barchart").select("svg");
+    // update y scale
+    var yscale = d3.scale.linear()
+       .domain([0, maxY])
+       .range([barHeight, margin.top]);
 
-  // update title
-  svg.select(".title")
-   .text("Avocados consumed per inhabitant in " + data_bar[0].DECLARANT);
+    var svg = d3.select("#barchart").select("svg");
 
-  // update bars
-  svg.selectAll("rect")
-    .data(data_bar)
-    .transition()
-    .duration(1000)
-    .attr("y", function (d){
-      return yscale(d.AVO_PP_YEAR);
-    })
-    .attr("height", function (d){
-      return bar_height - yscale(d.AVO_PP_YEAR);
-    });
+    // update title
+    svg.select(".title")
+     .text("Avocados consumed per inhabitant in " + dataBar[0].DECLARANT);
 
-  // update axis
-  var yaxis = d3.svg.axis()
-              .scale(yscale)
-              .orient("left")
-              .ticks(6);
+    // update bars
+    svg.selectAll("rect")
+      .data(dataBar)
+      .transition()
+      .duration(1000)
+      .attr("y", function (d){
+        return yscale(d.AVO_PP_YEAR);
+      })
+      .attr("height", function (d){
+        return barHeight - yscale(d.AVO_PP_YEAR);
+      });
 
-  svg.select(".y_axis")
-    .transition()
-    .duration(1000)
-    .call(yaxis);
+    // update axis
+    var yaxis = d3.svg.axis()
+                .scale(yscale)
+                .orient("left")
+                .ticks(6);
+
+    svg.select(".y_axis")
+      .transition()
+      .duration(1000)
+      .call(yaxis);
+
+  };
 };
