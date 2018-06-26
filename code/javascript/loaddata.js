@@ -5,10 +5,12 @@
 * load all the data and display default site
 */
 
+// global variables for data so there are accessible in every file
 var importExportYear;
 var consumption;
 var healthYears;
 
+// load json files
 window.onload = function(){
 queue()
 	.defer(d3.json, 'data/import_export_year.json')
@@ -17,10 +19,11 @@ queue()
 	.awaitAll(LoadData);
 };
 
-// load all the data
+// load all the data and initialize webpage with default situation
 function LoadData(error, response){
   if (error) throw error;
 
+		// save datasets in global variables
     importExportYear = response[0];
     consumption = response[1];
     healthYears = response[2];
@@ -36,5 +39,4 @@ function LoadData(error, response){
 
 		// enable changing the gender in default situation
 		donutData("NLD", "2015")
-
 };

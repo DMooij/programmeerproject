@@ -11,13 +11,15 @@ function barchart(currentLocation){
     for (var l = 0; l < consumption.length; l++){
       if (currentLocation == consumption[l].CODE){
         dataBar.push(consumption[l]);
-      }
+      };
     };
     updateBarchart(dataBar);
 };
 
 // make default barchart of location NLD
 function makeBarchart(location){
+
+    // select data for correct location
     var dataBar = [];
     for (var l = 0; l < consumption.length; l++){
       if (location == consumption[l].CODE){
@@ -25,6 +27,7 @@ function makeBarchart(location){
       };
     };
 
+    // set height and with
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
     var fullwidth = 500;
     var fullheight = 300;
@@ -46,7 +49,8 @@ function makeBarchart(location){
 
     // set y scale
     var yscale = d3.scale.linear()
-       .domain([0, Math.max.apply(Math, dataBar.map(function(d){return d.AVO_PP_YEAR}))])
+       .domain([0, Math.max.apply(Math, dataBar.map(function(d)
+         {return d.AVO_PP_YEAR}))])
        .range([barHeight, margin.top]);
 
     // create axes
@@ -92,7 +96,8 @@ function makeBarchart(location){
       .attr("class", "d3-tip")
       .offset([-10, 0])
       .html(function(d){
-         return "<strong>Avocados consumed per inhabitant:  <span style='color:#405d27'>" + d.AVO_PP_YEAR + "</span> </strong>"
+         return "<strong>Avocados consumed per inhabitant:  <span style='color:#405d27'>"
+         + d.AVO_PP_YEAR + "</span> </strong>"
       });
 
     svg.call(tooltip);
@@ -125,21 +130,22 @@ function makeBarchart(location){
      .style("font-size", "18px")
      .text("Avocados consumed per inhabitant in " + dataBar[0].DECLARANT);
 
+     // add info text
      d3.select("#info_bar")
        .append("text")
-       .text("The barchart shows avocado consumption in the time period 2010-2015. \
-       Use the slider to update the year of the donut chart and see if people feel \
-       healthier when more avocados are eaten. Use the button to change the gender \
-       and discover whether there is a difference in health perception between \
-       males and females.")
+       .text("The barchart shows avocado consumption in the time period \
+       2010-2015. Use the slider to update the year of the donut chart \
+       and see if people feel healthier when more avocados are eaten. \
+       Use the button to change the gender and discover whether there is \
+       a difference in health perception betweenmales and females.")
       .style("font-style", "italic");
 };
 
 // update barchart on change of location
 function updateBarchart(dataBar){
-
   if (dataBar.length != 0){
 
+    // set height and width
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
     var fullwidth = 500;
     var fullheight = 300;

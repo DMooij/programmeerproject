@@ -5,11 +5,13 @@
 * Select data in the right format to make a map
 */
 
+// legend is independent of flow and year
 var paletteScale;
+
 // set default flow to import
 var currentFlow = "import";
 
-// filter data for the selected year
+// select mapdata for the selected year
 function mapYear(valueYear, importExportYear){
 	yearQuantities = [];
 	for (var year = 0; year < importExportYear.length; year++){
@@ -38,8 +40,8 @@ function mapFlow(yearQuantities){
 	// make map of import or export depending on what is checked in the checkbox
 	if (currentFlow == "import"){
 		mapData(importArray);
-	};
-	if (currentFlow == "export"){
+	}
+	else if (currentFlow == "export"){
 		mapData(exportArray);
 	};
 
@@ -49,8 +51,8 @@ function mapFlow(yearQuantities){
 		if (value == "import"){
 			currentFlow = "import";
 			mapData(importArray);
-		};
-		if (value == "export" ){
+		}
+		else if (value == "export" ){
 			currentFlow = "export";
 			mapData(exportArray);
 		};
@@ -59,10 +61,12 @@ function mapFlow(yearQuantities){
 
 // convert data to the correct format for the map and add colourscale
 function mapData(importExportArray){
-		// colour country according to value
+
+		// colour country according to import/export value
 		paletteScale = d3.scale.quantize()
 			.domain([0, 200000])
-			.range(["#bfff80", "#b3ff66", "#99ff33", "#80ff00", "#66cc00", "#4d9900", "#336600", "#1a3300"])
+			.range(["#bfff80", "#b3ff66", "#99ff33", "#80ff00", "#66cc00",
+			"#4d9900", "#336600", "#1a3300"])
 
 		// convert to data format needed for the map
 		var dataMap = {};
@@ -76,6 +80,7 @@ function mapData(importExportArray){
 			};
 		};
 
+		// remove old map and make new map
 		removeMap();
 		makeMap(dataMap);
 
@@ -101,8 +106,10 @@ function makeMap(dataMap){
 				},
 				data: dataMap,
 				done: function(datamap){
-					datamap.svg.selectAll(".datamaps-subunit").on("click", function(geography){
+					datamap.svg.selectAll(".datamaps-subunit").on("click",
+					function(geography){
 
+						// update barchart and donut when a country is clicked
 						var currentLocation = geography.id;
 						donutData(currentLocation, valueYear);
 						barchart(currentLocation);
@@ -120,7 +127,8 @@ function makeMap(dataMap){
 							}
 								return ['<div class="hoverinfo"><strong>',
 												geo.properties.name,
-												': ' + map.QUANTITY_TON + ' tonnes ' + map.FLOW + ' in ' + map.YEAR ,
+												': ' + map.QUANTITY_TON + ' tonnes ' + map.FLOW
+												+ ' in ' + map.YEAR ,
 												'</strong></div>'].join('');
 						},
 						popOnHover: true,
@@ -132,6 +140,7 @@ function makeMap(dataMap){
 					},
 			 });
 
+		// add title to the map
 		var title = "Avocado import/export (tonnes)"
 			 d3.select("h3").text(title);
 };

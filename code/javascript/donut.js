@@ -5,115 +5,80 @@
 * Select data in the right format to make and update the donut chart
 */
 
+// default gender is total
 var currentGender = "total"
 
 // select data for the right year and gender
 function donutData(location, valueYear){
 
-    // select data for slider value
-    var healthYear = [];
-    for (var k = 0; k < healthYears.length; k++){
-      if (healthYears[k].YEAR == valueYear){
-        healthYear.push(healthYears[k]);
-      };
+  // select data for slider value year
+  var healthYear = [];
+  for (var k = 0; k < healthYears.length; k++){
+    if (healthYears[k].YEAR == valueYear){
+      healthYear.push(healthYears[k]);
     };
+  };
 
-      // filter data according to gender
-      var healthYearMale = [];
-      var healthYearFemale = [];
-      var healthYearTotal = [];
-      for (var l = 0; l < healthYear.length; l++){
-        if (healthYear[l].GENDER == "male"){
-          healthYearMale.push(healthYear[l]);
-        };
-        if (healthYear[l].GENDER == "female"){
-          healthYearFemale.push(healthYear[l]);
-        };
-        if (healthYear[l].GENDER == "total"){
-          healthYearTotal.push(healthYear[l]);
-        };
-      };
-    donutGender(location, healthYearTotal, healthYearMale, healthYearFemale);
+  // filter data on gender
+  var healthYearMale = [];
+  var healthYearFemale = [];
+  var healthYearTotal = [];
+  for (var l = 0; l < healthYear.length; l++){
+    if (healthYear[l].GENDER == "male"){
+      healthYearMale.push(healthYear[l]);
+    }
+    else if (healthYear[l].GENDER == "female"){
+      healthYearFemale.push(healthYear[l]);
+    }
+    else if (healthYear[l].GENDER == "total"){
+      healthYearTotal.push(healthYear[l]);
+    };
+  };
+donutGender(location, healthYearTotal, healthYearMale, healthYearFemale);
 };
 
-// select right data according to what is selected in the dropdown
+// select correct gender data according to what is selected in the dropdown
 function donutGender(location, healthTotal, healthMale, healthFemale){
-    // default total
-    //   var dataDonut = [];
-    //   for (var loc = 0; loc < healthTotal.length; loc++){
-    //      if (location == healthTotal[loc].COU){
-    //        dataDonut.push(healthTotal[loc]);
-    //      };
-    //   }
-    // updateDonut(dataDonut)
+  if (currentGender == "total"){
+      donut(location, healthTotal);
+  }
+  else if (currentGender == "male"){
+    donut(location, healthMale);
+  }
+  else if (currentGender == "female"){
+    donut(location, healthFemale);
+  };
 
-    if (currentGender == "total"){
-        var dataDonut = [];
-        for (var loc = 0; loc < healthTotal.length; loc++){
-           if (location == healthTotal[loc].COU){
-             dataDonut.push(healthTotal[loc]);
-           };
-        };
+  // get correct data on changing the gender in the dropdown
+  d3.selectAll(".dropdown-item").on("click", function(){
+    var value = this.getAttribute("value");
+    if (value == "male"){
+      currentGender = "male";
+      donut(location, healthMale);
     }
-
-    else if (currentGender == "male"){
-      var dataDonut = [];
-      for (var loc = 0; loc < healthMale.length; loc++){
-         if (location == healthMale[loc].COU){
-           dataDonut.push(healthMale[loc]);
-         };
-      };
+    else if (value == "female"){
+      currentGender = "female";
+      donut(location, healthFemale);
     }
-    else if (currentGender == "female"){
-      var dataDonut = [];
-      for (var loc = 0; loc < healthTotal.length; loc++){
-         if (location == healthTotal[loc].COU){
-           dataDonut.push(healthTotal[loc]);
-         };
-      };
+    else if (value == "total"){
+      currentGender = "total";
+      donut(location, healthTotal);
     };
-    updateDonut(dataDonut)
+  });
+};
 
-    // get correct data on changing the gender in the dropdown
-    d3.selectAll(".dropdown-item").on("click", function(){
-      var value = this.getAttribute("value");
-
-      if (value == "male"){
-        currentGender = "male";
-        var dataDonut = [];
-        for (var loc = 0; loc < healthMale.length; loc++){
-           if (location == healthMale[loc].COU){
-             dataDonut.push(healthMale[loc]);
-           };
-        };
-      };
-      if (value == "female"){
-        currentGender = "female";
-        var dataDonut = [];
-        for (var loc = 0; loc < healthFemale.length; loc++){
-           if (location == healthFemale[loc].COU){
-             dataDonut.push(healthFemale[loc]);
-           };
-        };
-      };
-      if (value == "total"){
-        currentGender = "total";
-        var dataDonut = [];
-        for (var loc = 0; loc < healthTotal.length; loc++){
-           if (location == healthTotal[loc].COU){
-             dataDonut.push(healthTotal[loc]);
-           };
-        };
-      };
-      updateDonut(dataDonut);
-    });
+function donut(location, healthGender){
+  var dataDonut = []
+  for (var loc = 0; loc < healthGender.length; loc++){
+    if (location == healthGender[loc].COU){
+      dataDonut.push(healthGender[loc])
+    };
+  };
+  updateDonut(dataDonut);
 };
 
 // make default donut with location NLD year 2015 and total gender
 function makeDonut(location){
-
-  console.log("make donut")
-
   var healthYear = [];
   for (var k = 0; k < healthYears.length; k++){
     if (healthYears[k].YEAR == "2015"){
@@ -122,7 +87,6 @@ function makeDonut(location){
   };
 
   var healthYearTotal = [];
-
   for (var l = 0; l < healthYear.length; l++){
     if (healthYear[l].GENDER == "total"){
       healthYearTotal.push(healthYear[l]);
@@ -164,7 +128,8 @@ function makeDonut(location){
     .attr("width", full_width)
     .attr("height", heightDonut)
   .append("g")
-    .attr("transform", "translate(" + widthDonut / 2 + "," + heightDonut / 2 + ")");
+    .attr("transform", "translate(" + widthDonut / 2 + ","
+    + heightDonut / 2 + ")");
 
   // make donut
   var g = svg.selectAll(".arc")
@@ -204,58 +169,55 @@ function makeDonut(location){
          'font-weight': 'bold'
      });
 
-     // make legend
-     var legendSize = 20;
-     var legendSpace = 7;
-     var heightLegend = legendSize + legendSpace;
+   // make legend
+  var legendSize = 20;
+  var legendSpace = 7;
+  var heightLegend = legendSize + legendSpace;
 
-     var legend = svg.selectAll(".legend")
-        .data(color.domain())
-        .enter()
-        .append("g")
-        .attr({
-        class:'legend',
-        transform:function(d,i){
-            return 'translate(160,' + ((i * heightLegend) - 40) + ')';}
+  var legend = svg.selectAll(".legend")
+      .data(color.domain())
+      .enter()
+      .append("g")
+      .attr({
+      class:'legend',
+      transform:function(d,i){
+          return 'translate(160,' + ((i * heightLegend) - 40) + ')';}
 
+      });
+
+  legend.append("rect")
+      .attr({
+            width: legendSize,
+            height: legendSize,
+            rx:18,
+            ry:18
+        })
+        .style({
+            fill:color,
+            stroke:color
         });
 
-      legend.append("rect")
+    legend.append('text')
         .attr({
-              width: legendSize,
-              height: legendSize,
-              rx:18,
-              ry:18
-          })
-          .style({
-              fill:color,
-              stroke:color
-          });
+            x:30,
+            y:15
+        })
+        .text(function(d){
+            return d;
+        }).style({
+            fill:"black",
+            'font-size':'14px'
+        });
 
-        legend.append('text')
-          .attr({
-              x:30,
-              y:15
-          })
-          .text(function(d){
-              return d;
-          }).style({
-              fill:"black",
-              'font-size':'14px'
-          });
-
-        // add title
-       var title = "Health perception of " + dataDonut[0]["GENDER"] + " in " + dataDonut[0]["COUNTRY"] + " in " + dataDonut[0]["YEAR"];
-        d3.select("#donut").select("h4").text(title);
+    // add title
+    var title = "Health perception of " + dataDonut[0]["GENDER"] + " in "
+    + dataDonut[0]["COUNTRY"] + " in " + dataDonut[0]["YEAR"];
+    d3.select("#donut").select("h4").text(title);
 }
 
 // update the donut chart on change of gender or slider value
 function updateDonut(dataDonut){
-
-  console.log("update")
-
   if (dataDonut.length != 0){
-
     var widthDonut = 450;
     var heightDonut = 300;
     var radius = Math.min(widthDonut - 10 , heightDonut - 10)/2;
@@ -280,7 +242,8 @@ function updateDonut(dataDonut){
     var arcpath = g.enter()
       .append("g")
       .attr("class", "arc")
-      .attr("transform", "translate(" + widthDonut / 2 + "," + heightDonut / 2 + ")");
+      .attr("transform", "translate(" + widthDonut / 2 + ","
+      + heightDonut / 2 + ")");
 
     arcpath.append("path")
       .transition()
@@ -306,9 +269,9 @@ function updateDonut(dataDonut){
             return d.data.VALUE+"%";
         });
 
-      // update title
-      var title = "Health perception of " + dataDonut[0]["GENDER"] + " in " + dataDonut[0]["COUNTRY"] + " in " + dataDonut[0]["YEAR"];
-         d3.select("#donut").select("h4").text(title);
-
+    // update title
+    var title = "Health perception of " + dataDonut[0]["GENDER"] + " in "
+    + dataDonut[0]["COUNTRY"] + " in " + dataDonut[0]["YEAR"];
+    d3.select("#donut").select("h4").text(title);
   };
 };

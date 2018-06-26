@@ -88,4 +88,5 @@
 ## Day 17 - 25 June 2018
 
 - fixed the issue with errors in the console when a country without data is clicked
-- worked on the slider issue; when female is selected and the slider is used the gender changes back to total so this needs to be remembered
+- updated README and added PROPOSAL.md
+- fixed the slider issue that changed the gender back to total when sliding from male/female
