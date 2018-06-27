@@ -95,4 +95,7 @@
 
 - Did a code review with Sylvie
 - improved and commented my code
-- added info text to home page 
+- managed to avoid nesting of function in Barchart
+- avoiding nesting in map and donut ruins everything, so decided to work on report instead
+- added info text to home page
+- added sources page

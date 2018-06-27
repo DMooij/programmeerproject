@@ -13,13 +13,13 @@ function barData(location){
       dataBar.push(consumption[l]);
     };
   };
-  return dataBar
+  return dataBar;
 }
 
 // make default barchart of location NLD
 function makeBarchart(location){
 
-    dataBar = barData(location)
+    var dataBar = barData(location);
 
     // set height and width
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
