@@ -14,6 +14,6 @@ This project aims to visualize the amount of avocados imported and exported in E
 
 
 # Project
-![Project](doc/project.PNG)
+![Project](doc/project.png)
 
 # Copyright
