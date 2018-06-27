@@ -6,26 +6,20 @@
 */
 
 // select correct data for the barchart
-function barchart(currentLocation){
-    var dataBar = [];
-    for (var l = 0; l < consumption.length; l++){
-      if (currentLocation == consumption[l].CODE){
-        dataBar.push(consumption[l]);
-      };
+function barData(location){
+  var dataBar = [];
+  for (var l = 0; l < consumption.length; l++){
+    if (location == consumption[l].CODE){
+      dataBar.push(consumption[l]);
     };
-    updateBarchart(dataBar);
-};
+  };
+  return dataBar
+}
 
 // make default barchart of location NLD
 function makeBarchart(location){
 
-    // select data for correct location
-    var dataBar = [];
-    for (var l = 0; l < consumption.length; l++){
-      if (location == consumption[l].CODE){
-         dataBar.push(consumption[l]);
-      };
-    };
+    dataBar = barData(location)
 
     // set height and width
     var margin = {top: 30, right: 20, bottom: 50, left: 50};

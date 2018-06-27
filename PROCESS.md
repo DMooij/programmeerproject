@@ -78,17 +78,21 @@
 - presented progress in weekly meeting
 - TO DO: remove .0 in legend, donut update (arctween?), size donut?, add text below legend
 
-## Day 16 - 24 June 2018
+## Day 16 - 25 June 2018
 
 - fixed legend .0 problem
 - made the donut smaller so no scrolling is necessary to view all three visualisations
 - added a soundtrack with play/pause to the home page
 - TO DO: donut when country with no data is clicked
 
-## Day 17 - 25 June 2018
+## Day 17 - 26 June 2018
 
 - fixed the issue with errors in the console when a country without data is clicked
 - updated README and added PROPOSAL.md
 - fixed the slider issue that changed the gender back to total when sliding from male/
 
-## Day 18 - 26 June 2018
+## Day 18 - 27 June 2018
+
+- Did a code review with Sylvie
+- improved and commented my code
+- added info text to home page 

@@ -110,11 +110,13 @@ function makeMap(dataMap){
 					datamap.svg.selectAll(".datamaps-subunit").on("click",
 					function(geography){
 
-						// update barchart and donut when a country is clicked
-						// enable slider in the new situation
+						// update barchart and donut for the new location
 						var currentLocation = geography.id;
 						donutData(currentLocation, valueYear);
-						barchart(currentLocation);
+						dataBar = barData(currentLocation)
+						updateBarchart(dataBar);
+
+						// enable slider in the new situation
 						slider(currentLocation);
 
 					});
