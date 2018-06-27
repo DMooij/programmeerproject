@@ -27,7 +27,7 @@ function makeBarchart(location){
       };
     };
 
-    // set height and with
+    // set height and width
     var margin = {top: 30, right: 20, bottom: 50, left: 50};
     var fullwidth = 500;
     var fullheight = 300;
@@ -39,7 +39,7 @@ function makeBarchart(location){
       .append("svg")
        .attr("width", fullwidth)
        .attr("height", fullheight)
-      .append("g")
+       .append("g")
        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // set x scale
@@ -137,7 +137,7 @@ function makeBarchart(location){
        2010-2015. Use the slider to update the year of the donut chart \
        and see if people feel healthier when more avocados are eaten. \
        Use the button to change the gender and discover whether there is \
-       a difference in health perception betweenmales and females.")
+       a difference in health perception between males and females.")
       .style("font-style", "italic");
 };
 
@@ -188,6 +188,5 @@ function updateBarchart(dataBar){
       .transition()
       .duration(1000)
       .call(yaxis);
-
   };
 };

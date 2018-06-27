@@ -28,4 +28,4 @@ http://stats.oecd.org/#
 
 # Libraries
 
-Required libraries are d3-tooltip and d3-worldmaps
+Required libraries are d3-tooltip, d3-legend and d3-worldmaps

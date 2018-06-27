@@ -8,10 +8,10 @@
 // legend is independent of flow and year
 var paletteScale;
 
-// set default flow to import
+// global to store what is checked in the checkbox, default set to import
 var currentFlow = "import";
 
-// select mapdata for the selected year
+// iterate over import/export data and select data for the selected year
 function mapYear(valueYear, importExportYear){
 	yearQuantities = [];
 	for (var year = 0; year < importExportYear.length; year++){
@@ -19,13 +19,14 @@ function mapYear(valueYear, importExportYear){
 			yearQuantities.push(importExportYear[year]);
 		};
 	}
+	// pass filtered year data on
 	mapFlow(yearQuantities);
 };
 
 // order data in export and import array
 function mapFlow(yearQuantities){
 
-		// filter data on flow
+		// filter data on flow and store in arrays
 		var importArray = [];
 		var exportArray = [];
 		for (var flow = 0; flow < yearQuantities.length; flow++){
@@ -45,7 +46,7 @@ function mapFlow(yearQuantities){
 		mapData(exportArray);
 	};
 
-	// update map when checkbox is changed
+	// update map and current flow when checkbox is changed and make map with correct data
 	d3.selectAll("input[name='optradio']").on("change", function(){
 		var value = this.value;
 		if (value == "import"){
@@ -66,7 +67,7 @@ function mapData(importExportArray){
 		paletteScale = d3.scale.quantize()
 			.domain([0, 200000])
 			.range(["#bfff80", "#b3ff66", "#99ff33", "#80ff00", "#66cc00",
-			"#4d9900", "#336600", "#1a3300"])
+			"#4d9900", "#336600", "#1a3300"]);
 
 		// convert to data format needed for the map
 		var dataMap = {};
@@ -79,11 +80,9 @@ function mapData(importExportArray){
 				fillColor:paletteScale(importExportArray[place]["QUANTITY_TON"]),
 			};
 		};
-
 		// remove old map and make new map
 		removeMap();
 		makeMap(dataMap);
-
 };
 
 // make datamap
@@ -93,10 +92,12 @@ function makeMap(dataMap){
 				setProjection: function(element) {
 					 width = 960;
 					 height = 600;
+
 					 var projection = d3.geo.mercator()
 							 .center([32, 52])
-						   .translate([ width/2, height/2 ])
-						   .scale([ width/1.5 ]);
+						   .translate([ width / 2, height / 2 ])
+						   .scale([ width / 1.5 ]);
+
 					 var path = d3.geo.path()
 		 					 .projection(projection);
 					 return {path: path, projection: projection};
@@ -110,6 +111,7 @@ function makeMap(dataMap){
 					function(geography){
 
 						// update barchart and donut when a country is clicked
+						// enable slider in the new situation
 						var currentLocation = geography.id;
 						donutData(currentLocation, valueYear);
 						barchart(currentLocation);
@@ -133,7 +135,8 @@ function makeMap(dataMap){
 						},
 						popOnHover: true,
 						highlightOnHover: true,
-						highlightFillColor: function(geo) {return geo["fillColor"] || "sienna"; },
+						highlightFillColor: function(geo) {return geo["fillColor"]
+							|| "sienna"; },
 						highlightBorderColor: "sienna",
 						highlightBorderWidth: 3,
 						highlightBorderOpacity: 1
@@ -148,9 +151,11 @@ function makeMap(dataMap){
 // make legend for the datamap
 function makeLegend(){
 
+	// set height and width
 	var legendHeight = 230;
 	var legendWidth = 300;
 
+	// set legend properties
 	var colorLegend = d3.legend.color()
 	 .scale(paletteScale)
 	 .labelFormat(d3.format(".0f"))
@@ -159,11 +164,12 @@ function makeLegend(){
 	 .shapeHeight(20)
 	 .labelOffset(12);
 
+	// add legend
 	var svg = d3.select("#maplegend")
 		.append("svg")
 		 .attr("width", legendWidth)
 		 .attr("height", legendHeight)
-		.append("g")
+		 .append("g")
 		 .attr("transform", "translate(20,20)")
 		 .call(colorLegend);
 };
