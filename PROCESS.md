@@ -99,3 +99,8 @@
 - avoiding nesting in map and donut ruins everything, so decided to work on report instead
 - added info text to home page
 - added sources page
+
+## Day 19 - 28 June 2018
+
+- Finished and submitted code
+- worked on report and update README
