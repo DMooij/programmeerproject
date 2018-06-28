@@ -8,6 +8,4 @@ This project aims to visualize the amount of avocados imported and exported in E
 
 ## Technical design
 
-## Challenges
-
-## Decisions
+## Challenges and decisions

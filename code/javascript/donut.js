@@ -42,13 +42,16 @@ function donutData(location, valueYear){
 // select correct gender data according to what is selected in the dropdown
 function donutGender(location, healthTotal, healthMale, healthFemale){
   if (currentGender == "total"){
-    donut(location, healthTotal);
+    var dataDonut = donut(location, healthTotal);
+    updateDonut(dataDonut);
   }
   else if (currentGender == "male"){
-    donut(location, healthMale);
+    var dataDonut = donut(location, healthMale);
+    updateDonut(dataDonut);
   }
   else if (currentGender == "female"){
-    donut(location, healthFemale);
+    var dataDonut = donut(location, healthFemale);
+    updateDonut(dataDonut);
   };
 
   // get correct data on changing the gender in the dropdown
@@ -57,15 +60,18 @@ function donutGender(location, healthTotal, healthMale, healthFemale){
     var value = this.getAttribute("value");
     if (value == "male"){
       currentGender = "male";
-      donut(location, healthMale);
+      var dataDonut = donut(location, healthMale);
+      updateDonut(dataDonut);
     }
     else if (value == "female"){
       currentGender = "female";
-      donut(location, healthFemale);
+      var dataDonut = donut(location, healthFemale);
+      updateDonut(dataDonut);
     }
     else if (value == "total"){
       currentGender = "total";
-      donut(location, healthTotal);
+      var dataDonut = donut(location, healthTotal);
+      updateDonut(dataDonut);
     };
   });
 };
@@ -78,7 +84,7 @@ function donut(location, healthGender){
       dataDonut.push(healthGender[loc]);
     };
   };
-  updateDonut(dataDonut);
+  return dataDonut;
 };
 
 // make default donut with location NLD year 2015 and total gender
