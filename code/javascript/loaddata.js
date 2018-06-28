@@ -37,6 +37,6 @@ function LoadData(error, response){
 		makeBarchart("NLD");
 		makeDonut("NLD");
 
-		// enable changing the gender in default situation
+		// enable changing the gender in default situation before slider has been used
 		donutData("NLD", "2015")
 };
