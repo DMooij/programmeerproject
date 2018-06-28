@@ -1,4 +1,4 @@
-# Project
+# Programming project
 ## Avocado consumption and health perception in Europe
 
 Dewi Mooij 10752978
